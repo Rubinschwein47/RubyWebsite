@@ -1,0 +1,6 @@
+﻿services:
+  rubywebsite:
+    image: rubywebsite
+    build:
+      context: .
+      dockerfile: RubyWebsite/Dockerfile
