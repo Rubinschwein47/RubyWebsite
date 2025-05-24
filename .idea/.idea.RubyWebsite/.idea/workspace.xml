@@ -9,11 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/RubyWebsite.sln" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.http" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.http" afterDir="false" />
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="clean up">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +32,11 @@
     "accountId": "148d347f-cec4-46e5-87f7-1dc7dd5726ff"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="mock://C:/Users/felix/RiderProjects/RubyWebsite/RubyWebsite/Program.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/frontend/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -46,6 +48,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -53,6 +56,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "npm.start.executor": "Run",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
@@ -140,13 +144,29 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="frontend" type="js.build_tools.npm" temporary="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue=".NET Launch Settings Profile.RubyWebsite:backend" />
       <item itemvalue=".NET Launch Settings Profile.RubyWebsite: https" />
       <item itemvalue=".NET Launch Settings Profile.RubyWebsite: IIS Express" />
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.RubyWebsite/Dockerfile" />
+      <item itemvalue="npm.frontend" />
     </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="npm.frontend" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -156,15 +176,27 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748102530315</updated>
-      <workItem from="1748102531453" duration="973000" />
+      <workItem from="1748102531453" duration="2887000" />
     </task>
+    <task id="LOCAL-00001" summary="clean up">
+      <option name="closed" value="true" />
+      <created>1748106580902</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1748106580902</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+    <MESSAGE value="clean up" />
+    <option name="LAST_COMMIT_MESSAGE" value="clean up" />
   </component>
 </project>
