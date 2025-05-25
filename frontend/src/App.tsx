@@ -3,6 +3,10 @@ import './App.css';
 import {useState} from 'react';
 import { RubyWebsiteService } from "./services/openapi/services/RubyWebsiteService";
 import {OpenAPI } from  "./services/openapi/index";
+import {Button, Space, DatePicker, Timeline, Layout} from 'antd';
+import { CompassFilled } from '@ant-design/icons';
+import {Content, Header} from "antd/es/layout/layout";
+import WebHeader from "./navigation/header";
 
 const {randomValues} = RubyWebsiteService;
 OpenAPI.BASE ="http://localhost:5037"
@@ -22,14 +26,25 @@ export default function App() {
     }
 
     return (
-        <div className={"main"}>
-            <button onClick={getRandom}>Call Backend</button>
-            <button onClick={flipShowExample}>Toggle</button>
-            <TestList
-                list={exampleList}
-                showExample={showExample}
-            />
-        </div>
+        // <div className={"main"}>
+        //   
+        //                
+        // </div>
+    <Layout style={{ height: '100vh' }}>
+        <WebHeader></WebHeader>
+        <Content>
+            <Space>
+                <Button type="primary" onClick={getRandom}>Call Backend</Button>
+                <Button type="primary" onClick={flipShowExample}>Toggle</Button>
+                <TestList
+                    list={exampleList}
+                    showExample={showExample}
+                />
+                <DatePicker />
+                <CompassFilled />
+            </Space>
+        </Content>
+    </Layout>
     );
 }
 
@@ -41,9 +56,11 @@ function TestList({list,showExample}:ToggleListProps) {
     if (!showExample) {
         return null
     }
-    const mappedList = list.map((item, id) => (<li key={id}>{item}</li>));
+    
+    const mappedList = list.map((item, id) => ({children: item}));
+    
     return (<div className={"test-container"}>
-            <ul className={"list-display"}>{mappedList}</ul>
+            <Timeline items={mappedList} />
         </div>
     );
 }
