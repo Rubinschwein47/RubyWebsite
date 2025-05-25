@@ -1,3 +1,5 @@
+using System.Diagnostics;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
@@ -35,6 +37,17 @@ app.MapGet("/weatherforecast", () =>
   })
   .WithName("GetWeatherForecast")
   .WithOpenApi();
+
+app.MapGet("/randomValues/{amount:int}", (int amount) =>
+{
+  var random = new Random();
+  var values = new int[amount];
+  for (int i = 0; i < values.Length; i++)
+  {
+    values[i] = random.Next(-100,101);
+  }
+  return values;
+}).WithName("RandomValues").WithOpenApi();
 
 app.Run();
 
