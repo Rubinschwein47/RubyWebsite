@@ -6,9 +6,20 @@ var builder = WebApplication.CreateBuilder(args);
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+builder.Services.AddCors(options =>
+{
+  options.AddPolicy(name: "_myAllowSpecificOrigins",
+    policy  =>
+    {
+      policy.WithOrigins("*");
+    });
+});
 
 var app = builder.Build();
 
+
+
+app.UseCors("_myAllowSpecificOrigins");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())
 {

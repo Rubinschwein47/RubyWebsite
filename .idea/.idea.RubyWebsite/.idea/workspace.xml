@@ -9,12 +9,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="implemented things">
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="stable and can start">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,6 +52,8 @@
     <setting file="file://$PROJECT_DIR$/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/Users/felix/RiderProjects/RubyWebsite/frontend/package.json" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/Users/felix/RiderProjects/RubyWebsite/frontend/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/felix/RiderProjects/RubyWebsite/frontend/package.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/Users/felix/RiderProjects/RubyWebsite/frontend/package.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo"><![CDATA[{
@@ -67,7 +69,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Debug",
+    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
     "node.js.detected.package.eslint": "true",
@@ -80,11 +82,11 @@
     "npm.start.executor": "Run",
     "npm.types:openapi.executor": "Run",
     "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Program Files\\JetBrains\\JetBrains Rider 2024.2.7\\plugins\\javascript-plugin\\jsLanguageServicesImpl\\external",
+    "ts.external.directory.path": "C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="npm.frontend">
+  <component name="RunManager" selected=".NET Launch Settings Profile.RubyWebsite:backend">
     <configuration name="RubyWebsite: IIS Express" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" />
       <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
@@ -210,9 +212,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.frontend" />
-        <item itemvalue="npm.installDependencies" />
         <item itemvalue="npm.types:openapi" />
+        <item itemvalue="npm.installDependencies" />
+        <item itemvalue="npm.frontend" />
       </list>
     </recent_temporary>
   </component>
@@ -224,7 +226,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1748102530315</updated>
-      <workItem from="1748102531453" duration="17920000" />
+      <workItem from="1748102531453" duration="18540000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -250,7 +252,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748135260832</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="stable and can start">
+      <option name="closed" value="true" />
+      <created>1748135732098</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1748135732098</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -264,20 +274,21 @@
     <MESSAGE value="added react" />
     <MESSAGE value="implemented things" />
     <MESSAGE value="fuck you openapi" />
-    <option name="LAST_COMMIT_MESSAGE" value="fuck you openapi" />
+    <MESSAGE value="stable and can start" />
+    <option name="LAST_COMMIT_MESSAGE" value="stable and can start" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Program.cs</url>
-          <line>48</line>
+          <line>59</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Program.cs" containingFunctionPresentation="">
             <startOffsets>
-              <option value="1204" />
+              <option value="1401" />
             </startOffsets>
             <endOffsets>
-              <option value="1218" />
+              <option value="1415" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="1" />
