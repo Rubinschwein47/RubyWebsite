@@ -1,7 +1,8 @@
-.anticon{
-    color:white !important;
-}
 
+
+.anticon{
+    color: var(--icon-color);
+}
 body {
     margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
