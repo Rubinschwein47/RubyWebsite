@@ -1,4 +1,4 @@
-import React, {ReactElement, useLayoutEffect, useRef} from 'react';
+import React, {ReactElement, useEffect, useLayoutEffect, useRef} from 'react';
 import './App.css';
 import {useState} from 'react';
 import { RubyWebsiteService } from "./services/openapi/services/RubyWebsiteService";
@@ -25,6 +25,10 @@ export default function App() {
         // @ts-ignore
         setHeight(ref.current.offsetHeight);
     }, []);
+    useEffect(() => {
+        // @ts-ignore
+        setHeight(ref.current.offsetHeight);
+    })
     
     async function getRandom(){
         randomValues(12).then((values) => {
