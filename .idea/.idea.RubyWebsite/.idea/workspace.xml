@@ -10,18 +10,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +228,7 @@
       <workItem from="1748289656290" duration="1162000" />
       <workItem from="1748511999512" duration="8037000" />
       <workItem from="1748524521148" duration="2112000" />
-      <workItem from="1748625386190" duration="14498000" />
+      <workItem from="1748625386190" duration="15417000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -289,7 +278,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748211653478</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="added walls, finished themes(no cookies), added Header text">
+      <option name="closed" value="true" />
+      <created>1748647467785</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1748647467785</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -306,6 +303,7 @@
     <MESSAGE value="stable and can start" />
     <MESSAGE value="implemented openapi" />
     <MESSAGE value="added themes" />
-    <option name="LAST_COMMIT_MESSAGE" value="added themes" />
+    <MESSAGE value="added walls, finished themes(no cookies), added Header text" />
+    <option name="LAST_COMMIT_MESSAGE" value="added walls, finished themes(no cookies), added Header text" />
   </component>
 </project>

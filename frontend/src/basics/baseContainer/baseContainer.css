@@ -1,0 +1,20 @@
+
+.baseContainer {
+    width: calc(100vw - 12rem);
+    margin: 10rem 6rem 3rem;
+    background-color: var(--container-color);
+    position: relative;
+    z-index: 1;
+    padding: 12px;
+    
+    border: 2px solid var(--header-color);
+    border-radius: var(--border-radius);
+}
+
+.wall-icon{
+    height: 150px;
+    float: right;
+    margin-right: 1rem;
+    top: -90px;
+    position: relative;
+}

@@ -3,8 +3,8 @@ import './header.css';
 import {Header} from "antd/es/layout/layout";
 import {Button, Dropdown, Flex, MenuProps} from "antd";
 import {MoonFilled, FormatPainterFilled, SunFilled} from '@ant-design/icons';
-import {useInfoStore} from '../store';
 import { Typography } from 'antd';
+import { useInfoStore } from '../../store';
 
 const { Title } = Typography;
 // const useSetTheme = (isLight: boolean) => {
@@ -40,7 +40,7 @@ export default function WebHeader() {
             }
         }
     ];
-    return (<Header style={{padding: '1rem', backgroundColor: isLightTheme ? '#eea9f3' : "#9e59cb", zIndex: 1}}>
+    return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
             <div style={{width: '75%'}}>
             </div>
