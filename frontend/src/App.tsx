@@ -1,4 +1,4 @@
-import React, {ReactElement, useEffect, useLayoutEffect, useRef} from 'react';
+import React, {Component, ReactElement, useEffect, useLayoutEffect, useRef} from 'react';
 import './App.css';
 import {useState} from 'react';
 import { RubyWebsiteService } from "./services/openapi/services/RubyWebsiteService";
@@ -9,10 +9,42 @@ import {Content, Header} from "antd/es/layout/layout";
 import WebHeader from "./navigation/header/header";
 import Background from './basics/background';
 import BaseContainer from './basics/baseContainer/baseContainer';
+import {createBrowserRouter, redirect, Route, RouterProvider} from "react-router";
+import Home from './pages/home/home';
+import Contact from './pages/contact/contact';
+import Portfolio from './pages/portfolio/portfolio';
+import TechStack from './pages/tech-stack/techStack';
 const {randomValues} = RubyWebsiteService;
 const { Text, Link } = Typography;
 
 OpenAPI.BASE ="http://localhost:5037"
+
+const router = createBrowserRouter([
+    {
+        path: "/home",
+        Component: Home,
+    },
+    {
+        path: "/contact",
+        Component: Contact,
+    },
+    {
+        path: "/portfolio",
+        Component: Portfolio,
+    },
+    {
+        path: "/tech-stack",
+        Component: TechStack,
+    },
+    {
+        path: "/",
+        loader: () => redirect("/home")
+    },
+    {
+        path: "*",
+        loader: () => redirect("/home")
+    }
+]);
 
 export default function App() {
     var [exampleList, setexampleList] = useState(["hello", "some longer text", "bye"]);
@@ -37,7 +69,6 @@ export default function App() {
     }
     function flipShowExample() {
         setSchowExample(!showExample);
-        console.log(showExample);
     }
 
     return (
@@ -46,18 +77,19 @@ export default function App() {
         <WebHeader></WebHeader>
         <Content ref={ref}>
             <BaseContainer>
-                <Space>
-                    <Button type="primary" onClick={getRandom}>Call Backend</Button>
-                    <Button type="primary" onClick={flipShowExample}>Toggle</Button>
-                    <TestList
-                        list={exampleList}
-                        showExample={showExample}
-                    />
-                    <DatePicker/>
-                    <CompassFilled/>
-                    <Text>{height}</Text>
-                </Space>
-                <div style={{backgroundColor: '#888', width: "5rem", height: '100rem'}}></div>
+                <RouterProvider router={router}></RouterProvider>
+                {/*<Space>*/}
+                {/*    <Button type="primary" onClick={getRandom}>Call Backend</Button>*/}
+                {/*    <Button type="primary" onClick={flipShowExample}>Toggle</Button>*/}
+                {/*    <TestList*/}
+                {/*        list={exampleList}*/}
+                {/*        showExample={showExample}*/}
+                {/*    />*/}
+                {/*    <DatePicker/>*/}
+                {/*    <CompassFilled/>*/}
+                {/*    <Text>{height}</Text>*/}
+                {/*</Space>*/}
+                {/*<div style={{backgroundColor: '#888', width: "5rem", height: '100rem'}}></div>*/}
             </BaseContainer>
         </Content>
     </Layout>

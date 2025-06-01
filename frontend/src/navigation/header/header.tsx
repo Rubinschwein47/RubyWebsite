@@ -7,9 +7,6 @@ import { Typography } from 'antd';
 import { useInfoStore } from '../../store';
 
 const { Title } = Typography;
-// const useSetTheme = (isLight: boolean) => {
-//     useInfoStore(state => state.setTheme(true));
-// }
 
 export default function WebHeader() {
     const setTheme = useInfoStore(state => state.setTheme);
@@ -22,12 +19,8 @@ export default function WebHeader() {
                 <p>Dark Mode <MoonFilled/></p>
             ),
             onClick: () => {
-                console.log("clicked dark");
                 setTheme(false);
             }
-            // onTitleClick : ()=>{
-            //     useInfoStore((state)=>{state.setTheme(false)});
-            // }
         },
         {
             key: 2,
@@ -35,7 +28,6 @@ export default function WebHeader() {
                 <p>Light <SunFilled/></p>
             ),
             onClick: () => {
-                console.log("clicked");
                 setTheme(true);
             }
         }
