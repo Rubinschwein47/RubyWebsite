@@ -9,17 +9,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="minor corrections">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/tech-stack/techStack.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
-    </list>
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -239,7 +229,7 @@
       <workItem from="1748511999512" duration="8037000" />
       <workItem from="1748524521148" duration="2112000" />
       <workItem from="1748625386190" duration="15417000" />
-      <workItem from="1748669120593" duration="15157000" />
+      <workItem from="1748669120593" duration="15854000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -313,7 +303,15 @@
       <option name="project" value="LOCAL" />
       <updated>1748707286873</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="added routing">
+      <option name="closed" value="true" />
+      <created>1748782767773</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1748782767773</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -333,6 +331,7 @@
     <MESSAGE value="added walls, finished themes(no cookies), added Header text" />
     <MESSAGE value="Added Container and Streamlined+Fixed Design" />
     <MESSAGE value="minor corrections" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor corrections" />
+    <MESSAGE value="added routing" />
+    <option name="LAST_COMMIT_MESSAGE" value="added routing" />
   </component>
 </project>

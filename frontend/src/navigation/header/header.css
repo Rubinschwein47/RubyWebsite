@@ -12,7 +12,29 @@
     position: fixed;
     top: 0;
     left: 0;
-    padding: 1rem;
     background-color: var(--header-color);
     z-index: 1000;
+    padding: 0 1rem;
+    margin: 0;
+}
+
+.background-icon{
+    position: absolute;
+    transform: translate(-50%, -50%);
+    color: rgba(255, 255, 255, 0.47) !important;
+    top: 50%;
+    left: 50%;
+    font-size: 3rem;
+}
+
+.header-tab{
+    position: relative;
+    width: 8rem;
+    text-align: center;
+    transition: all 0.3s ease-out;
+
+}
+.header-tab:hover {
+    /*font-size: 4rem;*/
+    scale: 1.2;
 }
