@@ -2,9 +2,10 @@ import React, {useState} from 'react';
 import './header.css';
 import {Header} from "antd/es/layout/layout";
 import {Button, Dropdown, Flex, MenuProps} from "antd";
-import {MoonFilled, FormatPainterFilled, SunFilled, HomeFilled} from '@ant-design/icons';
+import {MoonFilled, FormatPainterFilled, SunFilled, HomeFilled, RocketFilled, MergeFilled, MessageFilled} from '@ant-design/icons';
 import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
+import {Link, NavLink, useNavigate} from "react-router";
 
 const {Title} = Typography;
 
@@ -35,10 +36,18 @@ export default function WebHeader() {
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
             <Flex style={{width: '75%', alignItems: 'center'}}>
-                <div className={"header-tab"}>
-                    <Title level={3} style={{margin: "auto"}}>- Home -</Title>
+                <SubPage name={"home"}>
                     <HomeFilled className={"background-icon"}/>
-                </div>
+                </SubPage>
+                <SubPage name={"portfolio"}>
+                    <RocketFilled className={"background-icon"}/>
+                </SubPage>
+                <SubPage name={"tech-stack"}>
+                    <MergeFilled className={"background-icon"}/>
+                </SubPage>
+                <SubPage name={"contact"}>
+                    <MessageFilled className={"background-icon"}/>
+                </SubPage>
             </Flex>
             <div style={{width: '25%', justifyContent: 'end', display: 'flex', alignItems: 'center'}}>
                 <Dropdown menu={{items}} placement="bottomRight" arrow>
@@ -66,4 +75,22 @@ export default function WebHeader() {
             </Flex>
         </div>
     </Header>);
+}
+
+type SupPageProps = {
+    name: string;
+    children: React.ReactNode;
+}
+function SubPage({name,children}:SupPageProps) {
+    const navigate = useNavigate();
+
+    const goToLink = (destination: string) => {
+        navigate(destination);
+    };
+    return (
+        <div onClick={() => goToLink("/"+name)} className={"header-tab"}>
+            <Title level={3} style={{margin: "auto"}}>- {name} -</Title>
+            {children}
+        </div>
+    )
 }

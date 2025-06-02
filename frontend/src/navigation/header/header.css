@@ -21,7 +21,7 @@
 .background-icon{
     position: absolute;
     transform: translate(-50%, -50%);
-    color: rgba(255, 255, 255, 0.47) !important;
+    color: rgba(var(--bg-icon-color))!important;
     top: 50%;
     left: 50%;
     font-size: 3rem;
@@ -29,10 +29,10 @@
 
 .header-tab{
     position: relative;
-    width: 8rem;
+    width: 10rem;
     text-align: center;
     transition: all 0.3s ease-out;
-
+    border-radius: var(--border-radius);
 }
 .header-tab:hover {
     /*font-size: 4rem;*/

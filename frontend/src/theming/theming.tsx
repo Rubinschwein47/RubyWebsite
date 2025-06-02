@@ -15,6 +15,10 @@ const headerLight = '#eea9f3';
 const containerColorDark = '#022b50';
 const containerColorLight = '#fff';
 
+const bgIconColorDark = '255,255,255,0.45';
+const bgIconColorLight = '0,0,0,0.2';
+
+
 
 const blackTheme: ThemeConfig = {
     algorithm: theme.darkAlgorithm,
@@ -66,6 +70,7 @@ const whiteTheme: ThemeConfig = {
 export default function Theming({children}: { children: ReactNode }) {
     const isLightTheme = useInfoStore((state) => state.isLightMode);
     document.documentElement.style.setProperty('--icon-color', isLightTheme? 'black': 'white');
+    document.documentElement.style.setProperty('--bg-icon-color', isLightTheme? bgIconColorLight: bgIconColorDark);
     document.documentElement.style.setProperty('--header-color', isLightTheme? headerLight:headerDark);
     document.documentElement.style.setProperty('--container-color', isLightTheme? containerColorLight:containerColorDark);
     document.documentElement.style.setProperty('--border-radius', borderRadius + 'px');
