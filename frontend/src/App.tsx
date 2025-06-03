@@ -50,20 +50,7 @@ export default function App() {
             <WebHeader></WebHeader>
             <Content ref={ref}>
                 <BaseContainer>
-                    {/*<RouterProvider router={router}></RouterProvider>*/}
                     {element}
-                    {/*<Space>*/}
-                    {/*    <Button type="primary" onClick={getRandom}>Call Backend</Button>*/}
-                    {/*    <Button type="primary" onClick={flipShowExample}>Toggle</Button>*/}
-                    {/*    <TestList*/}
-                    {/*        list={exampleList}*/}
-                    {/*        showExample={showExample}*/}
-                    {/*    />*/}
-                    {/*    <DatePicker/>*/}
-                    {/*    <CompassFilled/>*/}
-                    {/*    <Text>{height}</Text>*/}
-                    {/*</Space>*/}
-                    {/*<div style={{backgroundColor: '#888', width: "5rem", height: '100rem'}}></div>*/}
                 </BaseContainer>
             </Content>
         </Layout>

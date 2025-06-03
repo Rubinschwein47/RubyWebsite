@@ -1,4 +1,4 @@
-import {createBrowserRouter, redirect, RouteObject} from "react-router";
+import {createBrowserRouter, Navigation, redirect, RouteObject} from "react-router";
 import Home from "../pages/home/home";
 import Contact from "../pages/contact/contact";
 import Portfolio from "../pages/portfolio/portfolio";
@@ -27,6 +27,7 @@ export const routes: RouteObject[] = [
     },
     {
         path: "*",
-        loader: () => redirect("/home")
+        loader: () => redirect("/home"),
+        // element: () => <Navigation>
     }
 ];

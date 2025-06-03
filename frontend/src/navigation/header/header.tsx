@@ -6,8 +6,9 @@ import {MoonFilled, FormatPainterFilled, SunFilled, HomeFilled, RocketFilled, Me
 import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
 import {Link, NavLink, useNavigate} from "react-router";
+import { useTranslation } from 'react-i18next';
 
-const {Title} = Typography;
+const {Title,Text} = Typography;
 
 export default function WebHeader() {
     const setTheme = useInfoStore(state => state.setTheme);
@@ -39,17 +40,20 @@ export default function WebHeader() {
                 <SubPage name={"home"}>
                     <HomeFilled className={"background-icon"}/>
                 </SubPage>
+                <Text style={{fontSize: "2rem"}}>-</Text>
                 <SubPage name={"portfolio"}>
                     <RocketFilled className={"background-icon"}/>
                 </SubPage>
+                <Text style={{fontSize: "2rem"}}>-</Text>
                 <SubPage name={"tech-stack"}>
                     <MergeFilled className={"background-icon"}/>
                 </SubPage>
+                <Text style={{fontSize: "2rem"}}>-</Text>
                 <SubPage name={"contact"}>
                     <MessageFilled className={"background-icon"}/>
                 </SubPage>
             </Flex>
-            <div style={{width: '25%', justifyContent: 'end', display: 'flex', alignItems: 'center'}}>
+            <div style={{width: '25%', justifyContent: 'end', display: 'flex', alignItems: 'center', paddingRight: "1rem"}}>
                 <Dropdown menu={{items}} placement="bottomRight" arrow>
                     <Button>Theme <FormatPainterFilled/></Button>
                 </Dropdown>
@@ -83,13 +87,14 @@ type SupPageProps = {
 }
 function SubPage({name,children}:SupPageProps) {
     const navigate = useNavigate();
+    const { t } = useTranslation();
 
     const goToLink = (destination: string) => {
         navigate(destination);
     };
     return (
         <div onClick={() => goToLink("/"+name)} className={"header-tab"}>
-            <Title level={3} style={{margin: "auto"}}>- {name} -</Title>
+            <Title level={3} style={{margin: "auto"}}>{t(name)}</Title>
             {children}
         </div>
     )

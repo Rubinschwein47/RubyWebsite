@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Theming from './theming/theming';
 import {BrowserRouter, Router} from "react-router";
+import './navigation/il18n';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));

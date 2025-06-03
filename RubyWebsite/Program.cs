@@ -1,4 +1,5 @@
 using System.Diagnostics;
+using RubyWebsite.Controllers;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -59,6 +60,8 @@ app.MapGet("/randomValues/{amount:int}", (int amount) =>
   }
   return values;
 }).WithName("RandomValues").WithOpenApi();
+
+LanguageController.AddEndpoints(app);
 
 app.Run();
 

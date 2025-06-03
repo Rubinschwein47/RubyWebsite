@@ -1,0 +1,8 @@
+test: Dies ist ein test
+
+header:
+  links:
+    home: Startseite
+    portfolio: Portfolio
+    tech-stack: Tech Stack
+    contact: Kontakt
