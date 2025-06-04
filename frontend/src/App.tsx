@@ -8,7 +8,8 @@ import WebHeader from "./navigation/header/header";
 import Background from './basics/background';
 import BaseContainer from './basics/baseContainer/baseContainer';
 import {RouterProvider, useRoutes} from "react-router";
-import { routes } from './navigation/router';
+import {routes} from './navigation/router';
+import {useInfoStore} from './store';
 
 const {randomValues} = RubyWebsiteService;
 const {Text, Link} = Typography;
@@ -22,14 +23,19 @@ export default function App() {
     const [height, setHeight] = useState(0);
 
     const element = useRoutes(routes);
+
+    const loaded = useInfoStore((state) => state.languageLoaded);
     
     useLayoutEffect(() => {
-        // @ts-ignore
-        setHeight(ref.current.offsetHeight);
+        if(loaded)
+            // @ts-ignore
+            setHeight(ref.current.offsetHeight);
     }, []);
     useEffect(() => {
-        // @ts-ignore
-        setHeight(ref.current.offsetHeight);
+        console.log("your mom");
+        if(loaded)
+            // @ts-ignore
+            setHeight(ref.current.offsetHeight);
     })
 
     async function getRandom() {
@@ -43,17 +49,17 @@ export default function App() {
     function flipShowExample() {
         setSchowExample(!showExample);
     }
-
-    return (
-        <Layout>
-            <Background height={height}/>
-            <WebHeader></WebHeader>
-            <Content ref={ref}>
-                <BaseContainer>
-                    {element}
-                </BaseContainer>
-            </Content>
-        </Layout>
+    
+    if (!loaded)
+        return <Layout key={4747}> <p>not Loaded</p></Layout>;
+    else
+        return (
+        <Layout key={4747}><Background height={height}/><WebHeader></WebHeader><Content ref={ref}>
+            {/*{loadedState}*/}
+            <BaseContainer>
+                {element}
+            </BaseContainer>
+        </Content></Layout>
     );
 }
 

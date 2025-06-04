@@ -1,5 +1,5 @@
 import {ConfigProvider, theme, ThemeConfig} from 'antd';
-import React, {ReactNode, useState} from 'react';
+import React, {ReactNode, useEffect, useState} from 'react';
 import './theming.css';
 import { useInfoStore } from '../store';
 
@@ -74,6 +74,11 @@ export default function Theming({children}: { children: ReactNode }) {
     document.documentElement.style.setProperty('--header-color', isLightTheme? headerLight:headerDark);
     document.documentElement.style.setProperty('--container-color', isLightTheme? containerColorLight:containerColorDark);
     document.documentElement.style.setProperty('--border-radius', borderRadius + 'px');
+
+    const setLanguage = useInfoStore((state) => state.setLanguage);
+    useEffect(() => {
+        setLanguage("en");
+    })
 
     return (
         <ConfigProvider

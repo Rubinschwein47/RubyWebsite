@@ -6,13 +6,13 @@ import {MoonFilled, FormatPainterFilled, SunFilled, HomeFilled, RocketFilled, Me
 import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
 import {Link, NavLink, useNavigate} from "react-router";
-import { useTranslation } from 'react-i18next';
+import Trans from '../Translate';
 
 const {Title,Text} = Typography;
 
 export default function WebHeader() {
     const setTheme = useInfoStore(state => state.setTheme);
-    const isLightTheme = useInfoStore((state) => state.isLightMode);
+    // const isLightTheme = useInfoStore((state) => state.isLightMode);
 
     const items: MenuProps['items'] = [
         {
@@ -87,15 +87,14 @@ type SupPageProps = {
 }
 function SubPage({name,children}:SupPageProps) {
     const navigate = useNavigate();
-    const { t } = useTranslation();
-
     const goToLink = (destination: string) => {
         navigate(destination);
     };
     return (
         <div onClick={() => goToLink("/"+name)} className={"header-tab"}>
-            <Title level={3} style={{margin: "auto"}}>{t(name)}</Title>
+            <Title level={3} style={{margin: "auto"}}><Trans path={"header.links." + name}/></Title>
             {children}
         </div>
     )
+
 }
