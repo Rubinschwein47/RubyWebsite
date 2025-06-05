@@ -2,7 +2,16 @@ import React, {useState} from 'react';
 import './header.css';
 import {Header} from "antd/es/layout/layout";
 import {Button, Dropdown, Flex, MenuProps} from "antd";
-import {MoonFilled, FormatPainterFilled, SunFilled, HomeFilled, RocketFilled, MergeFilled, MessageFilled} from '@ant-design/icons';
+import {
+    MoonFilled,
+    FormatPainterFilled,
+    SunFilled,
+    HomeFilled,
+    RocketFilled,
+    MergeFilled,
+    MessageFilled,
+    GlobalOutlined
+} from '@ant-design/icons';
 import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
 import {Link, NavLink, useNavigate} from "react-router";
@@ -11,29 +20,8 @@ import Trans from '../Translate';
 const {Title,Text} = Typography;
 
 export default function WebHeader() {
-    const setTheme = useInfoStore(state => state.setTheme);
     // const isLightTheme = useInfoStore((state) => state.isLightMode);
 
-    const items: MenuProps['items'] = [
-        {
-            key: 1,
-            label: (
-                <p>Dark Mode <MoonFilled/></p>
-            ),
-            onClick: () => {
-                setTheme("dark");
-            }
-        },
-        {
-            key: 2,
-            label: (
-                <p>Light <SunFilled/></p>
-            ),
-            onClick: () => {
-                setTheme("light");
-            }
-        }
-    ];
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
             <Flex style={{width: '75%', alignItems: 'center'}}>
@@ -53,11 +41,17 @@ export default function WebHeader() {
                     <MessageFilled className={"background-icon"}/>
                 </SubPage>
             </Flex>
-            <div style={{width: '25%', justifyContent: 'end', display: 'flex', alignItems: 'center', paddingRight: "1rem"}}>
-                <Dropdown menu={{items}} placement="bottomRight" arrow>
-                    <Button>Theme <FormatPainterFilled/></Button>
-                </Dropdown>
+            <div style={{
+                width: '25%',
+                justifyContent: 'end',
+                display: 'flex',
+                alignItems: 'center',
+                paddingRight: "1rem",
+            }}>
+                <LanguageDropdown></LanguageDropdown>
+                <ThemeDropdown></ThemeDropdown>
             </div>
+            
         </Flex>
         <div className={'namePresent'}>
             <Flex style={{
@@ -96,5 +90,63 @@ function SubPage({name,children}:SupPageProps) {
             {children}
         </div>
     )
+}
 
+function LanguageDropdown(){
+    const setLanguage = useInfoStore(state => state.setLanguage);
+
+    const items: MenuProps['items'] = [
+        {
+            key: 1,
+            label: (
+                <p><Trans path={"header.language.de"}/> <MoonFilled/></p>
+            ),
+            onClick: () => {
+                setLanguage("de");
+            }
+        },
+        {
+            key: 2,
+            label: (
+                <p><Trans path={"header.language.en"}/> <SunFilled/></p>
+            ),
+            onClick: () => {
+                setLanguage("en");
+            }
+        }
+    ];
+    return (
+        <Dropdown menu={{items}} placement="bottomRight" arrow>
+            <Button style={{marginRight:"1rem"}}><Trans path={"header.language.language"}/> <GlobalOutlined/></Button>
+        </Dropdown>
+    )
+}
+function ThemeDropdown(){
+    const setTheme = useInfoStore(state => state.setTheme);
+
+    const items: MenuProps['items'] = [
+        {
+            key: 1,
+            label: (
+                <p><Trans path={"header.theme.dark"}/> <MoonFilled/></p>
+            ),
+            onClick: () => {
+                setTheme("dark");
+            }
+        },
+        {
+            key: 2,
+            label: (
+                <p><Trans path={"header.theme.light"}/> <SunFilled/></p>
+            ),
+            onClick: () => {
+                setTheme("light");
+            }
+        }
+    ];
+    return (
+        <Dropdown menu={{items}} placement="bottomRight" arrow>
+            <Button><Trans path={"header.theme.theme"}/> <FormatPainterFilled/></Button>
+        </Dropdown>
+    )
 }

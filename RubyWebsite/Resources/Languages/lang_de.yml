@@ -6,3 +6,11 @@ header:
     portfolio: Portfolio
     tech-stack: Tech Stack
     contact: Kontakt
+  theme: 
+    theme: Theme
+    dark: Dunkles Design
+    light: Helles Design
+  language:
+    language: Sprache
+    de: Deutsch
+    en: English

@@ -6,7 +6,7 @@ type TransProps = {
 }
 export default function  Trans({path}: TransProps) {
     const translate = useInfoStore((state) => state.getTranslation);
-    const translatedText = translate("header.links." + path);
+    const translatedText = translate( path);
     
     return (
         <>{translatedText}</>

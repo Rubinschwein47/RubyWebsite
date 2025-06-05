@@ -32,7 +32,6 @@ export default function App() {
             setHeight(ref.current.offsetHeight);
     }, []);
     useEffect(() => {
-        console.log("your mom");
         if(loaded)
             // @ts-ignore
             setHeight(ref.current.offsetHeight);
@@ -55,7 +54,6 @@ export default function App() {
     else
         return (
         <Layout key={4747}><Background height={height}/><WebHeader></WebHeader><Content ref={ref}>
-            {/*{loadedState}*/}
             <BaseContainer>
                 {element}
             </BaseContainer>

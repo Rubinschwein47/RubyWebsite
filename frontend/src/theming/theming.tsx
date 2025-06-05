@@ -102,13 +102,19 @@ const antThemes:{ [key: string]: ThemeConfig } = {
 
 export default function Theming({children}: { children: ReactNode }) {
     const theme = useInfoStore((state) => state.theme);
+    const storeInitialized = useInfoStore((state) => state.initialized);
+    const initializeStore = useInfoStore((state) => state.initialize);
+    
     cssVariables.forEach((it)=>{
         document.documentElement.style.setProperty(it.variable, it.themes[theme]);
     });
 
     const setLanguage = useInfoStore((state) => state.setLanguage);
     useEffect(() => {
-        setLanguage("en");
+        console.log(navigator.languages);
+        if(!storeInitialized){
+            initializeStore();
+        }
     })
 
     return (
