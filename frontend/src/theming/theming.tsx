@@ -9,16 +9,43 @@ const headerHeight = 64;
 const borderRadius = 6;
 const primary = '#D364EC';
 
-const headerDark = '#9e59cb';
-const headerLight = '#eea9f3';
-
-const containerColorDark = '#022b50';
-const containerColorLight = '#fff';
-
-const bgIconColorDark = '255,255,255,0.45';
-const bgIconColorLight = '0,0,0,0.2';
-
-
+const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
+    {
+        variable: '--icon-color',
+        themes: {
+            dark: '#fff',
+            light: '#000',
+        }
+    },
+    {
+        variable: '--bg-icon-color',
+        themes: {
+            dark: '255,255,255,0.45',
+            light: '0,0,0,0.2',
+        }
+    },
+    {
+        variable: '--header-color',
+        themes: {
+            dark: '#9e59cb',
+            light: '#eea9f3',
+        }
+    },
+    {
+        variable: '--container-color',
+        themes: {
+            dark: '#022b50',
+            light: '#fff',
+        }
+    },
+    {
+        variable: '--border-radius',
+        themes: {
+            dark: borderRadius+'px',
+            light: borderRadius+'px',
+        }
+    },
+]
 
 const blackTheme: ThemeConfig = {
     algorithm: theme.darkAlgorithm,
@@ -67,13 +94,17 @@ const whiteTheme: ThemeConfig = {
         },
     },
 };
+
+const antThemes:{ [key: string]: ThemeConfig } = {
+    dark: blackTheme,
+    light: whiteTheme
+}
+
 export default function Theming({children}: { children: ReactNode }) {
-    const isLightTheme = useInfoStore((state) => state.isLightMode);
-    document.documentElement.style.setProperty('--icon-color', isLightTheme? 'black': 'white');
-    document.documentElement.style.setProperty('--bg-icon-color', isLightTheme? bgIconColorLight: bgIconColorDark);
-    document.documentElement.style.setProperty('--header-color', isLightTheme? headerLight:headerDark);
-    document.documentElement.style.setProperty('--container-color', isLightTheme? containerColorLight:containerColorDark);
-    document.documentElement.style.setProperty('--border-radius', borderRadius + 'px');
+    const theme = useInfoStore((state) => state.theme);
+    cssVariables.forEach((it)=>{
+        document.documentElement.style.setProperty(it.variable, it.themes[theme]);
+    });
 
     const setLanguage = useInfoStore((state) => state.setLanguage);
     useEffect(() => {
@@ -83,12 +114,9 @@ export default function Theming({children}: { children: ReactNode }) {
     return (
         <ConfigProvider
             // theme={whiteTheme}
-            theme={isLightTheme? whiteTheme: blackTheme}
+            theme={antThemes[theme]}
         > 
             {children}
         </ConfigProvider>
     );
 }
-// const store={
-//     theme: string,
-// }

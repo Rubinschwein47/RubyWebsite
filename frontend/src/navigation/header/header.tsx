@@ -21,7 +21,7 @@ export default function WebHeader() {
                 <p>Dark Mode <MoonFilled/></p>
             ),
             onClick: () => {
-                setTheme(false);
+                setTheme("dark");
             }
         },
         {
@@ -30,7 +30,7 @@ export default function WebHeader() {
                 <p>Light <SunFilled/></p>
             ),
             onClick: () => {
-                setTheme(true);
+                setTheme("light");
             }
         }
     ];

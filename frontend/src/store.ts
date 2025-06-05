@@ -5,8 +5,8 @@ import {LanguageControllerService} from "./services/openapi";
 const {translation} = LanguageControllerService;
 
 type InfoStore = {
-    isLightMode: boolean,
-    setTheme: (newIsLightMode: boolean) => void,
+    theme: string,
+    setTheme: (newTheme: string) => void,
     languageToken: string,
     setLanguage: (newLanguageToken: string) => Promise<boolean>,
     language: any,
@@ -15,8 +15,11 @@ type InfoStore = {
 }
 
 export const useInfoStore = create<InfoStore>((set, get) => ({
-    isLightMode: false,
-    setTheme: (newIsLightMode: boolean) => set({isLightMode: newIsLightMode}),
+    theme: "light",
+    setTheme: (newTheme: string) => {
+        set({theme: newTheme});
+        localStorage.setItem("theme", newTheme);
+    },
     languageToken: "en",
     setLanguage: async (newLanguageToken: string) => {
         set({languageLoaded: false});
