@@ -23,11 +23,14 @@ export const routes: RouteObject[] = [
     },
     {
         path: "/",
-        loader: () => redirect("/home")
+        // Component: Home,
+        action: (args, handlerCtx) => console.log(args, handlerCtx, "trolololol"),
+
     },
     {
-        path: "*",
-        loader: () => redirect("/home"),
+        path: "",
+        Component: Home,
+        action: (args, handlerCtx) => console.log(args, handlerCtx, "trolololol"),
         // element: () => <Navigation>
     }
 ];

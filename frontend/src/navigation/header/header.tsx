@@ -99,7 +99,7 @@ function LanguageDropdown(){
         {
             key: 1,
             label: (
-                <p><Trans path={"header.language.de"}/> <MoonFilled/></p>
+                <p><Trans path={"header.language.de"}/></p>
             ),
             onClick: () => {
                 setLanguage("de");
@@ -108,7 +108,7 @@ function LanguageDropdown(){
         {
             key: 2,
             label: (
-                <p><Trans path={"header.language.en"}/> <SunFilled/></p>
+                <p><Trans path={"header.language.en"}/></p>
             ),
             onClick: () => {
                 setLanguage("en");

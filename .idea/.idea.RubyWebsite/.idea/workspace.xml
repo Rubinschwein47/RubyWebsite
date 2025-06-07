@@ -9,10 +9,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="made themes more generic">
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -249,7 +247,7 @@
       <workItem from="1748881718146" duration="5823000" />
       <workItem from="1748970450495" duration="15642000" />
       <workItem from="1749053113713" duration="10427000" />
-      <workItem from="1749138999870" duration="7585000" />
+      <workItem from="1749138999870" duration="15639000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -355,7 +353,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749142119880</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="made translation whole, implemented localstorage and started writing about text">
+      <option name="closed" value="true" />
+      <created>1749162767550</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1749162767550</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -379,6 +385,7 @@
     <MESSAGE value="added Tab Icon" />
     <MESSAGE value="replaced library with own code, now actually works" />
     <MESSAGE value="made themes more generic" />
-    <option name="LAST_COMMIT_MESSAGE" value="made themes more generic" />
+    <MESSAGE value="made translation whole, implemented localstorage and started writing about text" />
+    <option name="LAST_COMMIT_MESSAGE" value="made translation whole, implemented localstorage and started writing about text" />
   </component>
 </project>
