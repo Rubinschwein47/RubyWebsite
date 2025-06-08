@@ -14,19 +14,3 @@ header:
     language: Language
     de: Deutsch
     en: English
-home:
-  header: Home
-  introduction:
-    header: Im kurzen über mich
-    text: Hallo, ich bin Rubinschwein47(kurz Ruby) aber in echt heiße ich Felix Conrad!
-      Privat bin ich Game-Dev, an der Arbeit bin ich aber Fullstack Entwickler (derzeit noch in der Ausbildung).
-      Also egal ob du an meinen Videospielen interresiert bist, Kontakt mit mir aufnehmen möchtest oder hier ausversehen gelandet bist, sieh dich gerne um :)!
-  whyRuby:
-    header: Marke Rubinschwein
-    text: Warum Rubinschwein47?
-      So ganz viel steht da garnicht hinter. In der dritten Klasse habe ich mir den namen ohne jeglichen Grund ausgedacht und seitdem nutze ich diesen Titel.
-      Seit dem habe ich versucht daraus meine Online Präsenz zu formen mit Variierenden Erfolg.
-      Heut zutage Pushe ich auch Ruby oder RS47 da sie einfach ansprechender und moderner wirken.
-  aboutWebsite:
-    header: Diese Website
-    text: Diese Website entsand aus purem selbshass

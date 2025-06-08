@@ -62,6 +62,7 @@ const blackTheme: ThemeConfig = {
         colorIconHover: white,
         colorTextBase: white,
         colorText: white,
+        colorSplit: primary
 
     },
     components: {
@@ -86,6 +87,7 @@ const whiteTheme: ThemeConfig = {
         colorIconHover: black,
         colorTextBase: black,
         colorText: black,
+        colorSplit: primary
 
     },
     components: {

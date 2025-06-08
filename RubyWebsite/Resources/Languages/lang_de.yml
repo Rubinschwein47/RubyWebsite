@@ -14,3 +14,51 @@ header:
     language: Sprache
     de: Deutsch
     en: English
+home:
+  header: Startseite
+  introduction:
+    header: Im kurzen über mich
+    text: Hallo, ich bin Rubinschwein47(kurz Ruby) aber in echt heiße ich Felix Conrad!
+      Privat bin ich Game-Dev, an der Arbeit bin ich aber Fullstack Entwickler (derzeit noch in der Ausbildung).
+      Also egal ob du an meinen Videospielen interresiert bist, Kontakt mit mir aufnehmen möchtest oder hier ausversehen gelandet bist, sieh dich gerne um :)!
+  whyRuby:
+    header: Marke Rubinschwein
+    text: Warum Rubinschwein47?
+      So ganz viel steht da garnicht hinter. In der dritten Klasse habe ich mir den Namen ohne jeglichen Grund ausgedacht und seitdem nutze ich diesen Titel.
+      Seit dem habe ich versucht daraus meine Online Präsenz zu formen und über die Jahre zu verfeinern.
+      Seit einiger Zeit verwende ich auch Ruby oder RS47 da sie einfach ansprechender und moderner wirken.
+    explanationOldLogos: Hier sieht man all die Logos die ich über die Jahre genutzt habe
+    logoDescriptions:
+      0: 
+        header: Der erste Versuch
+        text: Mein versuch war es warscheinlich cool aus zu sehen, 
+          deshalb habe ich damals ein Fanart von dem spiel Terraria genommen und mit der Professionalität eines 13 Jährigen ausgeschnitten.
+          Das Origal Stammt von dem Künstler Bohrokki auf Deviantart
+      1: 
+        header: Geschenk von Andrea Conrad
+        text: "Das war ein Geschenk in Form einer Vollständigen Cooperate Identity.
+         Ich habe es am Ende nie benutzt, verdient aber trotzdem einen Platz auf dieser Liste.
+         Checkt Gerne ihre Website aus: andreaconrad.de"
+      2:
+        header: Das Erste was komplett mir gehörte
+        text: Das Ganze stellt den Versuch dar ein Wildschwein mit einem Okultisten zu verbinden.
+      3:
+        header: Der versuch es Besser aussehen zu lassen
+        text: Ich wollte einfach die Fähigkeiten die Ich gelernt habe nutzen um eine bessere Version zu machen. 
+          Und auch wenn Form und Komposition erschreckend ähnlich sind, ist der Farbverlauf doch sehr viel angenehmer.
+      4: 
+        header: Heute
+        text: Das ist der aktuelle und hoffentlich langanhaltende Stand meiner Online Identity. 
+          Das Ziel war es etwas zu erschaffen das Visuell interresanter wirkt
+          sowie Eher Freundlich anstat auf Zwang Cool zu tuhen.
+          Um dieses Logo zu Erstellen habe ich eine Kombination aus 3d Moddeling, Shader und Nachbearbeitung mit einem Pixelart Programm verwendet.
+  aboutWebsite:
+    header: Warum die Website?
+    text: "Diese Website die man hier sieht entstand tatsächlich aus einer vielzahl von Gründen und erfüllt dementsprechend auch eine vielzahl an Gründen.
+      Zum einen gab es das Problem das wenn ich niht meinen Laptop dabei habe und da auch die Aktuellsten Projekte bereit habe, ist es sehr Schwierig den leuten zu zeigen was ich mache.
+      Dazu kommt auch noch das die einzige möglichkeit mich zu kontaktieren ist indem ich meine Nummer oder E-mail and andere weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.
+      Aber am wichtigsten von allem: Ich brauchte eine Ausrede um React und ASP.net Core zu lernen, womit diese Website jetzt auch geschrieben worde. Die technichen Einzelheiten findest du in Portfolio."
+  myGames:
+    header: Über meine Spiele
+    text: Natürlich gibt es genug ausnahmen, aber generell konzentriere ich mich darauf ruhige Spliele die irgendwo zwischen Entspannung und Nachdenken liegen, wobei Lidl Idle Planet das am besten verkörpert.
+      Für die Entwicklung habe ich bisher immer Unity benutzt, und plane auch dabei zu bleiben weil ich einfach damit sehr gut klar komme.

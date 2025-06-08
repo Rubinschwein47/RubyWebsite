@@ -10,7 +10,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/Pondering.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Screenshot 2025-06-07 154028.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoConrad.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoPig1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoPig2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoRuby.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoSkull.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -248,6 +262,8 @@
       <workItem from="1748970450495" duration="15642000" />
       <workItem from="1749053113713" duration="10427000" />
       <workItem from="1749138999870" duration="15639000" />
+      <workItem from="1749225532946" duration="1780000" />
+      <workItem from="1749295704460" duration="12192000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -361,7 +377,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749162767550</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="touched router and removed brain cells">
+      <option name="closed" value="true" />
+      <created>1749255213972</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1749255213972</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -386,6 +410,7 @@
     <MESSAGE value="replaced library with own code, now actually works" />
     <MESSAGE value="made themes more generic" />
     <MESSAGE value="made translation whole, implemented localstorage and started writing about text" />
-    <option name="LAST_COMMIT_MESSAGE" value="made translation whole, implemented localstorage and started writing about text" />
+    <MESSAGE value="touched router and removed brain cells" />
+    <option name="LAST_COMMIT_MESSAGE" value="touched router and removed brain cells" />
   </component>
 </project>

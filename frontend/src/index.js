@@ -4,8 +4,10 @@ import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
 import Theming from './theming/theming';
-import {BrowserRouter, Router} from "react-router";
+import {BrowserRouter, createBrowserRouter, Router} from "react-router";
+import {routes} from './navigation/router';
 
+const router = createBrowserRouter(routes)
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

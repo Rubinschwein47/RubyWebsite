@@ -3,6 +3,7 @@ import Home from "../pages/home/home";
 import Contact from "../pages/contact/contact";
 import Portfolio from "../pages/portfolio/portfolio";
 import TechStack from "../pages/tech-stack/techStack";
+import NotFound from "../pages/notFound";
 
 export const routes: RouteObject[] = [
     {
@@ -23,14 +24,10 @@ export const routes: RouteObject[] = [
     },
     {
         path: "/",
-        // Component: Home,
-        action: (args, handlerCtx) => console.log(args, handlerCtx, "trolololol"),
-
+        loader: () => redirect("/home"),
     },
     {
-        path: "",
-        Component: Home,
-        action: (args, handlerCtx) => console.log(args, handlerCtx, "trolololol"),
-        // element: () => <Navigation>
+        path: "*",
+        Component: NotFound,
     }
 ];
