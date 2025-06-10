@@ -1,0 +1,43 @@
+
+.project{
+    width: 100%;
+    position: relative;
+    padding: 1rem;
+}
+
+.project-head{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1rem;
+}
+
+.badge{
+    /*TODO: muss mit variables ausgefüllt werden*/
+    /*background-color: #b6ff9e;*/
+    padding: 3px 8px;
+    border-radius: var(--border-radius);
+    display: flex;
+    width: fit-content;
+    margin-right: 0.5rem;
+}
+.project-background{
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    /*The Combination of red and hue rotate 
+    together with a red image allows me to set custom colors really easily*/
+    border-left: 2px solid red;
+    filter: hue-rotate(300deg);
+}
+
+.project-background > img{
+    opacity: 0.3;
+    width: 15rem;
+}

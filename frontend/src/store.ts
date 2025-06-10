@@ -7,7 +7,7 @@ const {translation} = LanguageControllerService;
 type InfoStore = {
     theme: string,
     initialized: boolean,
-    initialize: () => void,
+    initialize: () => Promise<void>,
     setTheme: (newTheme: string) => void,
     languageToken: string,
     setLanguage: (newLanguageToken: string) => Promise<boolean>,
@@ -21,7 +21,7 @@ const supportedLanguages = [
 ]
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: false,
-    initialize: ()=>{
+    initialize: async ()=>{
         var newTheme = localStorage.getItem("theme");
         if(newTheme == null){
             newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
@@ -38,7 +38,7 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
                 newLang = "en";
             }
         }
-        get().setLanguage(newLang);
+        await get().setLanguage(newLang);
         set({initialized: true});
     },
     theme: "",
@@ -56,6 +56,7 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         const parsed = yaml.load(response) as object
         set({language: parsed});
         set({languageLoaded: true});
+        console.log("language Loaded");
         return true;
     },
     language: {},

@@ -25,14 +25,15 @@ export default function App() {
     const element = useRoutes(routes);
 
     const loaded = useInfoStore((state) => state.languageLoaded);
-    
+
     useLayoutEffect(() => {
-        if(loaded)
+        if (loaded) {
             // @ts-ignore
             setHeight(ref.current.offsetHeight);
+        }
     }, []);
     useEffect(() => {
-        if(loaded)
+        if (loaded)
             // @ts-ignore
             setHeight(ref.current.offsetHeight);
     })
@@ -48,17 +49,21 @@ export default function App() {
     function flipShowExample() {
         setSchowExample(!showExample);
     }
-    
+
     if (!loaded)
-        return <Layout key={4747}> <p>not Loaded</p></Layout>;
+        return <Layout key={4747}><p>not Loaded</p></Layout>;
     else
         return (
-        <Layout key={4747}><Background height={height}/><WebHeader></WebHeader><Content ref={ref}>
-            <BaseContainer>
-                {element}
-            </BaseContainer>
-        </Content></Layout>
-    );
+            <Layout key={4747}>
+                <Background height={height}/>
+                <WebHeader/>
+                <Content ref={ref}>
+                    <BaseContainer>
+                        {element}
+                    </BaseContainer>
+                </Content>
+            </Layout>
+        );
 }
 
 type ToggleListProps = {

@@ -10,21 +10,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/Pondering.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Screenshot 2025-06-07 154028.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoConrad.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoPig1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoPig2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoRuby.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/logos/LogoSkull.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/public/recources/Dither.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/basics/VDiv.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/router.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,8 +34,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JavaScript File" />
-        <option value="CSS File" />
         <option value="TypeScript File" />
+        <option value="CSS File" />
         <option value="TypeScript JSX File" />
       </list>
     </option>
@@ -264,6 +260,7 @@
       <workItem from="1749138999870" duration="15639000" />
       <workItem from="1749225532946" duration="1780000" />
       <workItem from="1749295704460" duration="12192000" />
+      <workItem from="1749562622665" duration="9800000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />

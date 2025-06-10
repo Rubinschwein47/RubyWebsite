@@ -8,7 +8,9 @@ export default function BaseContainer({children}: {children: React.ReactNode}) {
             <div style={{width:'100%',height:0, position: 'absolute'}}>
                 <img src={'/recources/over_wall.png'} className="wall-icon"/>
             </div>
-            {children}
+            <div className="content-space">
+                {children}
+            </div>
         </div>
     )
 }
