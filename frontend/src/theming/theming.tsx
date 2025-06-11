@@ -45,6 +45,47 @@ const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
             light: borderRadius+'px',
         }
     },
+    {
+        variable: "--highlight-orange",
+        themes:{
+            dark: "#98320c",
+            light: "#f39f6a",
+        }
+    },
+    {
+        variable: "--highlight-blue",
+        themes:{
+            dark: "#123a9e",
+            light: "#65a1e8",
+        }
+    },{
+        variable: "--highlight-light-blue",
+        themes:{
+            dark: "#2366aa",
+            light: "#80bfdc",
+        }
+    },
+    {
+        variable: "--highlight-purple",
+        themes:{
+            dark: "#621287",
+            light: "#d16de8",
+        }
+    },
+    {
+        variable: "--highlight-grey",
+        themes:{
+            dark: "#494949",
+            light: "#d5d5d5",
+        }
+    },
+    {
+        variable: "--highlight-green",
+        themes:{
+            dark: "#086e20",
+            light: "#7ced73",
+        }
+    }
 ]
 
 const blackTheme: ThemeConfig = {

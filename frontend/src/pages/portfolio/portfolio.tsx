@@ -10,27 +10,44 @@ import {useInfoStore} from "../../store";
 
 const {Title, Text, Paragraph} = Typography;
 
-
+const websiteProj: ProjectProps = {
+    text: "portfolio.projects.website.text",
+    name: "portfolio.projects.website.name",
+    images: [],
+    badges: [
+        {text:"Typescript",color:"blue"},
+        {text: "HTML", color: "orange"},
+        {text: "CSS", color: "light-blue"},
+        {text: "React",color: "blue"},
+        {text: "C#",color: "purple"},
+        {text: "Asp.net Core", color: "green"}],
+    logoPath: "logo512.png",
+    logoAlt: "logo of website",
+    externalLinks: [{text:"portfolio.projects.website.external.github",url:"https://github.com/Rubinschwein47/RubyWebsite"}],
+}
 export default function Portfolio() {
     const theme: string = useInfoStore((state) => state.theme);
     return <>
         <Title>Portfolio</Title>
         <div style={{height: "3rem"}}></div>
-        <Project/>
+        <Project props={websiteProj} />
     </>
 }
 
 type ProjectProps = {
-    LogoPath:string;
-    LogoAlt:string;
-    externalLinks:[{text:string,url:string}],
-    name:string,
-    badges:[{text:string,color:string}],
-    text:string,
-    //todo: images fehlen noch
+    logoPath: string;
+    logoAlt: string;
+    externalLinks: { text: string, url: string }[] | [],
+    name: string,
+    badges: { text: string, color: string }[] | [],
+    text: string,
+    images: { path: string; alt: string; }[] | [],
 }
-function Project(){
-    
+type WrapperProps = {
+    props: ProjectProps
+}
+function Project({props}: WrapperProps) {
+
     return (<div className={"project"}>
         <div className="project-background">
             <img src={"recources/Dither.png"} alt=""/>
@@ -41,57 +58,38 @@ function Project(){
         </div>
         <div className={"project-head"}>
             <div style={{display: "grid"}}>
-                <ImageWaiter width={"12rem"} alt={"logo_skull"} src="recources/logos/LogoSkull.png"/>
-                <Link
+                <ImageWaiter width={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
+                {props.externalLinks.map((it) => <Link
                     className="badge"
                     style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)"}}
-                    to={"https://www.crunchyroll.com/de"} >
-                    Source <ExportOutlined style={{color: "#1677ff"}}/>
-                </Link>
+                    to={it.url}>
+                    <Trans path={it.text}/><ExportOutlined style={{color: "var(--link-color)"}}/>
+                </Link>)}
+
             </div>
             <div style={{marginLeft: "1rem"}}>
-                <Title level={2} style={{margin: "0 0 1rem 0"}}>Projekt Name</Title>
+                <Title level={2} style={{margin: "0 0 1rem 0"}}>
+                    <Trans path={props.name}/>
+                </Title>
                 <div style={{display: "flex", flexDirection: "row", margin: "0 0 1rem 0"}}>
-                    <Text className="badge">LOL</Text>
-                    <Text className="badge">LOL</Text>
-                    <Text className="badge">LOL</Text>
-                    <Text className="badge">LOL</Text>
+                    {props.badges.map((it) =>
+                        <Text className="badge"
+                              style={{backgroundColor: "var(--highlight-" + it.color + ")"}}>{it.text}</Text>
+                    )}
                 </div>
                 <Paragraph>
-                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt
-                    ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo
-                    dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor
-                    sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor
-                    invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et
-                    justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem
-                    ipsum dolor sit amet.
+                    <Trans path={props.text}/>
                 </Paragraph>
             </div>
         </div>
         <div>
             <Image.PreviewGroup preview={{
-                toolbarRender: (
-                    reactElement,
-                    {
-                        current
-                    },
-                ) => (
-                    <Space size={12} className="toolbar-wrapper">
-                        <Title level={3}><Trans path={"home.whyRuby.logoDescriptions." + current + ".header"}/></Title>
-                        <Text><Trans path={"home.whyRuby.logoDescriptions." + current + ".text"}/></Text>
-                    </Space>
-                ),
                 height: "50%",
             }}>
-                <ImageWaiter width={"5rem"} alt={"logo_skull"} src="recources/logos/LogoSkull.png"/>
-                <VDiv/>
-                <ImageWaiter width={"5rem"} alt={"logo_conrad"} src="recources/logos/LogoConrad.png"/>
-                <VDiv/>
-                <ImageWaiter width={"5rem"} alt={"logo_pig1"} src="recources/logos/LogoPig1.png"/>
-                <VDiv/>
-                <ImageWaiter width={"5rem"} alt={"logo_pig2"} src="recources/logos/LogoPig2.png"/>
-                <VDiv/>
-                <ImageWaiter width={"5rem"} alt={"logo_pig3"} src="recources/logos/LogoRuby.png"/>
+                {props.images.map((it) => (<>
+                    <ImageWaiter width={"5rem"} alt={it.alt} src={it.path}/>
+                    <VDiv/>
+                </>))}
             </Image.PreviewGroup>
         </div>
     </div>)
