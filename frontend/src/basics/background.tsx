@@ -2,9 +2,7 @@ import React, {ReactElement} from "react";
 import {useInfoStore} from "../store";
 
 
-export default function Background({height: number}: { height: number }) {
-    const cssHeight = {height: number}.height;
-
+export default function Background() {
     const theme: string = useInfoStore((state) => state.theme);
 
     function getPicturePath() {
@@ -29,7 +27,7 @@ export default function Background({height: number}: { height: number }) {
         return tiles;
     }
 
-    return (<div style={{position: 'absolute', width: '100%', top: 0, left: 0, overflow: "clip", height: cssHeight}}>
+    return (<div style={{position: 'absolute', width: '100%', height: "100%"}}>
         {getBackground()}
     </div>)
 }

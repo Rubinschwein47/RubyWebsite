@@ -9,21 +9,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/NoLogo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/card.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/ingame_front.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/ingame_packs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/pack.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/LidlIdle/Logo.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/games/WallOf/Icon.png" afterDir="false" />
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="put all pictures together and finished the Portfolio, but text still missing">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus_Main.png" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/recources/games/Hippocampus/Hippocampus_Main.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/public/recources/games/LidlIdle/WelcmeBack.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/public/recources/games/LidlIdle/WelcomeBack.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/background.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -264,7 +253,7 @@
       <workItem from="1749225532946" duration="1780000" />
       <workItem from="1749295704460" duration="12192000" />
       <workItem from="1749562622665" duration="9800000" />
-      <workItem from="1749750511611" duration="4099000" />
+      <workItem from="1749750511611" duration="6383000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -386,7 +375,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749255213972</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="put all pictures together and finished the Portfolio, but text still missing">
+      <option name="closed" value="true" />
+      <created>1749754911447</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1749754911447</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -412,6 +409,7 @@
     <MESSAGE value="made themes more generic" />
     <MESSAGE value="made translation whole, implemented localstorage and started writing about text" />
     <MESSAGE value="touched router and removed brain cells" />
-    <option name="LAST_COMMIT_MESSAGE" value="touched router and removed brain cells" />
+    <MESSAGE value="put all pictures together and finished the Portfolio, but text still missing" />
+    <option name="LAST_COMMIT_MESSAGE" value="put all pictures together and finished the Portfolio, but text still missing" />
   </component>
 </project>
