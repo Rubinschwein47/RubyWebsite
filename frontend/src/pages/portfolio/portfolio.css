@@ -3,6 +3,7 @@
     width: 100%;
     position: relative;
     padding: 1rem;
+    margin-bottom: 3rem;
 }
 
 .project-head{
@@ -34,7 +35,6 @@
     /*The Combination of red and hue rotate 
     together with a red image allows me to set custom colors really easily*/
     border-left: 2px solid red;
-    filter: hue-rotate(300deg);
 }
 
 .project-background > img{

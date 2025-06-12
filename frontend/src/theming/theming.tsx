@@ -85,6 +85,13 @@ const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
             dark: "#086e20",
             light: "#7ced73",
         }
+    },
+    {
+        variable: "--highlight-yellow",
+        themes:{
+            dark: "#b6a010",
+            light: "#ffde73",
+        }
     }
 ]
 
