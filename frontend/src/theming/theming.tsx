@@ -1,5 +1,5 @@
 import {ConfigProvider, theme, ThemeConfig} from 'antd';
-import React, {ReactNode, useEffect, useState} from 'react';
+import React, {ReactNode, useEffect, useLayoutEffect, useState} from 'react';
 import './theming.css';
 import { useInfoStore } from '../store';
 
@@ -160,12 +160,21 @@ export default function Theming({children}: { children: ReactNode }) {
     });
 
     const setLanguage = useInfoStore((state) => state.setLanguage);
+    const setRatio = useInfoStore((state) => state.refreshIsMobile);
     useEffect(() => {
         console.log(navigator.languages);
         if(!storeInitialized){
             initializeStore();
         }
     })
+    useLayoutEffect(()=>{
+        function updateSize() {
+            setRatio();
+        }
+        window.addEventListener('resize', updateSize);
+        updateSize();
+        return () => window.removeEventListener('resize', updateSize);
+    });
 
     return (
         <ConfigProvider

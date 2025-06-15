@@ -9,10 +9,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="put all pictures together and finished the Portfolio, but text still missing">
+    <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/basics/background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/background.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -253,7 +260,9 @@
       <workItem from="1749225532946" duration="1780000" />
       <workItem from="1749295704460" duration="12192000" />
       <workItem from="1749562622665" duration="9800000" />
-      <workItem from="1749750511611" duration="6383000" />
+      <workItem from="1749750511611" duration="6645000" />
+      <workItem from="1749925634543" duration="1247000" />
+      <workItem from="1749988515810" duration="11695000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -383,7 +392,15 @@
       <option name="project" value="LOCAL" />
       <updated>1749754911447</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Fixed up background sizing issue and removed unused code">
+      <option name="closed" value="true" />
+      <created>1749769379441</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1749769379441</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -410,6 +427,7 @@
     <MESSAGE value="made translation whole, implemented localstorage and started writing about text" />
     <MESSAGE value="touched router and removed brain cells" />
     <MESSAGE value="put all pictures together and finished the Portfolio, but text still missing" />
-    <option name="LAST_COMMIT_MESSAGE" value="put all pictures together and finished the Portfolio, but text still missing" />
+    <MESSAGE value="Fixed up background sizing issue and removed unused code" />
+    <option name="LAST_COMMIT_MESSAGE" value="Fixed up background sizing issue and removed unused code" />
   </component>
 </project>

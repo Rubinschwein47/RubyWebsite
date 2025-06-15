@@ -5,5 +5,7 @@ const {Title} = Typography;
 
 
 export default function Contact() {
-    return (<Title>Contact</Title>)
+    return (<>
+        <Title>Contact</Title>
+    </>)
 }

@@ -1,5 +1,5 @@
 
-.baseContainer {
+.base-container {
     width: calc(100vw - 12rem);
     margin: 10rem 6rem 3rem;
     background-color: var(--container-color);
@@ -11,6 +11,11 @@
     border-radius: var(--border-radius);
 }
 
+.base-container-mobile {
+    width: calc(100vw - 20px);
+    margin: 10rem 10px 3rem;
+}
+
 .wall-icon{
     height: 150px;
     float: right;
@@ -20,5 +25,9 @@
 }
 .content-space{
     width: 100%;
-    padding: 0 200px 0 80px;
+    padding: 0 20% 0 80px;
+}
+
+.content-space-mobile{
+    padding: 0;
 }

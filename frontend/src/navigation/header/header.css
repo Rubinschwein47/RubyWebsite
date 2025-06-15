@@ -26,6 +26,9 @@
     left: 50%;
     font-size: 3rem;
 }
+.mobile-icon {
+    font-size: 2rem;
+}
 
 .header-tab{
     position: relative;
@@ -39,4 +42,13 @@
 .header-tab:hover {
     /*font-size: 4rem;*/
     scale: 1.2;
+}
+
+.options-panel {
+    width: 25%;
+    justify-content: end;
+    display: flex;
+    align-items: center;
+    padding-right: 1rem;
+    margin-left: auto;
 }

@@ -10,7 +10,8 @@ import {useInfoStore} from "../../store";
 
 const {Title, Text, Paragraph} = Typography;
 
-const projects: ProjectProps[] = [{
+const projects: ProjectProps[] = [
+    {
     text: "portfolio.projects.website.text",
     name: "portfolio.projects.website.name",
     images: [],
@@ -101,7 +102,9 @@ type WrapperProps = {
 function Project({props}: WrapperProps) {
 
     return (<div className={"project"}>
-        <div className="project-background" style={{filter: "hue-rotate("+props.colorRotation+"deg)"}}>
+        <div className="project-background" style={{filter: "hue-rotate(" + props.colorRotation + "deg)"}}>
+            <img src={"recources/Dither.png"} alt=""/>
+            <img src={"recources/Dither.png"} alt=""/>
             <img src={"recources/Dither.png"} alt=""/>
             <img src={"recources/Dither.png"} alt=""/>
             <img src={"recources/Dither.png"} alt=""/>
@@ -113,7 +116,7 @@ function Project({props}: WrapperProps) {
                 <ImageWaiter width={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
                 {props.externalLinks.map((it) => <Link
                     className="badge"
-                    style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)"}}
+                    style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)",height: "1.7rem"}}
                     to={it.url}>
                     <Trans path={it.text}/><ExportOutlined style={{color: "var(--link-color)"}}/>
                 </Link>)}
@@ -123,12 +126,12 @@ function Project({props}: WrapperProps) {
                 <Title level={2} style={{margin: "0 0 1rem 0"}}>
                     <Trans path={props.name}/>
                 </Title>
-                <div style={{display: "flex", flexDirection: "row", margin: "0 0 1rem 0"}}>
+                <p className={"badge-container"}>
                     {props.badges.map((it) =>
                         <Text className="badge"
                               style={{backgroundColor: "var(--highlight-" + it.color + ")"}}>{it.text}</Text>
                     )}
-                </div>
+                </p>
                 <Paragraph>
                     <Trans path={props.text}/>
                 </Paragraph>

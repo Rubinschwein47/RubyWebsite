@@ -10,52 +10,42 @@ import {
     RocketFilled,
     MergeFilled,
     MessageFilled,
-    GlobalOutlined
+    GlobalOutlined, MenuOutlined
 } from '@ant-design/icons';
 import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
 import {Link, NavLink, useNavigate} from "react-router";
 import Trans from '../Translate';
+import Home from "../../pages/home/home";
 
-const {Title,Text} = Typography;
+const {Title, Text} = Typography;
 
+const pages: { name: string; icon: React.JSX.Element }[] = [{
+    name: "home",
+    icon: <HomeFilled/>,
+}, {
+    name: "portfolio",
+    icon: <RocketFilled/>,
+}, {
+    name: "contact",
+    icon: <MessageFilled/>,
+}]
 export default function WebHeader() {
-    // const isLightTheme = useInfoStore((state) => state.isLightMode);
+    const isMobile = useInfoStore((state) => state.isMobileRatio);
 
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
-            <Flex style={{width: '75%', alignItems: 'center'}}>
-                <SubPage name={"home"}>
-                    <HomeFilled className={"background-icon"}/>
-                </SubPage>
-                <Text style={{fontSize: "2rem"}}>-</Text>
-                <SubPage name={"portfolio"}>
-                    <RocketFilled className={"background-icon"}/>
-                </SubPage>
-                <Text style={{fontSize: "2rem"}}>-</Text>
-                <SubPage name={"tech-stack"}>
-                    <MergeFilled className={"background-icon"}/>
-                </SubPage>
-                <Text style={{fontSize: "2rem"}}>-</Text>
-                <SubPage name={"contact"}>
-                    <MessageFilled className={"background-icon"}/>
-                </SubPage>
-            </Flex>
-            <div style={{
-                width: '25%',
-                justifyContent: 'end',
-                display: 'flex',
-                alignItems: 'center',
-                paddingRight: "1rem",
-            }}>
+            {isMobile? <MobilePages pages={pages}/>: <DesktopPages pages={pages}/>}
+            <div className={"options-panel"}>
                 <LanguageDropdown></LanguageDropdown>
                 <ThemeDropdown></ThemeDropdown>
             </div>
-            
+
         </Flex>
         <div className={'namePresent'}>
             <Flex style={{
-                alignItems: 'center'
+                alignItems: 'center',
+                pointerEvents: 'none'
             }}>
                 <div style={{
                     width: '5rem', height: '0',
@@ -75,24 +65,68 @@ export default function WebHeader() {
     </Header>);
 }
 
+
+type PagesProps = {
+    pages: { name: string; icon: React.JSX.Element }[]
+}
+
+function DesktopPages({pages}: PagesProps) {
+    return (
+        <Flex style={{width: '75%', alignItems: 'center'}}>
+            {pages.map((page, index) => (
+                <>
+                    <SubPage name={page.name}>
+                        {React.cloneElement(page.icon, {className: "background-icon"})}
+                    </SubPage>
+                    {index !== pages.length - 1 ? <Text style={{fontSize: "2rem"}}>-</Text> : null}
+                </>
+            ))}
+        </Flex>
+    )
+}
+
+function MobilePages({pages}: PagesProps) {
+    const navigate = useNavigate();
+    const goToLink = (destination: string) => {
+        navigate(destination);
+    };
+    var items: MenuProps['items'] = [];
+    pages.forEach((page, index) => {
+        items?.push({
+            key: index,
+            label: <Title level={3}><Trans path={"header.links." + page.name}/>  {React.cloneElement(page.icon, {className: "mobile-icon"})}</Title>,
+            onClick: () => {
+                goToLink("/" + page.name)
+            }
+        })
+    })
+
+    return (
+        <Dropdown menu={{items}} placement="bottomLeft" arrow>
+            <MenuOutlined style={{fontSize: "3rem", marginLeft: "1rem"}} />
+        </Dropdown>
+    )
+}
+
 type SupPageProps = {
     name: string;
     children: React.ReactNode;
 }
-function SubPage({name,children}:SupPageProps) {
+
+function SubPage({name, children}: SupPageProps) {
     const navigate = useNavigate();
     const goToLink = (destination: string) => {
         navigate(destination);
     };
     return (
-        <div onClick={() => goToLink("/"+name)} className={"header-tab"}>
+        <div onClick={() => goToLink("/" + name)} className={"header-tab"}>
             <Title level={3} style={{margin: "auto"}}><Trans path={"header.links." + name}/></Title>
             {children}
         </div>
     )
 }
 
-function LanguageDropdown(){
+function LanguageDropdown() {
     const setLanguage = useInfoStore(state => state.setLanguage);
 
     const items: MenuProps['items'] = [
@@ -117,11 +151,12 @@ function LanguageDropdown(){
     ];
     return (
         <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button style={{marginRight:"1rem"}}><Trans path={"header.language.language"}/> <GlobalOutlined/></Button>
+            <Button style={{marginRight: "1rem"}}><Trans path={"header.language.language"}/> <GlobalOutlined/></Button>
         </Dropdown>
     )
 }
-function ThemeDropdown(){
+
+function ThemeDropdown() {
     const setTheme = useInfoStore(state => state.setTheme);
 
     const items: MenuProps['items'] = [

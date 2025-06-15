@@ -14,6 +14,8 @@ type InfoStore = {
     language: any,
     languageLoaded: boolean,
     getTranslation: (key: string) => string,
+    isMobileRatio: boolean,
+    refreshIsMobile: () => void,
 }
 const supportedLanguages = [
     'en',
@@ -22,6 +24,7 @@ const supportedLanguages = [
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: false,
     initialize: async ()=>{
+        get().refreshIsMobile();
         var newTheme = localStorage.getItem("theme");
         if(newTheme == null){
             newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
@@ -78,6 +81,12 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
             return key
         }
         return tree;
-    }
+    },
+    isMobileRatio: false,
+    refreshIsMobile: () => {
+        const ratio = window.innerWidth / window.innerHeight;
+        console.log("IsMobile: " + (ratio < 1));
+        set({isMobileRatio: ratio < 1});
+    },
 }))
 
