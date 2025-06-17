@@ -22,7 +22,7 @@ export default function App() {
         return (
             <Layout key={4747}>
                 <WebHeader/>
-                <Content style={{overflow: "hidden", position: "absolute", minHeight: "100vh"}}>
+                <Content style={{overflow: "hidden", position: "absolute", minHeight: "100vh",backgroundColor: "var(--background-color)"}}>
                     <Background/>
                     <BaseContainer>
                         {element}

@@ -181,7 +181,7 @@ function ThemeDropdown() {
     ];
     return (
         <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button><Trans path={"header.theme.theme"}/> <FormatPainterFilled/></Button>
+            <Button type="primary"><Text><Trans path={"header.theme.theme"}/></Text> <FormatPainterFilled/></Button>
         </Dropdown>
     )
 }

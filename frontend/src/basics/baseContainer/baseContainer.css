@@ -5,10 +5,13 @@
     background-color: var(--container-color);
     position: relative;
     z-index: 1;
-    padding: 12px;
-    
+    min-height: 75vh;
+}
+
+.container{
     border: 2px solid var(--header-color);
     border-radius: var(--border-radius);
+    padding: 12px;
 }
 
 .base-container-mobile {

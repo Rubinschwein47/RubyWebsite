@@ -7,7 +7,8 @@ const white = '#fff';
 const black = '#000';
 const headerHeight = 64;
 const borderRadius = 6;
-const primary = '#D364EC';
+const whiteBackground = '#f5f5f5';
+const blackBackground = '#001529';
 
 const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
     {
@@ -92,6 +93,13 @@ const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
             dark: "#b6a010",
             light: "#ffde73",
         }
+    },
+    {
+        variable: "--background-color",
+        themes:{
+            dark: blackBackground,
+            light: whiteBackground
+        }
     }
 ]
 
@@ -99,18 +107,18 @@ const blackTheme: ThemeConfig = {
     algorithm: theme.darkAlgorithm,
     token: {
         // Seed Token
-        colorPrimary: primary,
+        colorPrimary: '#c422ec',
         borderRadius: borderRadius,
-        colorBgBase: '#001529',
+        colorBgBase: blackBackground,
         colorTextHeading: white,
         // colorBgHeader: '#2a2744',
         // Alias Token
-        colorBgContainer: '#65459D',
+        colorBgContainer: '#163C5EFF',
         colorIcon: white,
         colorIconHover: white,
         colorTextBase: white,
         colorText: white,
-        colorSplit: primary
+        // colorSplit: primary
 
     },
     components: {
@@ -124,19 +132,18 @@ const whiteTheme: ThemeConfig = {
     algorithm: theme.defaultAlgorithm,
     token: {
         // Seed Token
-        colorPrimary: primary,
+        colorPrimary: "#f873be",
         colorPrimaryText: black,
         borderRadius: borderRadius,
-        colorBgBase: white,
+        colorBgBase: whiteBackground,
         colorTextHeading: black,
         // Alias Token
-        colorBgContainer: '#985fcc',
+        colorBgContainer: '#f3f3f3',
         colorIcon: black,
         colorIconHover: black,
         colorTextBase: black,
         colorText: black,
-        colorSplit: primary
-
+        colorSplit: "#f873be"
     },
     components: {
         Layout: {
@@ -178,7 +185,6 @@ export default function Theming({children}: { children: ReactNode }) {
 
     return (
         <ConfigProvider
-            // theme={whiteTheme}
             theme={antThemes[theme]}
         > 
             {children}
