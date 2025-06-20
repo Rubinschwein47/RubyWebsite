@@ -6,12 +6,14 @@ import "./contact.css"
 import TextArea from "antd/es/input/TextArea";
 import {MailOutlined, PhoneFilled} from "@ant-design/icons";
 import {Link} from "react-router";
+import {GitHubIcon, ItchIcon} from "../../basics/customIcons/icons";
 
 const {Title, Text, Paragraph} = Typography;
 
 
 export default function Contact() {
     const isMobile = useInfoStore((state) => state.isMobileRatio);
+    const translate = useInfoStore((state) => state.getTranslation);
     return (<>
         <Title>Contact</Title>
         <div className={"contact-splitter" + (isMobile ? "-mobile" : "")}>
@@ -22,12 +24,12 @@ export default function Contact() {
                     <Title level={2} style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
                         path={"contact.leaveMessage"}/></Title>
                     <div style={{display: "flex", marginBottom: "1rem"}}>
-                        <Input placeholder="Filled" variant="filled"/>
-                        <Input placeholder="Filled" variant="filled" style={{marginLeft: "32px"}}/>
+                        <Input placeholder={translate("contact.firstName")} variant="filled"/>
+                        <Input placeholder={translate("contact.lastName")} variant="filled" style={{marginLeft: "32px"}}/>
                     </div>
-                    <Input style={{marginBottom: "1rem"}} placeholder="Filled" variant="filled"/>
+                    <Input style={{marginBottom: "1rem"}} placeholder={translate("contact.emailAddress")} variant="filled"/>
                     <TextArea
-                        placeholder="PlaceHolder"
+                        placeholder={translate("contact.textHere")}
                         autoSize={{minRows: 9, maxRows: 18}}
                         style={{marginBottom: "1rem"}}
                     />
@@ -40,11 +42,22 @@ export default function Contact() {
                 <Title level={2}><Trans
                     path={"contact.findMe"}/></Title>
                 <Paragraph copyable><PhoneFilled/> +49 179 1368 592</Paragraph>
-                <Tooltip title={"contact.writeDirect"}>
-                    <Link to={"mailto:contact@rubinschwein47.com"} style={{color: "var(--link-color)"}}><MailOutlined
+                <Tooltip title={translate("contact.writeDirect")}>
+                    <Link to={"mailto:contact@rubinschwein47.com"} target={"_blank"}><MailOutlined
                         style={{color: "var(--link-color)"}}/> contact@rubinschwein47.com</Link>
                 </Tooltip>
-                <Text copyable={{ text: 'contact@rubinschwein47.com' }} />
+                <Text copyable={{text: 'contact@rubinschwein47.com'}}/>
+                <br style={{marginBottom: "1rem"}}/>
+                <Tooltip title={translate("contact.toExternal")}>
+                    <Link to={"https://rubinschwein47.itch.io/"} target={"_blank"}><ItchIcon
+                        style={{color: "#c24c4e"}}/> <Trans path={"contact.itch"}/></Link>
+                </Tooltip>
+                <br style={{marginBottom: "1rem"}}/>
+                <Tooltip title={translate("contact.toExternal")}>
+                    <Link to={"https://github.com/Rubinschwein47"} target={"_blank"}>
+                        <GitHubIcon/> <Trans path={"contact.gitHub"}/>
+                    </Link>
+                </Tooltip>
             </div>
         </div>
         <Text style={{position: "absolute", right: "1rem", bottom: "1rem"}}><Trans path={"contact.niceDay"}/> </Text>

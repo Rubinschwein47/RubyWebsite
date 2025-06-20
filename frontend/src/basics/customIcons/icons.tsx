@@ -1,6 +1,7 @@
 import Icon, {CustomIconComponentProps} from "@ant-design/icons/lib/components/Icon";
 import React from "react";
-
+import {ReactComponent as itchSvg} from "./svgs/itch_white.svg";
+import {ReactComponent as githubSvg} from "./svgs/github-mark.svg";
 
 const HeartSvg = () => (
     <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 1024 1024">
@@ -16,30 +17,14 @@ export function HeartIcon(props: Partial<CustomIconComponentProps>) {
     );
 }
 
-const ArtSvg = () => (
-    <svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path fill-rule="evenodd" clip-rule="evenodd"
-              d="M16 0H4V12H16V0ZM9 6L11 8L14 5V10H6V9L9 6ZM9 3C9 3.55228 8.55228 4 8 4C7.44772 4 7 3.55228 7 3C7 2.44772 7.44772 2 8 2C8.55228 2 9 2.44772 9 3Z"
-              fill="#000000"/>
-        <path d="M0 4V16H12V14H2V4H0Z" fill="#000000"/>
-    </svg>
-);
-
-export function ArtIcon(props: Partial<CustomIconComponentProps>) {
+export function ItchIcon(props: Partial<CustomIconComponentProps>) {
     return (
-        <Icon component={ArtSvg} {...props} />
+        <Icon component={itchSvg} {...props} />
     );
 }
 
-const PuzzleSvg = () => (
-    <svg width="1rem" height="1rem" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path
-            d="M2,20.889V16.444H4.222a2.224,2.224,0,0,0,2.192-2.595A2.305,2.305,0,0,0,4.1,12H2V7.556A1.111,1.111,0,0,1,3.111,6.444H7.556V4.222a2.224,2.224,0,0,1,2.6-2.192A2.305,2.305,0,0,1,12,4.341v2.1h4.444a1.112,1.112,0,0,1,1.112,1.112V12h2.1a2.305,2.305,0,0,1,2.311,1.849,2.224,2.224,0,0,1-2.192,2.595H17.556v4.445A1.111,1.111,0,0,1,16.444,22H13.111V19.778a2.224,2.224,0,0,0-2.6-2.192A2.305,2.305,0,0,0,8.667,19.9V22H3.111A1.11,1.11,0,0,1,2,20.889Z"/>
-    </svg>
-);
-
-export function PuzzleIcon(props: Partial<CustomIconComponentProps>) {
+export function GitHubIcon(props: Partial<CustomIconComponentProps>) {
     return (
-        <Icon component={PuzzleSvg} {...props} />
+        <Icon component={githubSvg} {...props} />
     );
 }

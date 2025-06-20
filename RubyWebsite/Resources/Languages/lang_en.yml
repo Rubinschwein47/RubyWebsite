@@ -14,3 +14,28 @@ header:
     language: Language
     de: Deutsch
     en: English
+home:
+  header: Home Page
+  introduction:
+    header: Short about me
+    text: Hi, im Rubinschwein47(or just Ruby) which is german for "Ruby Pig 47", but in real life i am Felix Conrad!
+      Im a GameDev in private and a Fullstack Developer(currently apprentice) at work.
+      No matter if you came here because you were curious about my video games, you want to reach out to me or you just stumbled here, feel free to look around :)!
+  whyRuby:
+    header: Brand Rubinschwein
+    text: Why? Rubinschwein47
+      There isnt much behind it honestly. In Third grade(around 9) i chose this name without any apparent reason and i stuck it ever since.
+      Between then and now i've tried turning this into my online which i slowly improved.
+      For quite some time i have also ben using Ruby and RS47, simply because they sound a bit more professional.
+    explanationOldLogos: Here you can see the Various Logos that ive used over the years.
+    logoDescriptions:
+      0:
+        header: First Try
+        text: This was probably my go at appearing cool back then,
+          because of that i took fan art from Terraria and cropped it with the professionality of a 13 year old.
+          The Original is from the artist Bohrokki on Deviantart
+      1:
+        header: Present from my Mother
+        text: "This was a Present in the shape of a whole cooperate identity.
+          In the end i've never used "
+    
