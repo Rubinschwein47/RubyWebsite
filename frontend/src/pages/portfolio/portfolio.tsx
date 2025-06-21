@@ -82,7 +82,7 @@ export default function Portfolio() {
     return <>
         <Title>Portfolio</Title>
         <div style={{height: "3rem"}}></div>
-        {projects.map((it)=><Project props={it} />)}
+        {projects.map((it)=><Project key={it.name+'d'} lol={it.name} props={it} />)}
     </>
 }
 
@@ -97,11 +97,12 @@ type ProjectProps = {
     colorRotation: number,
 }
 type WrapperProps = {
-    props: ProjectProps
+    props: ProjectProps,
+    lol:string
 }
-function Project({props}: WrapperProps) {
+function Project({props,lol}: WrapperProps) {
 
-    return (<div className={"project"}>
+    return (<div key={lol} className={"project"}>
         <div className="project-background" style={{filter: "hue-rotate(" + props.colorRotation + "deg)"}}>
             <img src={"recources/Dither.png"} alt=""/>
             <img src={"recources/Dither.png"} alt=""/>
@@ -115,6 +116,7 @@ function Project({props}: WrapperProps) {
             <div style={{display: "grid"}}>
                 <ImageWaiter width={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
                 {props.externalLinks.map((it) => <Link
+                    key={it.url}
                     className="badge"
                     style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)",height: "1.7rem"}}
                     to={it.url}>
@@ -142,7 +144,7 @@ function Project({props}: WrapperProps) {
                 height: "70%",
             }}>
                 {props.images.map((it) => (<>
-                    <ImageWaiter width={"5rem"} alt={it.alt} src={it.path}/>
+                    <ImageWaiter key={it.alt} width={"5rem"} alt={it.alt} src={it.path}/>
                     <VDiv/>
                 </>))}
             </Image.PreviewGroup>

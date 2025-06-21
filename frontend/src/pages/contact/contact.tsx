@@ -22,19 +22,19 @@ export default function Contact() {
                     {isMobile ? null : <img src={'/recources/LeaningOnWall.png'} className={"wall-leaning"}
                                             alt="Ruby Leaning on Wall"/>}
                     <Title level={2} style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
-                        path={"contact.leaveMessage"}/></Title>
+                        path={"contact.message.leaveMessage"}/></Title>
                     <div style={{display: "flex", marginBottom: "1rem"}}>
-                        <Input placeholder={translate("contact.firstName")} variant="filled"/>
-                        <Input placeholder={translate("contact.lastName")} variant="filled" style={{marginLeft: "32px"}}/>
+                        <Input placeholder={translate("contact.message.firstName")} variant="filled"/>
+                        <Input placeholder={translate("contact.message.lastName")} variant="filled" style={{marginLeft: "32px"}}/>
                     </div>
-                    <Input style={{marginBottom: "1rem"}} placeholder={translate("contact.emailAddress")} variant="filled"/>
+                    <Input style={{marginBottom: "1rem"}} placeholder={translate("contact.message.emailAddress")} variant="filled"/>
                     <TextArea
-                        placeholder={translate("contact.textHere")}
+                        placeholder={translate("contact.message.textHere")}
                         autoSize={{minRows: 9, maxRows: 18}}
                         style={{marginBottom: "1rem"}}
                     />
                     <div style={{textAlign: "center"}}>
-                        <Button type="primary" style={{margin: "0 auto"}}><Trans path={"contact.sendRequest"}/></Button>
+                        <Button type="primary" style={{margin: "0 auto"}}><Trans path={"contact.message.sendRequest"}/></Button>
                     </div>
                 </div>
             </div>

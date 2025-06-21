@@ -38,4 +38,59 @@ home:
         header: Present from my Mother
         text: "This was a Present in the shape of a whole cooperate identity.
           In the end i've never used "
-    
+      2: 
+        header: The first one i completly own
+        text: The whole thing is trying to be a combination of a wild boar and a occultist inspired from the equally named Terraria enemy.
+      3: 
+        header: The attempt at trying to make it look good
+        text: I wanted to apply the skills i have since learned and create a new, better version.
+          Even though the shape and composition are pretty similar, the color gradient is a lot nicer to look at.
+      4: 
+        header: Today
+        text: This is the current version which i hope will be a pat of my online identity for quite some time.
+          The goal was to create a visually pleasing character
+          that would be more friendly instead of trying to look cool as hard as possible.
+          To create this logo, i used a combination of 3d modeling and shaders which i manually edited with a pixelart tool.
+  aboutWebsite:
+    header: Why this Website?
+    text: "The website you're seeing here was created for a number of reasons.
+      For one, whenever i didnt have my laptop with me or my current project wasnt on there, it was very difficult to show people what im doing.
+      On top of that, the only way to contact me was by me giving them my phone number or E-mail, which depending on the context, can be anywhere from unprofessional all the way to crossing boundaries.
+      But most importantly of all: I needed an excuse to learn React and ASP.net Core, which is what this website was written in. You can find the technical details under the Portfolio Tab"
+  myGames:
+    header: About my Games
+    text: Of course there are some exceptions, but for the most part i focus on calm games that lay anywhere between relaxing and needing to think. Lidl Idle Planet probably represents this best.
+      For development i have always used Unity, but im interested to experiment with different Game Engines in the future.
+portfolio:
+  header: Portfolio
+  projects:
+    website:
+      name: rubinschwein47.com
+      text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      external:
+        github: Github Repository
+    hippocampus:
+      name: Hippocampus WIP
+      text: Game that still needs text
+    lidlIdlePlanet:
+      name: Lidle Idle Planet
+      text: text fehlt noch
+      external:
+        itch: Play on Itch.io
+    wallOf:
+      name: Wall Of
+      text: Text hier
+      external:
+        itch: Play on Itch.io
+contact:
+  titlle: Contact
+  itch: Itch.io
+  gitHub: Github
+  message:
+    leaveMessage: Send me a message
+    firstName: first name
+    lastName: last name
+    emailAddress: Example@web.de
+    textHere: Write message here
+    sendRequest: Send
+  findMe: You can find me there

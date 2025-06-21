@@ -41,7 +41,7 @@ home:
          Checkt Gerne ihre Website aus: andreaconrad.de"
       2:
         header: Das Erste was komplett mir gehörte
-        text: Das Ganze stellt den Versuch dar ein Wildschwein mit einem Okultisten zu verbinden.
+        text: Das Ganze stellt den Versuch dar ein Wildschwein mit einem Okultisten, aus dem spiel Terraria, zu verbinden.
       3:
         header: Der versuch es Besser aussehen zu lassen
         text: Ich wollte einfach die Fähigkeiten die Ich gelernt habe nutzen um eine bessere Version zu machen. 
@@ -55,13 +55,13 @@ home:
   aboutWebsite:
     header: Warum die Website?
     text: "Diese Website die man hier sieht entstand tatsächlich aus einer vielzahl von Gründen und erfüllt dementsprechend auch eine vielzahl an Gründen.
-      Zum einen gab es das Problem das wenn ich niht meinen Laptop dabei habe und da auch die Aktuellsten Projekte bereit habe, ist es sehr Schwierig den leuten zu zeigen was ich mache.
+      Zum einen gab es das Problem das wenn ich nicht meinen Laptop dabei habe und da auch die Aktuellsten Projekte bereit habe, ist es sehr Schwierig den leuten zu zeigen was ich mache.
       Dazu kommt auch noch das die einzige möglichkeit mich zu kontaktieren ist indem ich meine Nummer oder E-mail and andere weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.
       Aber am wichtigsten von allem: Ich brauchte eine Ausrede um React und ASP.net Core zu lernen, womit diese Website jetzt auch geschrieben worde. Die technichen Einzelheiten findest du in Portfolio."
   myGames:
     header: Über meine Spiele
-    text: Natürlich gibt es genug ausnahmen, aber generell konzentriere ich mich darauf ruhige Spliele die irgendwo zwischen Entspannung und Nachdenken liegen, wobei Lidl Idle Planet das am besten verkörpert.
-      Für die Entwicklung habe ich bisher immer Unity benutzt, und plane auch dabei zu bleiben weil ich einfach damit sehr gut klar komme.
+    text: Natürlich gibt es genug ausnahmen, aber generell konzentriere ich mich darauf ruhige Spiele die irgendwo zwischen Entspannung und Nachdenken liegen, wobei Lidl Idle Planet das am besten verkörpert.
+      Für die Entwicklung habe ich bisher immer Unity benutzt, bin aber sehr interresiert mit anderen Game Engines zu experimentieren.
 portfolio:
   header: Portfolio
   projects:
@@ -83,3 +83,18 @@ portfolio:
       text: Text hier
       external:
         itch: Auf Itch.io Spielen
+contact: 
+  titlle: Kontakt
+  itch: Itch.io
+  gitHub: Github
+  message:
+    leaveMessage: Schreib mir eine Nachricht
+    firstName: Vorname
+    lastName: Nachname
+    emailAddress: Example@web.de
+    textHere: Nachricht hier verfassen
+    sendRequest: Senden
+  findMe: Da bin ich überall aktiv
+  toExternal: In einem neuen Fenster öffnen
+  writeDirect: Schreib mir hier
+  
