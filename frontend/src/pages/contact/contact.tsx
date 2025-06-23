@@ -14,6 +14,25 @@ const {Title, Text, Paragraph} = Typography;
 export default function Contact() {
     const isMobile = useInfoStore((state) => state.isMobileRatio);
     const translate = useInfoStore((state) => state.getTranslation);
+
+    const [firstName, setFirstName] = React.useState<string>('');
+    const [lastName, setLastName] = React.useState<string>('');
+    const [email, setEmail] = React.useState<string>('');
+    const [message, setMessage] = React.useState<string>('');
+
+    function checkMail(): boolean {
+        if (email.length == 0) {
+            return true;
+        }
+        if (/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/g.test(email)) {
+            return true;
+        }
+        return false;
+    }
+
+    function clickSend(){
+        
+    }
     return (<>
         <Title>Contact</Title>
         <div className={"contact-splitter" + (isMobile ? "-mobile" : "")}>
@@ -24,17 +43,27 @@ export default function Contact() {
                     <Title level={2} style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
                         path={"contact.message.leaveMessage"}/></Title>
                     <div style={{display: "flex", marginBottom: "1rem"}}>
-                        <Input placeholder={translate("contact.message.firstName")} variant="filled"/>
-                        <Input placeholder={translate("contact.message.lastName")} variant="filled" style={{marginLeft: "32px"}}/>
+                        <Input
+                            value={firstName} onChange={e => setFirstName(e.target.value)}
+                            placeholder={translate("contact.message.firstName")} variant="filled"/>
+                        <Input
+                            value={lastName} onChange={e => setLastName(e.target.value)}
+                            placeholder={translate("contact.message.lastName")} variant="filled"
+                            style={{marginLeft: "32px"}}/>
                     </div>
-                    <Input style={{marginBottom: "1rem"}} placeholder={translate("contact.message.emailAddress")} variant="filled"/>
+                    <Input
+                        value={email} onChange={e => setEmail(e.target.value)} status={checkMail() ? "" : "error"}
+                        style={{marginBottom: "1rem"}} placeholder={translate("contact.message.emailAddress")}
+                        variant="filled"/>
                     <TextArea
                         placeholder={translate("contact.message.textHere")}
                         autoSize={{minRows: 9, maxRows: 18}}
                         style={{marginBottom: "1rem"}}
+                        value={message}
+                        onChange={e => setMessage(e.target.value)}
                     />
                     <div style={{textAlign: "center"}}>
-                        <Button type="primary" style={{margin: "0 auto"}}><Trans path={"contact.message.sendRequest"}/></Button>
+                        <Button onClick={()=>clickSend()} type="primary" style={{margin: "0 auto"}}><Trans path={"contact.message.sendRequest"}/></Button>
                     </div>
                 </div>
             </div>
@@ -50,7 +79,7 @@ export default function Contact() {
                 <br style={{marginBottom: "1rem"}}/>
                 <Tooltip title={translate("contact.toExternal")}>
                     <Link to={"https://rubinschwein47.itch.io/"} target={"_blank"}><ItchIcon
-                        style={{color: "#c24c4e"}}/> <Trans path={"contact.itch"}/></Link>
+                        style={{color: "#f84346"}}/> <Trans path={"contact.itch"}/></Link>
                 </Tooltip>
                 <br style={{marginBottom: "1rem"}}/>
                 <Tooltip title={translate("contact.toExternal")}>
