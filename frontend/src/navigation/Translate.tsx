@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import { useInfoStore } from '../store';
 
 type TransProps = {
@@ -10,5 +10,5 @@ export default function  Trans({path}: TransProps) {
     
     return (
         <>{translatedText}</>
-    )
+    );
 }

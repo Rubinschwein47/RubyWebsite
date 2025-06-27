@@ -20,14 +20,14 @@ export default function Background() {
         const tiles: ReactElement<any, any>[] = [];
         for (let i = 0; i < 20; i++) {
             tiles.push(<div style={{width: '100%', height: '8rem'}} key={i}>
-                <img src={texture} style={{}}/>
-                <img src={texture} style={{transform: `rotateY(180deg)`, float: "right"}}/>
-            </div>)
+                <img src={texture} alt={"background wall left"}/>
+                <img src={texture} style={{transform: `rotateY(180deg)`, float: "right"}} alt={"background wall right"}/>
+            </div>);
         }
         return tiles;
     }
 
     return (<div style={{position: 'absolute', width: '100%', height: "100%"}}>
         {getBackground()}
-    </div>)
+    </div>);
 }

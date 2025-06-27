@@ -1,7 +1,7 @@
 import {Divider, Image, Space, Typography} from 'antd';
 import React from 'react';
 import Trans from "../../navigation/Translate";
-import "./home.css"
+import "./home.css";
 import ImageWaiter from "../../basics/ImageWaiter";
 import VDiv from "../../basics/VDiv";
 
@@ -36,15 +36,15 @@ export default function Home() {
                 ),
                 height: "50%",
             }}>
-                <ImageWaiter width={"8rem"} alt={"logo_skull"} src="recources/logos/LogoSkull.png"/>
+                <ImageWaiter size={"8rem"} alt={"logo_skull"} src="recources/logos/LogoSkull.png"/>
                 <VDiv/>
-                <ImageWaiter width={"8rem"} alt={"logo_conrad"} src="recources/logos/LogoConrad.png"/>
+                <ImageWaiter size={"8rem"} alt={"logo_conrad"} src="recources/logos/LogoConrad.png"/>
                 <VDiv/>
-                <ImageWaiter width={"8rem"} alt={"logo_pig1"} src="recources/logos/LogoPig1.png"/>
+                <ImageWaiter size={"8rem"} alt={"logo_pig1"} src="recources/logos/LogoPig1.png"/>
                 <VDiv/>
-                <ImageWaiter width={"8rem"} alt={"logo_pig2"} src="recources/logos/LogoPig2.png"/>
+                <ImageWaiter size={"8rem"} alt={"logo_pig2"} src="recources/logos/LogoPig2.png"/>
                 <VDiv/>
-                <ImageWaiter width={"8rem"} alt={"logo_pig3"} src="recources/logos/LogoRuby.png"/>
+                <ImageWaiter size={"8rem"} alt={"logo_pig3"} src="recources/logos/LogoRuby.png"/>
             </Image.PreviewGroup>
             <Divider/>
         </div>
@@ -58,8 +58,4 @@ export default function Home() {
             <Text><Trans path={"home.myGames.text"}/></Text>
         </div>
     </>);
-}
-
-export function LogoToolbar() {
-    return (<div>Hello</div>)
 }

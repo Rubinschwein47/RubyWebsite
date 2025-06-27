@@ -1,7 +1,7 @@
 import {ConfigProvider, theme, ThemeConfig} from 'antd';
-import React, {ReactNode, useEffect, useLayoutEffect, useState} from 'react';
+import React, {ReactNode, useEffect, useLayoutEffect} from 'react';
 import './theming.css';
-import { useInfoStore } from '../store';
+import {useInfoStore} from '../store';
 
 const white = '#fff';
 const black = '#000';
@@ -10,7 +10,7 @@ const borderRadius = 6;
 const whiteBackground = '#f5f5f5';
 const blackBackground = '#001529';
 
-const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
+const cssVariables: { variable: string, themes: { [key: string]: string } }[] = [
     {
         variable: '--icon-color',
         themes: {
@@ -42,61 +42,61 @@ const cssVariables:{variable: string, themes: { [key: string]: string }}[] = [
     {
         variable: '--border-radius',
         themes: {
-            dark: borderRadius+'px',
-            light: borderRadius+'px',
+            dark: borderRadius + 'px',
+            light: borderRadius + 'px',
         }
     },
     {
         variable: "--highlight-orange",
-        themes:{
+        themes: {
             dark: "#98320c",
             light: "#f39f6a",
         }
     },
     {
         variable: "--highlight-blue",
-        themes:{
+        themes: {
             dark: "#123a9e",
             light: "#65a1e8",
         }
-    },{
+    }, {
         variable: "--highlight-light-blue",
-        themes:{
+        themes: {
             dark: "#2366aa",
             light: "#80bfdc",
         }
     },
     {
         variable: "--highlight-purple",
-        themes:{
+        themes: {
             dark: "#621287",
             light: "#d16de8",
         }
     },
     {
         variable: "--highlight-grey",
-        themes:{
+        themes: {
             dark: "#494949",
             light: "#d5d5d5",
         }
     },
     {
         variable: "--highlight-green",
-        themes:{
+        themes: {
             dark: "#086e20",
             light: "#7ced73",
         }
     },
     {
         variable: "--highlight-yellow",
-        themes:{
+        themes: {
             dark: "#b6a010",
             light: "#ffde73",
         }
     },
     {
         variable: "--background-color",
-        themes:{
+        themes: {
             dark: blackBackground,
             light: whiteBackground
         }
@@ -152,7 +152,7 @@ const whiteTheme: ThemeConfig = {
     },
 };
 
-const antThemes:{ [key: string]: ThemeConfig } = {
+const antThemes: { [key: string]: ThemeConfig } = {
     dark: blackTheme,
     light: whiteTheme
 }
@@ -161,8 +161,8 @@ export default function Theming({children}: { children: ReactNode }) {
     const theme = useInfoStore((state) => state.theme);
     const storeInitialized = useInfoStore((state) => state.initialized);
     const initializeStore = useInfoStore((state) => state.initialize);
-    
-    cssVariables.forEach((it)=>{
+
+    cssVariables.forEach((it) => {
         document.documentElement.style.setProperty(it.variable, it.themes[theme]);
     });
 
@@ -170,14 +170,15 @@ export default function Theming({children}: { children: ReactNode }) {
     const setRatio = useInfoStore((state) => state.refreshIsMobile);
     useEffect(() => {
         console.log(navigator.languages);
-        if(!storeInitialized){
+        if (!storeInitialized) {
             initializeStore();
         }
     })
-    useLayoutEffect(()=>{
+    useLayoutEffect(() => {
         function updateSize() {
             setRatio();
         }
+
         window.addEventListener('resize', updateSize);
         updateSize();
         return () => window.removeEventListener('resize', updateSize);
@@ -186,7 +187,7 @@ export default function Theming({children}: { children: ReactNode }) {
     return (
         <ConfigProvider
             theme={antThemes[theme]}
-        > 
+        >
             {children}
         </ConfigProvider>
     );

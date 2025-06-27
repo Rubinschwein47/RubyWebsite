@@ -14,5 +14,5 @@ export default function BaseContainer({children}: {children: React.ReactNode}) {
                 {children}
             </div>
         </div>
-    )
+    );
 }

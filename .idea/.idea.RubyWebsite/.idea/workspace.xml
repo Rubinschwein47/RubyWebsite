@@ -10,11 +10,29 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/RubyWebsite/DTOs/ContactDto.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/VDiv.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/VDiv.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/background.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/background.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/models/WeatherForecast.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/services/RubyWebsiteService.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,16 +61,18 @@
     &quot;assignee&quot;: &quot;Rubinschwein47&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rubinschwein47/RubyWebsite.git",
-    "accountId": "7f40a035-3eab-4d63-baea-ded46f3d9de7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rubinschwein47/RubyWebsite.git&quot;,
+    &quot;accountId&quot;: &quot;7f40a035-3eab-4d63-baea-ded46f3d9de7&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b20dbd6f8b5b39f8631f761b1abcb0f6778d44cfed716654927bcc5427e/EndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36f346b6c0454bc8a6afa7aed38119fe5bbffcc983298d9bfa4dbd5f49461f/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/541a092bf7781c73472381c47dd31c3447c2568d2da945ec791f6193812a/OpenApiEndpointConventionBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57334938c37984ed44dcd0b3e1ff22984d161fa9fc6c7161a38d29e3e85eb6/HttpHeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/886622f82b9473b5c014d3c3ea73f6b713e2a1a78532cbe368d36af1ac9d2bef/OpenApiRequestBody.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce7854bb4da5f3387d19aeb7a46d9b3e214173bc14d69641477687ea285423b/Directory.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d74f28aeb493b91cab99cb8b6dab3a16f779b5f8e58e708cb4ee5f8590ccd532/OpenApiRouteHandlerBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
@@ -75,22 +95,25 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "git-widget-placeholder": "master",
+    "js.linters.configure.manually.selectedeslint": "true",
     "list.type.of.created.stylesheet": "CSS",
     "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
     "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.eslint": "C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\eslint",
+    "node.js.selected.package.standard": "",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
     "npm.frontend.executor": "Run",
     "npm.installDependencies.executor": "Run",
     "npm.start.executor": "Run",
     "npm.types:openapi.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "C:\\Users\\konta\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\typescript\\lib",
+    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
+    "ts.external.directory.path": "C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Compound.Both">
+  <component name="RunManager" selected="npm.installDependencies">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />

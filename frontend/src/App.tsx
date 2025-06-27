@@ -9,8 +9,9 @@ import BaseContainer from './basics/baseContainer/baseContainer';
 import {useRoutes} from "react-router";
 import {routes} from './navigation/router';
 import {useInfoStore} from './store';
+import '@ant-design/v5-patch-for-react-19';
 
-OpenAPI.BASE = "http://localhost:5037"
+OpenAPI.BASE = "http://localhost:5037";
 export default function App() {
     const element = useRoutes(routes);
 

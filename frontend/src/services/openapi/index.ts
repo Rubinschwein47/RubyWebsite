@@ -7,8 +7,8 @@ export { CancelablePromise, CancelError } from './core/CancelablePromise';
 export { OpenAPI } from './core/OpenAPI';
 export type { OpenAPIConfig } from './core/OpenAPI';
 
+export type { ContactDto } from './models/ContactDto';
 export type { ProblemDetails } from './models/ProblemDetails';
-export type { WeatherForecast } from './models/WeatherForecast';
 
-export { LanguageControllerService } from './services/LanguageControllerService';
-export { RubyWebsiteService } from './services/RubyWebsiteService';
+export { ContactControllerService } from './services/ContactControllerService';
+export { LanguageControllerService } from "./services/LanguageControllerService";

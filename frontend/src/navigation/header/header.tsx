@@ -1,22 +1,20 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './header.css';
 import {Header} from "antd/es/layout/layout";
-import {Button, Dropdown, Flex, MenuProps} from "antd";
+import {Button, Dropdown, Flex, MenuProps, Typography} from "antd";
 import {
-    MoonFilled,
     FormatPainterFilled,
-    SunFilled,
+    GlobalOutlined,
     HomeFilled,
-    RocketFilled,
-    MergeFilled,
+    MenuOutlined,
     MessageFilled,
-    GlobalOutlined, MenuOutlined
+    MoonFilled,
+    RocketFilled,
+    SunFilled
 } from '@ant-design/icons';
-import {Typography} from 'antd';
 import {useInfoStore} from '../../store';
-import {Link, NavLink, useNavigate} from "react-router";
+import {useNavigate} from "react-router";
 import Trans from '../Translate';
-import Home from "../../pages/home/home";
 
 const {Title, Text} = Typography;
 
@@ -29,7 +27,7 @@ const pages: { name: string; icon: React.JSX.Element }[] = [{
 }, {
     name: "contact",
     icon: <MessageFilled/>,
-}]
+}];
 export default function WebHeader() {
     const isMobile = useInfoStore((state) => state.isMobileRatio);
 
@@ -82,7 +80,7 @@ function DesktopPages({pages}: PagesProps) {
                 </>
             ))}
         </Flex>
-    )
+    );
 }
 
 function MobilePages({pages}: PagesProps) {
@@ -90,22 +88,22 @@ function MobilePages({pages}: PagesProps) {
     const goToLink = (destination: string) => {
         navigate(destination);
     };
-    var items: MenuProps['items'] = [];
+    const items: MenuProps['items'] = [];
     pages.forEach((page, index) => {
         items?.push({
             key: index,
             label: <Title level={3}><Trans path={"header.links." + page.name}/>  {React.cloneElement(page.icon, {className: "mobile-icon"})}</Title>,
             onClick: () => {
-                goToLink("/" + page.name)
+                goToLink("/" + page.name);
             }
-        })
-    })
+        });
+    });
 
     return (
         <Dropdown menu={{items}} placement="bottomLeft" arrow>
             <MenuOutlined style={{fontSize: "3rem", marginLeft: "1rem"}} />
         </Dropdown>
-    )
+    );
 }
 
 type SupPageProps = {
@@ -123,7 +121,7 @@ function SubPage({name, children}: SupPageProps) {
             <Title level={3} style={{margin: "auto"}}><Trans path={"header.links." + name}/></Title>
             {children}
         </div>
-    )
+    );
 }
 
 function LanguageDropdown() {
@@ -153,7 +151,7 @@ function LanguageDropdown() {
         <Dropdown menu={{items}} placement="bottomRight" arrow>
             <Button style={{marginRight: "1rem"}}><Trans path={"header.language.language"}/> <GlobalOutlined/></Button>
         </Dropdown>
-    )
+    );
 }
 
 function ThemeDropdown() {
@@ -183,5 +181,5 @@ function ThemeDropdown() {
         <Dropdown menu={{items}} placement="bottomRight" arrow>
             <Button type="primary"><Text><Trans path={"header.theme.theme"}/></Text> <FormatPainterFilled/></Button>
         </Dropdown>
-    )
+    );
 }

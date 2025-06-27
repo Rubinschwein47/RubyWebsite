@@ -1,39 +1,63 @@
-import {Button, Input, Tooltip, Typography} from 'antd';
+import {Button, Input, message, Tooltip, Typography} from 'antd';
 import React from 'react';
 import {useInfoStore} from "../../store";
 import Trans from "../../navigation/Translate";
-import "./contact.css"
+import "./contact.css";
 import TextArea from "antd/es/input/TextArea";
 import {MailOutlined, PhoneFilled} from "@ant-design/icons";
 import {Link} from "react-router";
 import {GitHubIcon, ItchIcon} from "../../basics/customIcons/icons";
+import "../../services/openapi/models/ContactDto";
+import {ContactControllerService, ContactDto} from "../../services/openapi";
 
 const {Title, Text, Paragraph} = Typography;
 
 
 export default function Contact() {
+    const [messageApi, contextHolder] = message.useMessage();
     const isMobile = useInfoStore((state) => state.isMobileRatio);
     const translate = useInfoStore((state) => state.getTranslation);
-
     const [firstName, setFirstName] = React.useState<string>('');
     const [lastName, setLastName] = React.useState<string>('');
     const [email, setEmail] = React.useState<string>('');
-    const [message, setMessage] = React.useState<string>('');
+    const [textMessage, setTextMessage] = React.useState<string>('');
 
     function checkMail(): boolean {
         if (email.length == 0) {
             return true;
         }
-        if (/^[\w\-\.]+@([\w-]+\.)+[\w-]{2,}$/g.test(email)) {
+        if (/^[\w\-.]+@([\w-]+\.)+[\w-]{2,}$/g.test(email)) {
             return true;
         }
         return false;
     }
 
-    function clickSend(){
-        
-    }
+    const clickSend = () => {
+        console.log("clickSend");
+        if (!checkMail() || email.length == 0) {
+            messageApi.open({
+                type: "error",
+                content: translate("hints.faultyMail"),
+                duration: 5
+            });
+            return;
+        }
+        const contactDTO: ContactDto = {
+            firstName: firstName,
+            lastName: lastName,
+            email: email,
+            message: textMessage,
+        };
+        messageApi.open({
+            key: "contactSend",
+            type: 'loading',
+            content: 'Loading...',
+        });
+        ContactControllerService.sendMail(contactDTO);
+    };
+
     return (<>
+        {contextHolder}
         <Title>Contact</Title>
         <div className={"contact-splitter" + (isMobile ? "-mobile" : "")}>
             <div>
@@ -59,11 +83,12 @@ export default function Contact() {
                         placeholder={translate("contact.message.textHere")}
                         autoSize={{minRows: 9, maxRows: 18}}
                         style={{marginBottom: "1rem"}}
-                        value={message}
-                        onChange={e => setMessage(e.target.value)}
+                        value={textMessage}
+                        onChange={e => setTextMessage(e.target.value)}
                     />
                     <div style={{textAlign: "center"}}>
-                        <Button onClick={()=>clickSend()} type="primary" style={{margin: "0 auto"}}><Trans path={"contact.message.sendRequest"}/></Button>
+                        <Button onClick={clickSend} type="primary" style={{margin: "0 auto"}}><Trans
+                            path={"contact.message.sendRequest"}/></Button>
                     </div>
                 </div>
             </div>
