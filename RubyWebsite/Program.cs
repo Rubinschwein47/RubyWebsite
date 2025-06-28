@@ -1,4 +1,5 @@
 using RubyWebsite.Controllers;
+using RubyWebsite.DataObjects;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -12,12 +13,15 @@ builder.Services.AddCors(options =>
     policy  =>
     {
       policy.WithOrigins("*");
+      policy.AllowAnyHeader();
+      policy.AllowAnyMethod();
     });
 });
 
 var app = builder.Build();
 
-
+if (app.Environment.IsDevelopment())
+  DotNetEnv.Env.Load();
 
 app.UseCors("_myAllowSpecificOrigins");
 // Configure the HTTP request pipeline.
@@ -30,5 +34,6 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 LanguageController.AddEndpoints(app);
-ContactController.AddEndpoints(app);
+var smtp = builder.Configuration.GetSection("Smtp").Get<SmtpSettings>();
+ContactController.AddEndpoints(app, smtp);
 app.Run();

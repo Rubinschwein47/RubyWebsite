@@ -2,7 +2,6 @@ import {redirect, RouteObject} from "react-router";
 import Home from "../pages/home/home";
 import Contact from "../pages/contact/contact";
 import Portfolio from "../pages/portfolio/portfolio";
-import TechStack from "../pages/tech-stack/techStack";
 import NotFound from "../pages/notFound";
 
 export const routes: RouteObject[] = [
@@ -17,10 +16,6 @@ export const routes: RouteObject[] = [
     {
         path: "/portfolio",
         Component: Portfolio,
-    },
-    {
-        path: "/tech-stack",
-        Component: TechStack,
     },
     {
         path: "/",

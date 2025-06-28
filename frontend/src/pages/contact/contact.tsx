@@ -51,9 +51,34 @@ export default function Contact() {
         messageApi.open({
             key: "contactSend",
             type: 'loading',
-            content: 'Loading...',
+            content: translate("hints.loading"),
+            duration: 60
         });
-        ContactControllerService.sendMail(contactDTO);
+        const promise = ContactControllerService.sendMail(contactDTO);
+        promise.then((result) => {
+            if(result) {
+                messageApi.open({
+                    key: "contactSend",
+                    type: 'success',
+                    content: translate("hints.mailSuccess"),
+                    duration: 5
+                });
+            }else {
+                messageApi.open({
+                    key: "contactSend",
+                    type: 'warning',
+                    content: translate("hints.mailFailure"),
+                    duration: 5
+                });
+            }
+        }).catch((err) => {
+            messageApi.open({
+                key: "contactSend",
+                type: 'error',
+                content: err.message,
+                duration: 10
+            });
+        });
     };
 
     return (<>
