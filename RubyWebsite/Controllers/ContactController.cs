@@ -1,9 +1,12 @@
-using System.Net;
-using System.Net.Mail;
 using System.Runtime.InteropServices.JavaScript;
+using System.Text;
+using MailKit;
+using MailKit.Net.Smtp;
+using MailKit.Security;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Models;
+using MimeKit;
 using Newtonsoft.Json;
 using RubyWebsite.DataObjects;
 using RubyWebsite.DTOs;
@@ -53,23 +56,18 @@ public static class ContactController
       return false;
     }
 
-    var mailMessage = new MailMessage(_smtpSettings.Username, "contact@rubinschwein47.com");
+    var mailMessage = new MimeMessage();
+    mailMessage.Body = new TextPart("plain") { Text = contact.Message };
+    mailMessage.From.Add(new MailboxAddress(_smtpSettings.SenderName,_smtpSettings.Username));
+    mailMessage.To.Add(new MailboxAddress("Felix Conrad", "contact@rubinschwein47.com"));
     mailMessage.Subject = $"Website Message From: {contact.FirstName} {contact.LastName}, mail: {contact.Email}";
-    mailMessage.Body = contact.Message;
     try
     {
-      using var smtp = new SmtpClient();
-      smtp.Host = _smtpSettings.Server;
-      smtp.EnableSsl = true;
-      var smtpCredentials = new NetworkCredential(_smtpSettings.Username, password);
-      smtp.Credentials = smtpCredentials;
-      smtp.Port = _smtpSettings.Port;
-      smtp.Send(mailMessage);
-    }
-    catch (System.Net.Mail.SmtpException ex)
-    {
-      Console.WriteLine(ex);
-      throw;
+      using var smtp = new SmtpClient(new ProtocolLogger (Console.OpenStandardOutput ())); 
+      await smtp.ConnectAsync(_smtpSettings.Server, _smtpSettings.Port, SecureSocketOptions.SslOnConnect);
+      await smtp.AuthenticateAsync(_smtpSettings.Username, password);
+      await smtp.SendAsync(mailMessage); // This uses MimeKit.MimeMessage
+      await smtp.DisconnectAsync(true);
     }
     catch (Exception e)
     {

@@ -10,17 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/RubyWebsite/DataObjects/SmtpSettings.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/DataObjects/SmtpSettings.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/DataObjects/SmtpSettings.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/appsettings.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/router.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/router.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,21 +44,23 @@
     &quot;assignee&quot;: &quot;Rubinschwein47&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rubinschwein47/RubyWebsite.git",
-    "accountId": "148d347f-cec4-46e5-87f7-1dc7dd5726ff"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rubinschwein47/RubyWebsite.git&quot;,
+    &quot;accountId&quot;: &quot;148d347f-cec4-46e5-87f7-1dc7dd5726ff&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/bb8dc38029c64c67b42c74519e21f91c9400/f6/eff8dde7/Env.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1b20dbd6f8b5b39f8631f761b1abcb0f6778d44cfed716654927bcc5427e/EndpointRouteBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/36f346b6c0454bc8a6afa7aed38119fe5bbffcc983298d9bfa4dbd5f49461f/Monitor.CoreCLR.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/541a092bf7781c73472381c47dd31c3447c2568d2da945ec791f6193812a/OpenApiEndpointConventionBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/57334938c37984ed44dcd0b3e1ff22984d161fa9fc6c7161a38d29e3e85eb6/HttpHeaderParser.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6140fb726658b1d31e544e8f4a652dc4897f0375a30a2402287854d4eed1a20/SmtpClient.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6140fb726658b1d31e544e8f4a652dc4897f0375a30a2402287854d4eed1a20/SmtpClient.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/886622f82b9473b5c014d3c3ea73f6b713e2a1a78532cbe368d36af1ac9d2bef/OpenApiRequestBody.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/c7102cd0ffb8973777e61b1942c3fffac7e14016a511d055c3adf73ff91748/ThrowHelper.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/ce7854bb4da5f3387d19aeb7a46d9b3e214173bc14d69641477687ea285423b/Directory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d08879a8142ef06881bfc6ea7a6440836b8a71361dc1de1c5c7d0269fcd95/ProtocolLogger.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/d74f28aeb493b91cab99cb8b6dab3a16f779b5f8e58e708cb4ee5f8590ccd532/OpenApiRouteHandlerBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -79,30 +76,30 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Debug",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "master",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.frontend.executor": "Run",
-    "npm.installDependencies.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.types:openapi.executor": "Run",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RubyWebsite:backend.executor&quot;: &quot;Debug&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
+    &quot;npm.installDependencies.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.types:openapi.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\felix\\RiderProjects\\RubyWebsite\\frontend\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RubyWebsite:backend">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
@@ -277,7 +274,8 @@
       <workItem from="1750322341335" duration="1975000" />
       <workItem from="1750331479842" duration="1192000" />
       <workItem from="1750495079144" duration="2012000" />
-      <workItem from="1751062871611" duration="6542000" />
+      <workItem from="1751062871611" duration="7131000" />
+      <workItem from="1751229282610" duration="4842000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -439,7 +437,15 @@
       <option name="project" value="LOCAL" />
       <updated>1751060796033</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="gay">
+      <option name="closed" value="true" />
+      <created>1751070179695</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1751070179695</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -470,75 +476,115 @@
     <MESSAGE value="added mobile support" />
     <MESSAGE value="started contact page" />
     <MESSAGE value="Implemented es lint and continued message" />
-    <option name="LAST_COMMIT_MESSAGE" value="Implemented es lint and continued message" />
+    <MESSAGE value="gay" />
+    <option name="LAST_COMMIT_MESSAGE" value="gay" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
-          <line>80</line>
+          <line>78</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
             <startOffsets>
-              <option value="2369" />
+              <option value="2570" />
             </startOffsets>
             <endOffsets>
-              <option value="2381" />
+              <option value="2582" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
-          <line>70</line>
+          <line>67</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
             <startOffsets>
-              <option value="2244" />
+              <option value="2303" />
             </startOffsets>
             <endOffsets>
-              <option value="2266" />
+              <option value="2366" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="22" />
+          <option name="timeStamp" value="31" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
-          <line>75</line>
+          <line>68</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
             <startOffsets>
-              <option value="2322" />
+              <option value="2373" />
             </startOffsets>
             <endOffsets>
-              <option value="2343" />
+              <option value="2407" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="23" />
+          <option name="timeStamp" value="32" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
-          <line>66</line>
+          <line>69</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
             <startOffsets>
-              <option value="2157" />
+              <option value="2447" />
             </startOffsets>
             <endOffsets>
-              <option value="2180" />
+              <option value="2480" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="24" />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
+          <line>58</line>
+          <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
+            <startOffsets>
+              <option value="1675" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1711" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
+          <line>73</line>
+          <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
+            <startOffsets>
+              <option value="2523" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2544" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="40" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="DotNet Breakpoints">
           <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
           <line>65</line>
           <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
             <startOffsets>
-              <option value="2119" />
+              <option value="2104" />
             </startOffsets>
             <endOffsets>
-              <option value="2150" />
+              <option value="2188" />
             </endOffsets>
           </properties>
-          <option name="timeStamp" value="25" />
+          <option name="timeStamp" value="42" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs</url>
+          <line>66</line>
+          <properties documentPath="C:\Users\felix\RiderProjects\RubyWebsite\RubyWebsite\Controllers\ContactController.cs" containingFunctionPresentation="Method 'ContactRequest'">
+            <startOffsets>
+              <option value="2196" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2296" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="47" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
