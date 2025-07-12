@@ -20,23 +20,23 @@ type InfoStore = {
 const supportedLanguages = [
     'en',
     'de'
-]
+];
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: false,
     initialize: async ()=>{
         get().refreshIsMobile();
-        var newTheme = localStorage.getItem("theme");
+        let newTheme = localStorage.getItem("theme");
         if(newTheme == null){
             newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
         }
         set({theme: newTheme});
-        var newLang = localStorage.getItem("language");
+        let newLang = localStorage.getItem("language");
         if(newLang == null){
             navigator.languages.forEach((it)=>{
                 if(newLang != null && supportedLanguages.includes(it)){
-                    newLang = newLang;
+                    newLang = it;
                 }
-            })
+            });
             if(newLang == null){
                 newLang = "en";
             }
@@ -54,9 +54,9 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         localStorage.setItem("language", newLanguageToken);
         set({languageLoaded: false});
         set({languageToken: newLanguageToken});
-        var request = translation(newLanguageToken);
+        const request = translation(newLanguageToken);
         const response = await request;
-        const parsed = yaml.load(response) as object
+        const parsed = yaml.load(response) as object;
         set({language: parsed});
         set({languageLoaded: true});
         console.log("language Loaded");
@@ -66,7 +66,7 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
     languageLoaded: false,
     getTranslation: (key: string) => {
         const parts = key.split(".");
-        var tree = get().language;
+        let tree = get().language;
         parts.forEach((it,i) => {
             const treeResult = tree[it as keyof typeof tree];
             if(
@@ -78,7 +78,7 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
             tree = tree[it as keyof typeof tree];
         });
         if(typeof tree != "string") {
-            return key
+            return key;
         }
         return tree;
     },
@@ -88,5 +88,5 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         console.log("IsMobile: " + (ratio < 1));
         set({isMobileRatio: ratio < 1});
     },
-}))
+}));
 
