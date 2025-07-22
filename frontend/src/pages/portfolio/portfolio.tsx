@@ -9,6 +9,20 @@ import VDiv from "../../basics/VDiv";
 
 const {Title, Text, Paragraph} = Typography;
 
+type ProjectProps = {
+    logoPath: string;
+    logoAlt: string;
+    externalLinks: { text: string, url: string }[] | [],
+    name: string,
+    badges: { text: string, color: string }[] | [],
+    text: string,
+    images: { path: string; alt: string; }[] | [],
+    colorRotation: number,
+}
+type WrapperProps = {
+    props: ProjectProps,
+    projectKey: string
+}
 const projects: ProjectProps[] = [
     {
         text: "portfolio.projects.website.text",
@@ -85,6 +99,7 @@ const projects: ProjectProps[] = [
         }],
         colorRotation: 185
     }];
+
 export default function Portfolio() {
     return <>
         <Title>Portfolio</Title>
@@ -93,32 +108,10 @@ export default function Portfolio() {
     </>;
 }
 
-type ProjectProps = {
-    logoPath: string;
-    logoAlt: string;
-    externalLinks: { text: string, url: string }[] | [],
-    name: string,
-    badges: { text: string, color: string }[] | [],
-    text: string,
-    images: { path: string; alt: string; }[] | [],
-    colorRotation: number,
-}
-type WrapperProps = {
-    props: ProjectProps,
-    projectKey: string
-}
-
 function Project({props, projectKey}: WrapperProps) {
 
     return (<div key={projectKey} className={"project"}>
         <div className="project-background" style={{filter: "hue-rotate(" + props.colorRotation + "deg)"}}>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
         </div>
         <div className={"project-head"}>
             <div style={{display: "grid"}}>

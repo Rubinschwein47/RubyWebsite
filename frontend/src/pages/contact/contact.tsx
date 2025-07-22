@@ -1,6 +1,6 @@
 import {Button, Input, message, Tooltip, Typography} from 'antd';
 import React from 'react';
-import {useInfoStore} from "../../store";
+import {useInfoStore, WindowRatio} from "../../store";
 import Trans from "../../navigation/Translate";
 import "./contact.css";
 import TextArea from "antd/es/input/TextArea";
@@ -15,7 +15,7 @@ const {Title, Text, Paragraph} = Typography;
 
 export default function Contact() {
     const [messageApi, contextHolder] = message.useMessage();
-    const isMobile = useInfoStore((state) => state.isMobileRatio);
+    const ratio = useInfoStore((state) => state.windowRatio);
     const translate = useInfoStore((state) => state.getTranslation);
     const [firstName, setFirstName] = React.useState<string>('');
     const [lastName, setLastName] = React.useState<string>('');
@@ -83,12 +83,12 @@ export default function Contact() {
 
     return (<>
         {contextHolder}
-        <Title>Contact</Title>
-        <div className={"contact-splitter" + (isMobile ? "-mobile" : "")}>
+        <Title>Contact</Title> 
+        <div className={"contact-splitter-"+ratio}>
             <div>
                 <div className={"container"} style={{width: '100%', position: 'relative'}}>
-                    {isMobile ? null : <img src={'/recources/LeaningOnWall.png'} className={"wall-leaning"}
-                                            alt="Ruby Leaning on Wall"/>}
+                    {ratio === WindowRatio.pc? <img src={'/recources/LeaningOnWall.png'} className={"wall-leaning"}
+                                            alt="Ruby Leaning on Wall"/>:null}
                     <Title level={2} style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
                         path={"contact.message.leaveMessage"}/></Title>
                     <div style={{display: "flex", marginBottom: "1rem"}}>
@@ -117,7 +117,7 @@ export default function Contact() {
                     </div>
                 </div>
             </div>
-            <div style={{paddingLeft: isMobile ? 0 : "9rem"}}>
+            <div style={{paddingLeft: ratio === WindowRatio.mobile ? 0 : "9rem"}}>
                 <Title level={2}><Trans
                     path={"contact.findMe"}/></Title>
                 <Paragraph copyable><PhoneFilled/> +49 179 1368 592</Paragraph>

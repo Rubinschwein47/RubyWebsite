@@ -167,7 +167,7 @@ export default function Theming({children}: { children: ReactNode }) {
     });
 
     const setLanguage = useInfoStore((state) => state.setLanguage);
-    const setRatio = useInfoStore((state) => state.refreshIsMobile);
+    const setRatio = useInfoStore((state) => state.refreshRatio);
     useEffect(() => {
         console.log(navigator.languages);
         if (!storeInitialized) {

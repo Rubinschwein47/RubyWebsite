@@ -4,6 +4,12 @@ import {LanguageControllerService} from "./services/openapi";
 
 const {translation} = LanguageControllerService;
 
+export enum WindowRatio {
+    pc = "pc",
+    square = "square",
+    mobile  = "mobile",
+}
+
 type InfoStore = {
     theme: string,
     initialized: boolean,
@@ -14,8 +20,8 @@ type InfoStore = {
     language: any,
     languageLoaded: boolean,
     getTranslation: (key: string) => string,
-    isMobileRatio: boolean,
-    refreshIsMobile: () => void,
+    windowRatio: WindowRatio,
+    refreshRatio: () => void,
 }
 const supportedLanguages = [
     'en',
@@ -24,7 +30,7 @@ const supportedLanguages = [
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: false,
     initialize: async ()=>{
-        get().refreshIsMobile();
+        get().refreshRatio();
         let newTheme = localStorage.getItem("theme");
         if(newTheme == null){
             newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
@@ -82,11 +88,21 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         }
         return tree;
     },
-    isMobileRatio: false,
-    refreshIsMobile: () => {
+    windowRatio: WindowRatio.square,
+    refreshRatio: () => {
         const ratio = window.innerWidth / window.innerHeight;
-        console.log("IsMobile: " + (ratio < 1));
-        set({isMobileRatio: ratio < 1});
+        if(ratio >= 4/3) {
+            set({windowRatio: WindowRatio.pc});
+            console.log("pc")
+            return;
+        }
+        if(ratio <= 3/4) {
+            set({windowRatio: WindowRatio.mobile});
+            console.log("mobile")
+            return;
+        }
+        console.log("square")
+        set({windowRatio: WindowRatio.square});
     },
 }));
 

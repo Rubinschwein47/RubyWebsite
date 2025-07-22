@@ -12,7 +12,7 @@ import {
     RocketFilled,
     SunFilled
 } from '@ant-design/icons';
-import {useInfoStore} from '../../store';
+import {useInfoStore, WindowRatio} from '../../store';
 import {useNavigate} from "react-router";
 import Trans from '../Translate';
 
@@ -29,37 +29,32 @@ const pages: { name: string; icon: React.JSX.Element }[] = [{
     icon: <MessageFilled/>,
 }];
 export default function WebHeader() {
-    const isMobile = useInfoStore((state) => state.isMobileRatio);
+    const ratio = useInfoStore((state) => state.windowRatio);
 
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
-            {isMobile? <MobilePages pages={pages}/>: <DesktopPages pages={pages}/>}
+            {ratio === WindowRatio.mobile ?
+                <><MobilePages pages={pages}/> <Title style={{margin: "auto 12px"}} level={3}>Rubinschwein47</Title></> 
+                : <DesktopPages pages={pages}/>}
             <div className={"options-panel"}>
-                <LanguageDropdown></LanguageDropdown>
-                <ThemeDropdown></ThemeDropdown>
+                <LanguageDropdown ratio={ratio}></LanguageDropdown>
+                <ThemeDropdown ratio={ratio}></ThemeDropdown>
             </div>
 
         </Flex>
-        <div className={'namePresent'}>
-            <Flex style={{
-                alignItems: 'center',
-                pointerEvents: 'none'
-            }}>
-                <div style={{
-                    width: '5rem', height: '0',
-                    borderColor: "var(--icon-color)",
-                    borderBottomStyle: 'solid',
-                    marginLeft: 'auto'
-                }}></div>
-                <Title style={{margin: '1rem'}}>Rubinschwein47</Title>
-                <div style={{
-                    width: '5rem', height: '0',
-                    borderColor: "var(--icon-color)",
-                    borderBottomStyle: 'solid',
-                    marginRight: 'auto'
-                }}></div>
-            </Flex>
-        </div>
+        {ratio === WindowRatio.mobile ?
+            null :
+            <div className={'name-present'}>
+                <Flex style={{
+                    alignItems: 'center',
+                    pointerEvents: 'none'
+                }}>
+                    <div className={"name-present-line"} style={{marginLeft: "auto"}}></div>
+                    <Title style={{margin: '1rem'}}>Rubinschwein47</Title>
+                    <div className={"name-present-line"} style={{marginRight: "auto"}}></div>
+                </Flex>
+            </div>
+        }
     </Header>);
 }
 
@@ -92,7 +87,9 @@ function MobilePages({pages}: PagesProps) {
     pages.forEach((page, index) => {
         items?.push({
             key: index,
-            label: <Title level={3}><Trans path={"header.links." + page.name}/>  {React.cloneElement(page.icon, {className: "mobile-icon"})}</Title>,
+            label: <Title level={3}><Trans
+                path={"header.links." + page.name}/> {React.cloneElement(page.icon, {className: "mobile-icon"})}
+            </Title>,
             onClick: () => {
                 goToLink("/" + page.name);
             }
@@ -101,7 +98,7 @@ function MobilePages({pages}: PagesProps) {
 
     return (
         <Dropdown menu={{items}} placement="bottomLeft" arrow>
-            <MenuOutlined style={{fontSize: "3rem", marginLeft: "1rem"}} />
+            <MenuOutlined style={{fontSize: "3rem", marginLeft: "1rem"}}/>
         </Dropdown>
     );
 }
@@ -123,8 +120,10 @@ function SubPage({name, children}: SupPageProps) {
         </div>
     );
 }
-
-function LanguageDropdown() {
+type DropDownProps = {
+    ratio: WindowRatio;
+}
+function LanguageDropdown({ratio}: DropDownProps) {
     const setLanguage = useInfoStore(state => state.setLanguage);
 
     const items: MenuProps['items'] = [
@@ -149,12 +148,15 @@ function LanguageDropdown() {
     ];
     return (
         <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button style={{marginRight: "1rem"}}><Trans path={"header.language.language"}/> <GlobalOutlined/></Button>
+            <Button style={{marginRight: "1rem"}}>
+                {ratio === WindowRatio.mobile? null :
+                    <Text> <Trans path={"header.language.language"}/></Text>}
+                <GlobalOutlined/></Button>       
         </Dropdown>
     );
 }
 
-function ThemeDropdown() {
+function ThemeDropdown({ratio}: DropDownProps) {
     const setTheme = useInfoStore(state => state.setTheme);
 
     const items: MenuProps['items'] = [
@@ -179,7 +181,10 @@ function ThemeDropdown() {
     ];
     return (
         <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button type="primary"><Text><Trans path={"header.theme.theme"}/></Text> <FormatPainterFilled/></Button>
+            <Button type="primary">
+                {ratio === WindowRatio.mobile? null :
+                <Text> <Trans path={"header.theme.theme"}/></Text>}
+                <FormatPainterFilled/></Button>
         </Dropdown>
     );
 }

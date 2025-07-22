@@ -37,12 +37,18 @@
     left: 0;
     bottom: 0;
     z-index: -1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
+    /*overflow: hidden;*/
+    /*display: flex;*/
+    /*flex-direction: column;*/
     /*The Combination of red and hue rotate 
     together with a red image allows me to set custom colors really easily*/
     border-left: 2px solid red;
+    
+    background-image: url("../../../public/recources/Dither.png");
+    /*todo: alpha is still not working/ transparency is shit*/
+    /*image(url("../../../public/recources/Dither.png"));*/
+    background-size: 15rem;
+    background-repeat: repeat-y;
 }
 
 .project-background > img{
