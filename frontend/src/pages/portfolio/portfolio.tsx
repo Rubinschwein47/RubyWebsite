@@ -40,7 +40,7 @@ const projects: ProjectProps[] = [
         badges: [
             {text: "Unity", color: "grey"},
             {text: "C#", color: "purple"},
-            {text: "rdl(Ruby Data Language)", color: "yellow"}],
+            {text: "YAML", color: "red"}],
         logoPath: "recources/games/Hippocampus/NoLogo.png",
         logoAlt: "logo of hippocampus",
         externalLinks: [],

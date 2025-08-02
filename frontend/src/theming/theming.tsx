@@ -95,6 +95,13 @@ const cssVariables: { variable: string, themes: { [key: string]: string } }[] = 
         }
     },
     {
+        variable: "--highlight-red",
+        themes: {
+            dark: "#a5022d",
+            light: "#f33854",
+        }
+    },
+    {
         variable: "--background-color",
         themes: {
             dark: blackBackground,
