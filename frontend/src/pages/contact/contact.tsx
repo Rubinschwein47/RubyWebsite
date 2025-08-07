@@ -1,7 +1,7 @@
 import {Button, Input, message, Tooltip, Typography} from 'antd';
 import React from 'react';
 import {useInfoStore, WindowRatio} from "../../store";
-import Trans from "../../navigation/Translate";
+import Trans from "../../basics/Translate";
 import "./contact.css";
 import TextArea from "antd/es/input/TextArea";
 import {MailOutlined, PhoneFilled} from "@ant-design/icons";

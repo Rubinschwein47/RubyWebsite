@@ -71,16 +71,32 @@ portfolio:
       external: 
         github: Github Repository
     hippocampus:
-      name: Hippocampus WIP
-      text: Game that still needs text
+      name: Ruby Data Language
+      text:
+        Die Ruby Data Language ist eine Stark modfiezierbare Datensprache, also ein Konkurenzprodukt zu Xml, Json und Yaml.
+        sie errinert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für entwickler so atypischen Syntax hat.
+        Zum einen sollte die Srache sehr einfach zu lesen und zu schreiben sein und von quasi jedem mit minimalen technichen Kentnissen benutzbar sein.
+        Dazu brauchte ich die möglichkeit aufrufbare Funktionen ein zu bauen da die RDL für ein Videospiel entwickelt wurde und damit man Daten von außerhalb laden kann in Compile Time.
+        Die Entwicklung habe ich eingestellt da das Spiel wofür ich diese Sprache entwickelt habe meine fähigkeiten als Solo Entwicker überschreitet.
+      tech-text: "Technich gesehen geht ein Ordner in das Programm wo dann alle .rdl Datein Nacheinander erst preprocessed und dann compiled werden
+        Im preprocess Schritt wird der rohe String in zeilen aufgeteilt und nutzlose Zeilen(wie leere zeilen oder Kommentare) werden entfernt.
+        Dann im ersten Compile schritt wird die Datenstruktur gebaut indem entlang der zeilen nach passenden Regex Conditions gesucht wurd und ein Dictionary-Tree entsteht.
+        Im zweiten Process werden die Werte von Strings in die über eine yaml definierten Typen umgewandelt (Bsp Integer) und Preprocess Funktionen werden ausgeführt.
+        Die bisher einzige Fertige Funktion ist das laden von lokalen Pngs in ein für Unity nutzbares format.
+        Am Ende werden der Dictionary Tree, Die Zeilen und potentielle Syntaxfehler der File in ein Wrapper Object gegeben.
+        Die einzelnen Daten kann man dann wie in einer Angular Form aufrufen (Bsp: myRdl.Get(\"Package.Name\"))."
     lidlIdlePlanet: 
       name: Lidle Idle Planet
-      text: text fehlt noch
+      text: Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.
+        Es hat ein ziehmlich expandierbares System für die Upgrades in dem es für jedes level ein Object generiert mit unterschiedlichen Mono behaviors.
+        Extrem dynamisch aber inperformant und nutzt keine echten OOP Prinzipien, war aber ein super Lernschritt.
       external:
         itch: Auf Itch.io Spielen
     wallOf:
       name: Wall Of
-      text: Text hier
+      text: Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.
+        Das spiel entstand in eienm ein wöchigen Game jam und ist ein Bullet hell wo du einen Panzer fährst und Formen abschiest.
+        Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.
       external:
         itch: Auf Itch.io Spielen
 contact: 
@@ -98,4 +114,5 @@ contact:
   toExternal: In einem neuen Fenster öffnen
   writeDirect: Schreib mir hier
   niceDay: Noch einen Wundervollen Tag
-  
+hints:
+  mailFailure:

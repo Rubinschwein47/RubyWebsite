@@ -14,7 +14,7 @@ import {
 } from '@ant-design/icons';
 import {useInfoStore, WindowRatio} from '../../store';
 import {useNavigate} from "react-router";
-import Trans from '../Translate';
+import Trans from "../../basics/Translate";
 
 const {Title, Text} = Typography;
 
