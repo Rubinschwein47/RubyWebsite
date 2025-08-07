@@ -1,9 +1,13 @@
 .toolbar-wrapper{
-    height: 10rem;
     display: flex;
     flex-direction: column;
     background-color: var(--container-color);
     border: 1px solid var(--header-color);
     border-radius: var(--border-radius);
     padding: 0 1rem;
+}
+
+.toolbar-wrapper-mobile{
+    height: auto;
+    width: calc(100vw - 100px);
 }

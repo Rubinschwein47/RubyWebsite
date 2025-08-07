@@ -123,6 +123,7 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
         </div>
         <div className={"project-head"} style={{flexDirection: windowRatio === WindowRatio.mobile ? "column" : "row"}}>
             {windowRatio === WindowRatio.mobile?
+                // mobile aspect starts here
                 <>
                     <Title level={2} style={{margin: "0 0 1rem 0"}}>
                         <Trans path={props.name}/>
@@ -137,9 +138,10 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                     </Paragraph>
                     <Links links={props.externalLinks}></Links>
                 </>:
+                // square and pc starts here
                 <>
                     <div style={{display: "grid"}}>
-                        <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
+                        <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath} forceSquare={true}/>
                         <Links links={props.externalLinks}></Links>
                     </div>
                     <div style={{marginLeft: "1rem"}}>
@@ -148,7 +150,7 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                         </Title>
                         <Badges badges={props.badges}></Badges>
                         <Paragraph>
-                            <Trans path={props.text}/>
+                            <Trans path={props.text} asMarkDown={true}/>
                         </Paragraph>
                     </div>
                 </>
@@ -180,7 +182,7 @@ function Badges(props: BadgeProps) {
                       key={index}>{it.text}</Text>
             )}
         </p>
-    )
+    );
 }
 
 type LinkProps = {
@@ -194,5 +196,5 @@ function Links({links}: LinkProps) {
         style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)", height: "1.7rem"}}
         to={it.url}>
         <Trans path={it.text}/><ExportOutlined style={{color: "var(--link-color)"}}/>
-    </Link>)}</>)
+    </Link>)}</>);
 }

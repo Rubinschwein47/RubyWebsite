@@ -21,3 +21,11 @@ code {
     height: auto;
     min-height: 100vh;
 }
+
+p{
+    white-space: pre-line;
+}
+
+.ant-typography{
+    white-space: pre-line;
+}

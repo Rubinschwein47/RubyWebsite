@@ -18,48 +18,48 @@ home:
   header: Home Page
   introduction:
     header: Short about me
-    text: Hi, im Rubinschwein47(or just Ruby) which is german for "Ruby Pig 47", but in real life i am Felix Conrad!
-      Im a GameDev in private and a Fullstack Developer(currently apprentice) at work.
+    text: Hi, im Rubinschwein47(or just Ruby) which is german for "Ruby Pig 47", but in real life i am Felix Conrad!\n
+      Im a GameDev in private and a Fullstack Developer(currently apprentice) at work.\n
       No matter if you came here because you were curious about my video games, you want to reach out to me or you just stumbled here, feel free to look around :)!
   whyRuby:
     header: Brand Rubinschwein
     text: Why? Rubinschwein47
-      There isnt much behind it honestly. In Third grade(around 9) i chose this name without any apparent reason and i stuck it ever since.
-      Between then and now i've tried turning this into my online which i slowly improved.
-      For quite some time i have also ben using Ruby and RS47, simply because they sound a bit more professional.
+      There isnt much behind it honestly. In Third grade(around 9) i chose this name without any apparent reason and i stuck it ever since.\n
+      Between then and now i've tried turning this into my online which i slowly improved.\n
+      For quite some time i have also ben using Ruby and RS47, simply because they sound a bit more professional.\n
     explanationOldLogos: Here you can see the Various Logos that ive used over the years.
     logoDescriptions:
       0:
         header: First Try
-        text: This was probably my go at appearing cool back then,
-          because of that i took fan art from Terraria and cropped it with the professionality of a 13 year old.
+        text: This was probably my go at appearing cool back then,\n
+          because of that i took fan art from Terraria and cropped it with the professionality of a 13 year old.\n
           The Original is from the artist Bohrokki on Deviantart
       1:
         header: Present from my Mother
-        text: "This was a Present in the shape of a whole cooperate identity.
+        text: "This was a Present in the shape of a whole cooperate identity.\n
           In the end i've never used "
       2: 
         header: The first one i completly own
         text: The whole thing is trying to be a combination of a wild boar and a occultist inspired from the equally named Terraria enemy.
       3: 
         header: The attempt at trying to make it look good
-        text: I wanted to apply the skills i have since learned and create a new, better version.
+        text: I wanted to apply the skills i have since learned and create a new, better version.\n
           Even though the shape and composition are pretty similar, the color gradient is a lot nicer to look at.
       4: 
         header: Today
-        text: This is the current version which i hope will be a pat of my online identity for quite some time.
-          The goal was to create a visually pleasing character
-          that would be more friendly instead of trying to look cool as hard as possible.
+        text: This is the current version which i hope will be a pat of my online identity for quite some time.\n
+          The goal was to create a visually pleasing character\n
+          that would be more friendly instead of trying to look cool as hard as possible.\n
           To create this logo, i used a combination of 3d modeling and shaders which i manually edited with a pixelart tool.
   aboutWebsite:
     header: Why this Website?
-    text: "The website you're seeing here was created for a number of reasons.
-      For one, whenever i didnt have my laptop with me or my current project wasnt on there, it was very difficult to show people what im doing.
-      On top of that, the only way to contact me was by me giving them my phone number or E-mail, which depending on the context, can be anywhere from unprofessional all the way to crossing boundaries.
+    text: "The website you're seeing here was created for a number of reasons.\n
+      For one, whenever i didnt have my laptop with me or my current project wasnt on there, it was very difficult to show people what im doing.\n
+      On top of that, the only way to contact me was by me giving them my phone number or E-mail, which depending on the context, can be anywhere from unprofessional all the way to crossing boundaries.\n
       But most importantly of all: I needed an excuse to learn React and ASP.net Core, which is what this website was written in. You can find the technical details under the Portfolio Tab"
   myGames:
     header: About my Games
-    text: Of course there are some exceptions, but for the most part i focus on calm games that lay anywhere between relaxing and needing to think. Lidl Idle Planet probably represents this best.
+    text: Of course there are some exceptions, but for the most part i focus on calm games that lay anywhere between relaxing and needing to think. Lidl Idle Planet probably represents this best.\n
       For development i have always used Unity, but im interested to experiment with different Game Engines in the future.
 portfolio:
   header: Portfolio

@@ -4,12 +4,12 @@ import {OpenAPI} from "./services/openapi";
 import {Layout} from 'antd';
 import {Content} from "antd/es/layout/layout";
 import WebHeader from "./navigation/header/header";
-import Background from './basics/background';
 import BaseContainer from './basics/baseContainer/baseContainer';
 import {useRoutes} from "react-router";
 import {routes} from './navigation/router';
 import {useInfoStore} from './store';
 import '@ant-design/v5-patch-for-react-19';
+import Background from "./basics/background/background";
 
 OpenAPI.BASE = "http://localhost:5037";
 export default function App() {

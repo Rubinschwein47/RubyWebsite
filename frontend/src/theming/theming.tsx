@@ -108,7 +108,7 @@ const cssVariables: { variable: string, themes: { [key: string]: string } }[] = 
             light: whiteBackground
         }
     }
-]
+];
 
 const blackTheme: ThemeConfig = {
     algorithm: theme.darkAlgorithm,
@@ -162,7 +162,7 @@ const whiteTheme: ThemeConfig = {
 const antThemes: { [key: string]: ThemeConfig } = {
     dark: blackTheme,
     light: whiteTheme
-}
+};
 
 export default function Theming({children}: { children: ReactNode }) {
     const theme = useInfoStore((state) => state.theme);
@@ -173,14 +173,13 @@ export default function Theming({children}: { children: ReactNode }) {
         document.documentElement.style.setProperty(it.variable, it.themes[theme]);
     });
 
-    const setLanguage = useInfoStore((state) => state.setLanguage);
     const setRatio = useInfoStore((state) => state.refreshRatio);
     useEffect(() => {
         console.log(navigator.languages);
         if (!storeInitialized) {
             initializeStore();
         }
-    })
+    });
     useLayoutEffect(() => {
         function updateSize() {
             setRatio();
