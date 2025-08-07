@@ -65,7 +65,6 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         const parsed = yaml.load(response) as object;
         set({language: parsed});
         set({languageLoaded: true});
-        console.log("language Loaded");
         return true;
     },
     language: {},
@@ -93,15 +92,12 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         const ratio = window.innerWidth / window.innerHeight;
         if(ratio >= 4/3) {
             set({windowRatio: WindowRatio.pc});
-            console.log("pc")
             return;
         }
         if(ratio <= 3/4) {
             set({windowRatio: WindowRatio.mobile});
-            console.log("mobile")
             return;
         }
-        console.log("square")
         set({windowRatio: WindowRatio.square});
     },
 }));

@@ -10,23 +10,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/Dither.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/projectSettingsUpdater.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/projectSettingsUpdater.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/shelf/Uncommitted_changes_before_Update_at_27_06_2025_20_34_[Changes]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/shelf/Uncommitted_changes_before_Update_at_27_06_2025_20_34__Changes_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/shelf/Uncommitted_changes_before_Update_at_7_12_25__10_13PM__Changes_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/baseContainer/baseContainer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/theming.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,12 +44,12 @@
     &quot;assignee&quot;: &quot;Rubinschwein47&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Rubinschwein47/RubyWebsite.git",
-    "accountId": "6a1644b6-d41f-447f-9606-b1534582a5df"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Rubinschwein47/RubyWebsite.git&quot;,
+    &quot;accountId&quot;: &quot;6a1644b6-d41f-447f-9606-b1534582a5df&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e744562ef42dc5e29efed36f99fad0bd8896f768f06a144364a62cb95d92813/Console.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///home/felix_conrad/RiderProjects/RubyWebsite/RubyWebsite/Controllers/ContactController.cs" root0="SKIP_HIGHLIGHTING" />
@@ -80,32 +69,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.3184466",
-    "git-widget-placeholder": "master",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.frontend.executor": "Run",
-    "npm.installDependencies.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.types:openapi.executor": "Run",
-    "settings.editor.selected.configurable": "settings.javascript.linters.eslint",
-    "ts.external.directory.path": "/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RubyWebsite:backend.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.3184466&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
+    &quot;npm.installDependencies.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.types:openapi.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.linters.eslint&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
-  <component name="RunManager" selected="npm.frontend">
+}</component>
+  <component name="RunManager" selected="Compound.Both">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />
@@ -281,7 +270,10 @@
       <workItem from="1750495079144" duration="2012000" />
       <workItem from="1751062871611" duration="7131000" />
       <workItem from="1751229282610" duration="4842000" />
-      <workItem from="1753184775343" duration="9098000" />
+      <workItem from="1753184775343" duration="9634000" />
+      <workItem from="1753292777751" duration="3453000" />
+      <workItem from="1753540659483" duration="1490000" />
+      <workItem from="1753643073427" duration="1280000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -459,7 +451,15 @@
       <option name="project" value="LOCAL" />
       <updated>1752354353309</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="Adjusted Website for diffrent ratios, portfolio still needs work">
+      <option name="closed" value="true" />
+      <created>1753216429534</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1753216429534</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -492,7 +492,8 @@
     <MESSAGE value="Implemented es lint and continued message" />
     <MESSAGE value="gay" />
     <MESSAGE value="minor bug fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="minor bug fixes" />
+    <MESSAGE value="Adjusted Website for diffrent ratios, portfolio still needs work" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adjusted Website for diffrent ratios, portfolio still needs work" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
