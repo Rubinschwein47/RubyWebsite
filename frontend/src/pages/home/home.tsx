@@ -1,9 +1,9 @@
 import {Divider, Image, Space, Typography} from 'antd';
 import React from 'react';
-import Trans from "../../navigation/Translate";
 import "./home.css";
 import ImageWaiter from "../../basics/ImageWaiter";
 import VDiv from "../../basics/VDiv";
+import Trans from '../../basics/Translate';
 
 const {Title, Text} = Typography;
 

@@ -4,7 +4,7 @@ import "./portfolio.css";
 import ImageWaiter from "../../basics/ImageWaiter";
 import {Link} from "react-router";
 import {ExportOutlined} from "@ant-design/icons";
-import Trans from "../../navigation/Translate";
+import Trans from "../../basics/Translate";
 import VDiv from "../../basics/VDiv";
 import {useInfoStore, WindowRatio} from "../../store";
 
@@ -133,7 +133,7 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                     <div style={{height: "1rem"}}></div>
                     <Badges badges={props.badges}></Badges>
                     <Paragraph>
-                        <Trans path={props.text}/>
+                        <Trans path={props.text} asMarkDown={true}/>
                     </Paragraph>
                     <Links links={props.externalLinks}></Links>
                 </>:
