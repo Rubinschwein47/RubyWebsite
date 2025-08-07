@@ -53,6 +53,7 @@ public static class ContactController
     var password = Environment.GetEnvironmentVariable("EMAIL_PASSWORD");
     if (string.IsNullOrEmpty(password))
     {
+      Console.WriteLine("Password is missing");
       return false;
     }
 

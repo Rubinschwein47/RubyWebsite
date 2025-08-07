@@ -8,7 +8,8 @@ namespace RubyWebsite.Controllers;
 
 public static class LanguageController
 {
-  static string basePath = Directory.GetCurrentDirectory() + @"\Resources\Languages\lang_";
+  static char sep = Path.DirectorySeparatorChar; 
+  static string basePath = Directory.GetCurrentDirectory() + $"{sep}Resources{sep}Languages{sep}lang_";
   public static void AddEndpoints(WebApplication app)
   {
     app.MapGet("/locales/{language}", GetLanguage)

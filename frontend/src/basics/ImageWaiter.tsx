@@ -18,6 +18,7 @@ export default function ImageWaiter({src,alt,size}:ImageProp) {
                 <Skeleton.Image active={true} style={{width:size,height:size}}></Skeleton.Image>
             )}
             <Image
+                height={size}
                 src={src}
                 alt={alt}
                 onLoad={handleImageLoad}

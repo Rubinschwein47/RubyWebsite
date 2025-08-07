@@ -9,7 +9,6 @@
 .project-head{
     width: 100%;
     display: flex;
-    flex-direction: row;
     margin-bottom: 1rem;
 }
 
@@ -37,15 +36,17 @@
     left: 0;
     bottom: 0;
     z-index: -1;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
     /*The Combination of red and hue rotate 
     together with a red image allows me to set custom colors really easily*/
     border-left: 2px solid red;
 }
 
-.project-background > img{
-    opacity: 0.3;
-    width: 15rem;
+.project-background-image{
+    opacity: 0.2;
+    background-image: url("../../../public/recources/Dither.png");
+    background-size: 15rem;
+    background-repeat: repeat-y;
+    position: absolute;
+    width: 100%;
+    height: 100%;
 }

@@ -6,9 +6,25 @@ import {Link} from "react-router";
 import {ExportOutlined} from "@ant-design/icons";
 import Trans from "../../navigation/Translate";
 import VDiv from "../../basics/VDiv";
+import {useInfoStore, WindowRatio} from "../../store";
 
 const {Title, Text, Paragraph} = Typography;
 
+type ProjectProps = {
+    logoPath: string;
+    logoAlt: string;
+    externalLinks: { text: string, url: string }[] | [],
+    name: string,
+    badges: { text: string, color: string }[] | [],
+    text: string,
+    images: { path: string; alt: string; }[] | [],
+    colorRotation: number,
+}
+type WrapperProps = {
+    props: ProjectProps,
+    projectKey: string,
+    windowRatio: WindowRatio,
+}
 const projects: ProjectProps[] = [
     {
         text: "portfolio.projects.website.text",
@@ -85,68 +101,58 @@ const projects: ProjectProps[] = [
         }],
         colorRotation: 185
     }];
+
 export default function Portfolio() {
+    const ratio = useInfoStore((state) => state.windowRatio);
     return <>
         <Title>Portfolio</Title>
         <div style={{height: "3rem"}}></div>
-        {projects.map((it) => <Project key={it.name + 'd'} projectKey={it.name} props={it}/>)}
+        {projects.map((it) => <Project 
+            key={it.name + 'd'} 
+            projectKey={it.name} 
+            props={it}
+            windowRatio={ratio}/>)}
     </>;
 }
 
-type ProjectProps = {
-    logoPath: string;
-    logoAlt: string;
-    externalLinks: { text: string, url: string }[] | [],
-    name: string,
-    badges: { text: string, color: string }[] | [],
-    text: string,
-    images: { path: string; alt: string; }[] | [],
-    colorRotation: number,
-}
-type WrapperProps = {
-    props: ProjectProps,
-    projectKey: string
-}
-
-function Project({props, projectKey}: WrapperProps) {
+function Project({props, projectKey, windowRatio}: WrapperProps) {
 
     return (<div key={projectKey} className={"project"}>
         <div className="project-background" style={{filter: "hue-rotate(" + props.colorRotation + "deg)"}}>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
-            <img src={"recources/Dither.png"} alt=""/>
+            <div className={"project-background-image"}></div>
         </div>
-        <div className={"project-head"}>
-            <div style={{display: "grid"}}>
-                <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
-                {props.externalLinks.map((it) => <Link
-                    key={it.url}
-                    className="badge"
-                    style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)", height: "1.7rem"}}
-                    to={it.url}>
-                    <Trans path={it.text}/><ExportOutlined style={{color: "var(--link-color)"}}/>
-                </Link>)}
-
-            </div>
-            <div style={{marginLeft: "1rem"}}>
-                <Title level={2} style={{margin: "0 0 1rem 0"}}>
-                    <Trans path={props.name}/>
-                </Title>
-                <p className={"badge-container"}>
-                    {props.badges.map((it,index) =>
-                        <Text className="badge"
-                              style={{backgroundColor: "var(--highlight-" + it.color + ")"}}
-                        key={index}>{it.text}</Text>
-                    )}
-                </p>
-                <Paragraph>
-                    <Trans path={props.text}/>
-                </Paragraph>
-            </div>
+        <div className={"project-head"} style={{flexDirection: windowRatio === WindowRatio.mobile ? "column" : "row"}}>
+            {windowRatio === WindowRatio.mobile?
+                <>
+                    <Title level={2} style={{margin: "0 0 1rem 0"}}>
+                        <Trans path={props.name}/>
+                    </Title>
+                    <div style={{width: "100%", textAlign: "center"}}>
+                        <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
+                    </div>
+                    <div style={{height: "1rem"}}></div>
+                    <Badges badges={props.badges}></Badges>
+                    <Paragraph>
+                        <Trans path={props.text}/>
+                    </Paragraph>
+                    <Links links={props.externalLinks}></Links>
+                </>:
+                <>
+                    <div style={{display: "grid"}}>
+                        <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
+                        <Links links={props.externalLinks}></Links>
+                    </div>
+                    <div style={{marginLeft: "1rem"}}>
+                        <Title level={2} style={{margin: "0 0 1rem 0"}}>
+                            <Trans path={props.name}/>
+                        </Title>
+                        <Badges badges={props.badges}></Badges>
+                        <Paragraph>
+                            <Trans path={props.text}/>
+                        </Paragraph>
+                    </div>
+                </>
+            }
         </div>
         <div>
             <Image.PreviewGroup preview={{
@@ -159,4 +165,34 @@ function Project({props, projectKey}: WrapperProps) {
             </Image.PreviewGroup>
         </div>
     </div>);
+}
+
+type BadgeProps = {
+    badges: { text: string, color: string }[] | [];
+}
+
+function Badges(props: BadgeProps) {
+    return (
+        <p className={"badge-container"}>
+            {props.badges.map((it, index) =>
+                <Text className="badge"
+                      style={{backgroundColor: "var(--highlight-" + it.color + ")"}}
+                      key={index}>{it.text}</Text>
+            )}
+        </p>
+    )
+}
+
+type LinkProps = {
+    links: { text: string, url: string }[] | [];
+}
+
+function Links({links}: LinkProps) {
+    return (<>{links.map((it) => <Link
+        key={it.url}
+        className="badge"
+        style={{margin: "1rem 0 0 1rem", backgroundColor: "var(--container-color)", height: "1.7rem"}}
+        to={it.url}>
+        <Trans path={it.text}/><ExportOutlined style={{color: "var(--link-color)"}}/>
+    </Link>)}</>)
 }

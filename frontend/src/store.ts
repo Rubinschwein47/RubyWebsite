@@ -4,6 +4,12 @@ import {LanguageControllerService} from "./services/openapi";
 
 const {translation} = LanguageControllerService;
 
+export enum WindowRatio {
+    pc = "pc",
+    square = "square",
+    mobile  = "mobile",
+}
+
 type InfoStore = {
     theme: string,
     initialized: boolean,
@@ -14,29 +20,29 @@ type InfoStore = {
     language: any,
     languageLoaded: boolean,
     getTranslation: (key: string) => string,
-    isMobileRatio: boolean,
-    refreshIsMobile: () => void,
+    windowRatio: WindowRatio,
+    refreshRatio: () => void,
 }
 const supportedLanguages = [
     'en',
     'de'
-]
+];
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: false,
     initialize: async ()=>{
-        get().refreshIsMobile();
-        var newTheme = localStorage.getItem("theme");
+        get().refreshRatio();
+        let newTheme = localStorage.getItem("theme");
         if(newTheme == null){
             newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
         }
         set({theme: newTheme});
-        var newLang = localStorage.getItem("language");
+        let newLang = localStorage.getItem("language");
         if(newLang == null){
             navigator.languages.forEach((it)=>{
                 if(newLang != null && supportedLanguages.includes(it)){
-                    newLang = newLang;
+                    newLang = it;
                 }
-            })
+            });
             if(newLang == null){
                 newLang = "en";
             }
@@ -54,19 +60,18 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
         localStorage.setItem("language", newLanguageToken);
         set({languageLoaded: false});
         set({languageToken: newLanguageToken});
-        var request = translation(newLanguageToken);
+        const request = translation(newLanguageToken);
         const response = await request;
-        const parsed = yaml.load(response) as object
+        const parsed = yaml.load(response) as object;
         set({language: parsed});
         set({languageLoaded: true});
-        console.log("language Loaded");
         return true;
     },
     language: {},
     languageLoaded: false,
     getTranslation: (key: string) => {
         const parts = key.split(".");
-        var tree = get().language;
+        let tree = get().language;
         parts.forEach((it,i) => {
             const treeResult = tree[it as keyof typeof tree];
             if(
@@ -78,15 +83,22 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
             tree = tree[it as keyof typeof tree];
         });
         if(typeof tree != "string") {
-            return key
+            return key;
         }
         return tree;
     },
-    isMobileRatio: false,
-    refreshIsMobile: () => {
+    windowRatio: WindowRatio.square,
+    refreshRatio: () => {
         const ratio = window.innerWidth / window.innerHeight;
-        console.log("IsMobile: " + (ratio < 1));
-        set({isMobileRatio: ratio < 1});
+        if(ratio >= 4/3) {
+            set({windowRatio: WindowRatio.pc});
+            return;
+        }
+        if(ratio <= 3/4) {
+            set({windowRatio: WindowRatio.mobile});
+            return;
+        }
+        set({windowRatio: WindowRatio.square});
     },
-}))
+}));
 

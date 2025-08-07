@@ -1,22 +1,30 @@
 
 .base-container {
-    width: calc(100vw - 12rem);
-    margin: 10rem 6rem 3rem;
     background-color: var(--container-color);
     position: relative;
     z-index: 1;
     min-height: 75vh;
 }
 
+.base-container-pc {
+    width: calc(100vw - 12rem);
+    margin: 10rem 6rem 3rem;
+}
+
+.base-container-square {
+    width: calc(100vw - 20px);
+    margin: 10rem 10px 3rem;
+}
+
+.base-container-mobile {
+    width: 100vw;
+    margin: 10rem 0 3rem;
+}
+
 .container{
     border: 2px solid var(--header-color);
     border-radius: var(--border-radius);
     padding: 12px;
-}
-
-.base-container-mobile {
-    width: calc(100vw - 20px);
-    margin: 10rem 10px 3rem;
 }
 
 .wall-icon{
@@ -31,6 +39,13 @@
     padding: 0 20% 0 80px;
 }
 
+.content-space-pc{
+    padding: 0 20% 0 80px;
+}
+
+.content-space-square{
+    padding: 0;
+}
 .content-space-mobile{
     padding: 0;
 }
