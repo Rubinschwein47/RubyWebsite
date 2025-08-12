@@ -64,6 +64,9 @@ home:
       Für die Entwicklung habe ich bisher immer Unity benutzt, bin aber sehr interresiert mit anderen Game Engines zu experimentieren."
 portfolio:
   header: Portfolio
+  tabs:
+    info: Info
+    tech: Technisches
   projects:
     website:
       name: rubinschwein47.com
@@ -95,16 +98,16 @@ lol
         Die einzelnen Daten kann man dann wie in einer Angular Form aufrufen (Bsp: myRdl.Get(\"Package.Name\"))."
     lidlIdlePlanet: 
       name: Lidle Idle Planet
-      text: Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
+      text: "Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
         Es hat ein ziehmlich expandierbares System für die Upgrades in dem es für jedes level ein Object generiert mit unterschiedlichen Mono behaviors.\n
-        Extrem dynamisch aber inperformant und nutzt keine echten OOP Prinzipien, war aber ein super Lernschritt.
+        Extrem dynamisch aber inperformant und nutzt keine echten OOP Prinzipien, war aber ein super Lernschritt."
       external:
         itch: Auf Itch.io Spielen
     wallOf:
       name: Wall Of
-      text: Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.\n
+      text: "Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.\n
         Das spiel entstand in eienm ein wöchigen Game jam und ist ein Bullet hell wo du einen Panzer fährst und Formen abschiest.\n
-        Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.\n
+        Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.\n"
       external:
         itch: Auf Itch.io Spielen
 contact: 

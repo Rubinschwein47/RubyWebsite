@@ -1,4 +1,4 @@
-import {Image, Typography} from 'antd';
+import {Image, Tabs, TabsProps, Typography} from 'antd';
 import React from 'react';
 import "./portfolio.css";
 import ImageWaiter from "../../basics/ImageWaiter";
@@ -16,7 +16,7 @@ type ProjectProps = {
     externalLinks: { text: string, url: string }[] | [],
     name: string,
     badges: { text: string, color: string }[] | [],
-    text: string,
+    texts: { tabName: string, text: string }[] | [],
     images: { path: string; alt: string; }[] | [],
     colorRotation: number,
 }
@@ -27,7 +27,7 @@ type WrapperProps = {
 }
 const projects: ProjectProps[] = [
     {
-        text: "portfolio.projects.website.text",
+        texts: [{tabName: "portfolio.tabs.info", text: "portfolio.projects.website.text"}],
         name: "portfolio.projects.website.name",
         images: [],
         badges: [
@@ -45,7 +45,10 @@ const projects: ProjectProps[] = [
         }],
         colorRotation: 300
     }, {
-        text: "portfolio.projects.hippocampus.text",
+        texts: [
+            {tabName: "portfolio.tabs.info", text: "portfolio.projects.hippocampus.text"},
+            {tabName: "portfolio.tabs.tech", text: "portfolio.projects.hippocampus.tech-text"}
+        ],
         name: "portfolio.projects.hippocampus.name",
         images: [
             {path: "recources/games/Hippocampus/ingame_front.png", alt: "Main Screen"},
@@ -57,12 +60,12 @@ const projects: ProjectProps[] = [
             {text: "Unity", color: "grey"},
             {text: "C#", color: "purple"},
             {text: "YAML", color: "red"}],
-        logoPath: "recources/games/Hippocampus/NoLogo.png",
-        logoAlt: "logo of hippocampus",
+        logoPath: "recources/games/Hippocampus/RDL-Logo.png",
+        logoAlt: "logo of rdl",
         externalLinks: [],
         colorRotation: 0,
     }, {
-        text: "portfolio.projects.lidlIdlePlanet.text",
+        texts: [{tabName: "portfolio.tabs.info", text: "portfolio.projects.lidlIdlePlanet.text"}],
         name: "portfolio.projects.lidlIdlePlanet.name",
         images: [
             {path: "recources/games/LidlIdle/Start.jpg", alt: "Main Screen"},
@@ -82,7 +85,7 @@ const projects: ProjectProps[] = [
         }],
         colorRotation: 250
     }, {
-        text: "portfolio.projects.wallOf.text",
+        texts: [{tabName: "portfolio.tabs.info", text: "portfolio.projects.wallOf.text"}],
         name: "portfolio.projects.wallOf.name",
         images: [
             {path: "recources/games/WallOf/Start.png", alt: "Main Screen"},
@@ -107,22 +110,33 @@ export default function Portfolio() {
     return <>
         <Title>Portfolio</Title>
         <div style={{height: "3rem"}}></div>
-        {projects.map((it) => <Project 
-            key={it.name + 'd'} 
-            projectKey={it.name} 
+        {projects.map((it) => <Project
+            key={it.name + 'd'}
+            projectKey={it.name}
             props={it}
             windowRatio={ratio}/>)}
     </>;
 }
 
 function Project({props, projectKey, windowRatio}: WrapperProps) {
+    const textTabs: TabsProps['items'] = [];
+    props.texts.map((it, index) => {
+        textTabs.push( {
+            label: <Trans path={it.tabName}></Trans>,
+            key: String(index+1),
+            children:
+                (<Paragraph>
+                    <Trans path={it.text} asMarkDown={true}/>
+                </Paragraph>)
+        });
+    })
 
     return (<div key={projectKey} className={"project"}>
         <div className="project-background" style={{filter: "hue-rotate(" + props.colorRotation + "deg)"}}>
             <div className={"project-background-image"}></div>
         </div>
         <div className={"project-head"} style={{flexDirection: windowRatio === WindowRatio.mobile ? "column" : "row"}}>
-            {windowRatio === WindowRatio.mobile?
+            {windowRatio === WindowRatio.mobile ?
                 // mobile aspect starts here
                 <>
                     <Title level={2} style={{margin: "0 0 1rem 0"}}>
@@ -133,11 +147,13 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                     </div>
                     <div style={{height: "1rem"}}></div>
                     <Badges badges={props.badges}></Badges>
-                    <Paragraph>
-                        <Trans path={props.text} asMarkDown={true}/>
-                    </Paragraph>
+                    <Tabs
+                        type={"card"}
+                        defaultActiveKey="1"
+                        items={textTabs}
+                    />
                     <Links links={props.externalLinks}></Links>
-                </>:
+                </> :
                 // square and pc starts here
                 <>
                     <div style={{display: "grid"}}>
@@ -149,9 +165,11 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                             <Trans path={props.name}/>
                         </Title>
                         <Badges badges={props.badges}></Badges>
-                        <Paragraph>
-                            <Trans path={props.text} asMarkDown={true}/>
-                        </Paragraph>
+                        <Tabs
+                            type={"card"}
+                            defaultActiveKey="1"
+                            items={textTabs}
+                        />
                     </div>
                 </>
             }
