@@ -27,7 +27,10 @@ type WrapperProps = {
 }
 const projects: ProjectProps[] = [
     {
-        texts: [{tabName: "portfolio.tabs.info", text: "portfolio.projects.website.text"}],
+        texts: [
+            {tabName: "portfolio.tabs.info", text: "portfolio.projects.website.text"},
+            {tabName: "portfolio.tabs.tech", text: "portfolio.projects.website.tech"},
+        ],
         name: "portfolio.projects.website.name",
         images: [],
         badges: [
@@ -151,6 +154,7 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                         type={"card"}
                         defaultActiveKey="1"
                         items={textTabs}
+                        style={{whiteSpace: "break-spaces"}}
                     />
                     <Links links={props.externalLinks}></Links>
                 </> :
@@ -169,6 +173,7 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
                             type={"card"}
                             defaultActiveKey="1"
                             items={textTabs}
+                            style={{whiteSpace: "break-spaces"}}
                         />
                     </div>
                 </>

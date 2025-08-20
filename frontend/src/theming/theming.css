@@ -29,3 +29,7 @@ p{
 .ant-typography{
     white-space: pre-line;
 }
+
+.markdown{
+    white-space: nowrap;
+}

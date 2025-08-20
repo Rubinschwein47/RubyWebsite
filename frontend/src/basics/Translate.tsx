@@ -10,5 +10,5 @@ export default function  Trans({path, asMarkDown = false}: TransProps) {
     const translate = useInfoStore((state) => state.getTranslation);
     const translatedText = translate( path);
     
-    return asMarkDown?<Markdown>{translatedText}</Markdown>:<>{translatedText}</>
+    return asMarkDown?<div className={"markdown"}><Markdown>{translatedText}</Markdown></div>:<>{translatedText}</>
 }

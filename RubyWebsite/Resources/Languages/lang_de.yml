@@ -6,7 +6,7 @@ header:
     portfolio: Portfolio
     tech-stack: Tech Stack
     contact: Kontakt
-  theme: 
+  theme:
     theme: Theme
     dark: Dunkles Design
     light: Helles Design
@@ -29,12 +29,12 @@ home:
       Seit einiger Zeit verwende ich auch Ruby oder RS47 da sie einfach ansprechender und moderner wirken.\n"
     explanationOldLogos: Hier sieht man all die Logos die ich über die Jahre genutzt habe
     logoDescriptions:
-      0: 
+      0:
         header: Der erste Versuch
         text: "Mein versuch war es warscheinlich cool aus zu sehen, \n
           deshalb habe ich damals ein Fanart von dem spiel Terraria genommen und mit der Professionalität eines 13 Jährigen ausgeschnitten.\n
           Das Origal Stammt von dem Künstler Bohrokki auf Deviantart"
-      1: 
+      1:
         header: Geschenk von Andrea Conrad
         text: "Das war ein Geschenk in Form einer Vollständigen Cooperate Identity.\n
          Ich habe es am Ende nie benutzt, verdient aber trotzdem einen Platz auf dieser Liste.\n
@@ -46,7 +46,7 @@ home:
         header: Der versuch es Besser aussehen zu lassen
         text: "Ich wollte einfach die Fähigkeiten die Ich gelernt habe nutzen um eine bessere Version zu machen. \n
           Und auch wenn Form und Komposition erschreckend ähnlich sind, ist der Farbverlauf doch sehr viel angenehmer."
-      4: 
+      4:
         header: Heute
         text: "Das ist der aktuelle und hoffentlich langanhaltende Stand meiner Online Identity.\n
           Das Ziel war es etwas zu erschaffen das Visuell interresanter wirkt\n
@@ -56,7 +56,7 @@ home:
     header: Warum die Website?
     text: "Diese Website die man hier sieht entstand tatsächlich aus einer vielzahl von Gründen und erfüllt dementsprechend auch eine vielzahl an Gründen.\n
       Zum einen gab es das Problem das wenn ich nicht meinen Laptop dabei habe und da auch die Aktuellsten Projekte bereit habe, ist es sehr Schwierig den leuten zu zeigen was ich mache.\n
-      Dazu kommt auch noch das die einzige möglichkeit mich zu kontaktieren ist indem ich meine Nummer oder E-mail and andere weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.\n
+      Dazu kommt auch noch das die einzige möglichkeit mich zu kontaktieren ist indem ich meine Nummer oder E-mail und andere weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.\n
       Aber am wichtigsten von allem: Ich brauchte eine Ausrede um React und ASP.net Core zu lernen, womit diese Website jetzt auch geschrieben worde. Die technichen Einzelheiten findest du in Portfolio."
   myGames:
     header: Über meine Spiele
@@ -70,22 +70,40 @@ portfolio:
   projects:
     website:
       name: rubinschwein47.com
-      text: "dies ist ein test
-**bold**
-
-## überschrift
-
-> 
-
-lol
-
- - List item"
-      external: 
+      text: " > 2025\n
+      
+        Eine kleine Website die alle Angenehmlichkeiten für Benuzer und Entwickler beinhalted die man sich in einem Production environment wünschen würde.\n
+        Dazu gehören für Benutzer Dinge wie Handy und Desktop Kompatibilität, mehrere Sprachen und Dark/Light Mode nach Wahl.\n
+        Für Entwickler Openapi, zentralisierte Übersetzung und alle Komponenten sind auf Wartbarkeit ausgelegt.\n
+         \n
+        Die einzelnen Gründe stehen auf der Startseite wenn du interresiert bist.\n
+        "
+      tech: "
+      Die Website Läuft auf einem kleinen VPS den ich selber eingerichtet und mit meiner Domain verknüpft habe.\n
+      (Gleiche Domain habe ich dann auch mit migadu, einem kleinen mailprovider benutzt für meine mail Adresse)\n
+      \n
+      Hier sind alle relevanten Tools sortiert nach Front und Backend:\n
+      (Für genaueres schau dir gern das Github Projekt an) \n
+      \n
+      ## Frontend\n
+       - **React** als Basis \"Framework\" für das gesamte Project\n
+       - **AntDesign** UI Library für Teile des Theming und standart Komponenten\n
+       - **OpenApi** um zwischen Back und Frontend Schnell zu Iterieren\n
+       - **Zutand** Frontendweite Datenverwaltung\n
+       \n
+      ## Backend\n
+       - **ASP.Net Core** das Framework\n
+       - **OpenApi/SimpleApi** für Api Bereitstellung und Dokumentation\n
+       - **Mailkit & MimeKit** um meinen MailServer anzusprechen\n
+      "
+      external:
         github: Github Repository
     hippocampus:
       name: Ruby Data Language
-      text: "Die Ruby Data Language ist eine Stark modfiezierbare Datensprache, also ein Konkurenzprodukt zu Xml, Json und Yaml.\n
-        sie errinert **vom** Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für entwickler so atypischen Syntax hat.\n
+      text: " > 2024\n
+      
+        Die **Ruby Data Language** ist eine stark modfiezierbare Datensprache, also ein **Konkurenzprodukt zu Xml**, Json und Yaml.\n
+        sie errinert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für Entwickler so untypischen Syntax hat.\n
         Zum einen sollte die Srache sehr einfach zu lesen und zu schreiben sein und von quasi jedem mit minimalen technichen Kentnissen benutzbar sein.\n
         Dazu brauchte ich die möglichkeit aufrufbare Funktionen ein zu bauen da die RDL für ein Videospiel entwickelt wurde und damit man Daten von außerhalb laden kann in Compile Time.\n
         Die Entwicklung habe ich eingestellt da das Spiel wofür ich diese Sprache entwickelt habe meine fähigkeiten als Solo Entwicker überschreitet."
@@ -96,7 +114,7 @@ lol
         Die bisher einzige Fertige Funktion ist das laden von lokalen Pngs in ein für Unity nutzbares format.\n
         Am Ende werden der Dictionary Tree, Die Zeilen und potentielle Syntaxfehler der File in ein Wrapper Object gegeben.\n
         Die einzelnen Daten kann man dann wie in einer Angular Form aufrufen (Bsp: myRdl.Get(\"Package.Name\"))."
-    lidlIdlePlanet: 
+    lidlIdlePlanet:
       name: Lidle Idle Planet
       text: "Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
         Es hat ein ziehmlich expandierbares System für die Upgrades in dem es für jedes level ein Object generiert mit unterschiedlichen Mono behaviors.\n
@@ -110,7 +128,7 @@ lol
         Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.\n"
       external:
         itch: Auf Itch.io Spielen
-contact: 
+contact:
   titlle: Kontakt
   itch: Itch.io
   gitHub: Github
