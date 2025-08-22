@@ -78,21 +78,21 @@ portfolio:
       The Individual reasons as to why i developed this are on the starting page if your interested. 
       "
       tech: "
-      This website runs on a small VPS that i configured and connected to my domain.
-      (The same domain i used with migadu, a small mail provider for my mail Address)
-      
-      Here are all relevant tools sorted by front and backend:
-      (for more precise information feel free look at the Github Project)
-      
-      ## Frontend
-       - **React** as a base \"Framework\" for the whole Project
-       - **AntDesign** UI Library for parts of the Theming and base components
-       - **OpenApi** for fast iteration between Back and Frontend
-       - **Zutand** data Management across the whole website
-      
+      This website runs on a small VPS that i configured and connected to my domain.\n
+      (The same domain i used with migadu, a small mail provider for my mail Address)\n
+      \n
+      Here are all relevant tools sorted by front and backend:\n
+      (for more precise information feel free look at the Github Project)\n
+      \n
+      ## Frontend\n
+       - **React** as a base \"Framework\" for the whole Project\n
+       - **AntDesign** UI Library for parts of the Theming and base components\n
+       - **OpenApi** for fast iteration between Back and Frontend\n
+       - **Zutand** data Management across the whole website\n
+      \n
       ## Backend\n
-       - **ASP.Net Core** the Framework
-       - **OpenApi/SimpleApi** for providing the Api and Documentation
+       - **ASP.Net Core** the Framework\n
+       - **OpenApi/SimpleApi** for providing the Api and Documentation\n
        - **Mailkit & MimeKit** to connect to my Mailserver
       "
       external:
@@ -101,24 +101,36 @@ portfolio:
       name: Hippocampus WIP
       text: " > 2024
       
-      The **Ruby Data Language** is a strongly modifiable data Language, thus a **competing product to Xml**, Json and Yaml.
-      The style is similiar to Toml which is why it got the nickname Crackl. And because of its for Developers untypical syntax.
-      For one it is supposed to be very easy to read and write for and be usable for everyone with minimal technical knowledge.
-      I also needed a way to call Functions inside the RDL file for a Video Game i was developing at the time to load functions outside of compile time.
+      The **Ruby Data Language** is a strongly modifiable data Language, thus a **competing product to Xml**, Json and Yaml.\n
+      The style is similiar to Toml which is why it got the nickname Crackl. And because of its for Developers untypical syntax.\n
+      For one it is supposed to be very easy to read and write for and be usable for everyone with minimal technical knowledge.\n
+      I also needed a way to call Functions inside the RDL file for a Video Game i was developing at the time to load functions outside of compile time.\n
       The development stopped since the game i was developing this for simply went out of scope for a solo Developer. 
       "
-      tech-text: "From a technical point a folder gets fed into the programm where all .rdl files are first preprocessed and then compiled.
-      In Preprocessing the raw Strings are split up into lines and useless lines get deleted(like empty ones and Comments).
-      Then in the First compile step a dictionary tree 
+      tech-text: "From a technical point a folder gets fed into the programm where all .rdl files are first preprocessed and then compiled.\n
+      In Preprocessing the raw Strings are split up into lines and useless lines get deleted(like empty ones and Comments).\n
+      Then in the first compile step the data hierarchy is being built by checking lines for the for the correct Regex and building a dictionary tree accordingly.\n
+      In the second process the values are transferred from from strings to a through yaml defined Type (E.g. Integer) and and preprocess functions are being executed.\n
+      The only completed function for now is the loading of local Png's into a unity usable format.\n
+      In the end the Dictionary tree, the individuals lines and potential syntax errors are put into a wrapper object.\n
+      The individual bits of information can then be accessed in a fashion similar to Angular Formgroups (E.g.: myRdl.Get(\"Package.Name\")). 
       "
     lidlIdlePlanet:
       name: Lidle Idle Planet
-      text: text fehlt noch
+      text: " > 2022\n
+      \n
+      A small idle game where you click on a planet to collect points with which you can buy upgrades and make your cozy purple-white world better\n
+      It has a pretty expandable system for upgrades where each level will spawn an object which is fit with a Mono Behavior for the according upgrade.\n
+      Extremly dynamic but not very fast and doesnt really use true OOP principles, but it was an awesome learning experience"
       external:
         itch: Play on Itch.io
     wallOf:
       name: Wall Of
-      text: Text hier
+      text: " > 2021\n
+      \n
+      The first game and programming-project that i actually finished. Before that i already dis small arduino Projects or similar but this is the first i published.\n
+      The game was created in a one-week game jam and is a Bullet hell where you drive a tank and shoot simplistic shapes.\n
+      from a tech point of fiew its pretty basic, the only interesting thing is Object Pooler maybe."
       external:
         itch: Play on Itch.io
 contact:

@@ -57,7 +57,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2xY6CEYeEyjeCRydGzaL9waPWgu" />
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -89,7 +89,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Compound.Both">
+  <component name="RunManager" selected="npm.installDependencies">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />

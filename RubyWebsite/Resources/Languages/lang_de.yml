@@ -109,21 +109,25 @@ portfolio:
         Die Entwicklung habe ich eingestellt da das Spiel wofür ich diese Sprache entwickelt habe meine fähigkeiten als Solo Entwicker überschreitet."
       tech-text: "Technich gesehen geht ein Ordner in das Programm wo dann alle .rdl Datein Nacheinander erst preprocessed und dann compiled werden.\n
         Im preprocess Schritt wird der rohe String in zeilen aufgeteilt und nutzlose Zeilen(wie leere zeilen oder Kommentare) werden entfernt.\n
-        Dann im ersten Compile schritt wird die Datenstruktur gebaut indem entlang der zeilen nach passenden Regex Conditions gesucht wurd und ein Dictionary-Tree entsteht.\n
+        Dann im ersten Compile schritt wird die Daten Hierarchie gebaut indem entlang der zeilen nach passenden Regex Conditions gesucht wurd und ein Dictionary-Tree entsteht.\n
         Im zweiten Process werden die Werte von Strings in die über eine yaml definierten Typen umgewandelt (Bsp Integer) und Preprocess Funktionen werden ausgeführt.\n
-        Die bisher einzige Fertige Funktion ist das laden von lokalen Pngs in ein für Unity nutzbares format.\n
+        Die bisher einzige fertige Funktion ist das laden von lokalen Pngs in ein für Unity nutzbares format.\n
         Am Ende werden der Dictionary Tree, Die Zeilen und potentielle Syntaxfehler der File in ein Wrapper Object gegeben.\n
         Die einzelnen Daten kann man dann wie in einer Angular Form aufrufen (Bsp: myRdl.Get(\"Package.Name\"))."
     lidlIdlePlanet:
       name: Lidle Idle Planet
-      text: "Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
+      text: " > 2022\n
+      \n
+      Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
         Es hat ein ziehmlich expandierbares System für die Upgrades in dem es für jedes level ein Object generiert mit unterschiedlichen Mono behaviors.\n
         Extrem dynamisch aber inperformant und nutzt keine echten OOP Prinzipien, war aber ein super Lernschritt."
       external:
         itch: Auf Itch.io Spielen
     wallOf:
       name: Wall Of
-      text: "Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.\n
+      text: " > 2021\n
+      \n
+      Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.\n
         Das spiel entstand in eienm ein wöchigen Game jam und ist ein Bullet hell wo du einen Panzer fährst und Formen abschiest.\n
         Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.\n"
       external:
