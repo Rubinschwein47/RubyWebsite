@@ -76,11 +76,11 @@ portfolio:
         Dazu gehören für Benutzer Dinge wie Handy und Desktop Kompatibilität, mehrere Sprachen und Dark/Light Mode nach Wahl.\n
         Für Entwickler Openapi, zentralisierte Übersetzung und alle Komponenten sind auf Wartbarkeit ausgelegt.\n
          \n
-        Die einzelnen Gründe stehen auf der Startseite wenn du interresiert bist.\n
+        Die einzelnen Gründe warum ich das hier entwickelt habe stehen auf der Startseite wenn du interresiert bist.\n
         "
       tech: "
-      Die Website Läuft auf einem kleinen VPS den ich selber eingerichtet und mit meiner Domain verknüpft habe.\n
-      (Gleiche Domain habe ich dann auch mit migadu, einem kleinen mailprovider benutzt für meine mail Adresse)\n
+      Die Website läuft auf einem kleinen VPS den ich eingerichtet und mit meiner Domain verknüpft habe.\n
+      (Gleiche Domain habe ich dann auch mit migadu, einem kleinen Mail-provider benutzt für meine mail Adresse)\n
       \n
       Hier sind alle relevanten Tools sortiert nach Front und Backend:\n
       (Für genaueres schau dir gern das Github Projekt an) \n
@@ -103,11 +103,11 @@ portfolio:
       text: " > 2024\n
       
         Die **Ruby Data Language** ist eine stark modfiezierbare Datensprache, also ein **Konkurenzprodukt zu Xml**, Json und Yaml.\n
-        sie errinert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für Entwickler so untypischen Syntax hat.\n
+        Sie errinert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für Entwickler so untypischen Syntax hat.\n
         Zum einen sollte die Srache sehr einfach zu lesen und zu schreiben sein und von quasi jedem mit minimalen technichen Kentnissen benutzbar sein.\n
         Dazu brauchte ich die möglichkeit aufrufbare Funktionen ein zu bauen da die RDL für ein Videospiel entwickelt wurde und damit man Daten von außerhalb laden kann in Compile Time.\n
         Die Entwicklung habe ich eingestellt da das Spiel wofür ich diese Sprache entwickelt habe meine fähigkeiten als Solo Entwicker überschreitet."
-      tech-text: "Technich gesehen geht ein Ordner in das Programm wo dann alle .rdl Datein Nacheinander erst preprocessed und dann compiled werden\n
+      tech-text: "Technich gesehen geht ein Ordner in das Programm wo dann alle .rdl Datein Nacheinander erst preprocessed und dann compiled werden.\n
         Im preprocess Schritt wird der rohe String in zeilen aufgeteilt und nutzlose Zeilen(wie leere zeilen oder Kommentare) werden entfernt.\n
         Dann im ersten Compile schritt wird die Datenstruktur gebaut indem entlang der zeilen nach passenden Regex Conditions gesucht wurd und ein Dictionary-Tree entsteht.\n
         Im zweiten Process werden die Werte von Strings in die über eine yaml definierten Typen umgewandelt (Bsp Integer) und Preprocess Funktionen werden ausgeführt.\n

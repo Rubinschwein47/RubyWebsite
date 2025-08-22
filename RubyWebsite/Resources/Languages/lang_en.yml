@@ -38,14 +38,14 @@ home:
         header: Present from my Mother
         text: "This was a Present in the shape of a whole cooperate identity.\n
           In the end i've never used "
-      2: 
+      2:
         header: The first one i completly own
         text: The whole thing is trying to be a combination of a wild boar and a occultist inspired from the equally named Terraria enemy.
-      3: 
+      3:
         header: The attempt at trying to make it look good
         text: I wanted to apply the skills i have since learned and create a new, better version.\n
           Even though the shape and composition are pretty similar, the color gradient is a lot nicer to look at.
-      4: 
+      4:
         header: Today
         text: This is the current version which i hope will be a pat of my online identity for quite some time.\n
           The goal was to create a visually pleasing character\n
@@ -63,15 +63,54 @@ home:
       For development i have always used Unity, but im interested to experiment with different Game Engines in the future.
 portfolio:
   header: Portfolio
+  tabs:
+    info: Overview
+    tech: Tech
   projects:
     website:
       name: rubinschwein47.com
-      text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+      text: " > 2025\n
+      \n
+      A small website that combines all the anemities for Users and Developers that you would want in an production ready environment.\n
+      This includes things for users such as mobile and desktop compatability, multiple languages and Light/Dark-mode to pick.\n
+      For developers there are OpenApi, centralized translation and Components optimized for maintainability.\n
+      \n
+      The Individual reasons as to why i developed this are on the starting page if your interested. 
+      "
+      tech: "
+      This website runs on a small VPS that i configured and connected to my domain.
+      (The same domain i used with migadu, a small mail provider for my mail Address)
+      
+      Here are all relevant tools sorted by front and backend:
+      (for more precise information feel free look at the Github Project)
+      
+      ## Frontend
+       - **React** as a base \"Framework\" for the whole Project
+       - **AntDesign** UI Library for parts of the Theming and base components
+       - **OpenApi** for fast iteration between Back and Frontend
+       - **Zutand** data Management across the whole website
+      
+      ## Backend\n
+       - **ASP.Net Core** the Framework
+       - **OpenApi/SimpleApi** for providing the Api and Documentation
+       - **Mailkit & MimeKit** to connect to my Mailserver
+      "
       external:
         github: Github Repository
     hippocampus:
       name: Hippocampus WIP
-      text: Game that still needs text
+      text: " > 2024
+      
+      The **Ruby Data Language** is a strongly modifiable data Language, thus a **competing product to Xml**, Json and Yaml.
+      The style is similiar to Toml which is why it got the nickname Crackl. And because of its for Developers untypical syntax.
+      For one it is supposed to be very easy to read and write for and be usable for everyone with minimal technical knowledge.
+      I also needed a way to call Functions inside the RDL file for a Video Game i was developing at the time to load functions outside of compile time.
+      The development stopped since the game i was developing this for simply went out of scope for a solo Developer. 
+      "
+      tech-text: "From a technical point a folder gets fed into the programm where all .rdl files are first preprocessed and then compiled.
+      In Preprocessing the raw Strings are split up into lines and useless lines get deleted(like empty ones and Comments).
+      Then in the First compile step a dictionary tree 
+      "
     lidlIdlePlanet:
       name: Lidle Idle Planet
       text: text fehlt noch
