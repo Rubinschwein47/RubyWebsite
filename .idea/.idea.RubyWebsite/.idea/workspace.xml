@@ -11,6 +11,8 @@
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LISCENCE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
     </list>
@@ -57,7 +59,7 @@
   &quot;associatedIndex&quot;: 6
 }</component>
   <component name="ProjectId" id="2xY6CEYeEyjeCRydGzaL9waPWgu" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+  <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="ProjectViewState">
@@ -89,7 +91,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="npm.installDependencies">
+  <component name="RunManager" selected="Compound.Both">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />
@@ -127,7 +129,7 @@
     </configuration>
     <configuration name="RubyWebsite:backend" type="LaunchSettings" factoryName=".NET Launch Settings Profile">
       <option name="LAUNCH_PROFILE_PROJECT_FILE_PATH" value="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" />
-      <option name="LAUNCH_PROFILE_TFM" value="net8.0" />
+      <option name="LAUNCH_PROFILE_TFM" value="net9.0" />
       <option name="LAUNCH_PROFILE_NAME" value="http" />
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <option name="USE_MONO" value="0" />
@@ -271,6 +273,8 @@
       <workItem from="1753643073427" duration="1280000" />
       <workItem from="1755714237879" duration="7707000" />
       <workItem from="1755796705895" duration="4245000" />
+      <workItem from="1756140724563" duration="6752000" />
+      <workItem from="1756152812315" duration="1827000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />

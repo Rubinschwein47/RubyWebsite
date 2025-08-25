@@ -83,7 +83,7 @@ export default function Contact() {
 
     return (<>
         {contextHolder}
-        <Title>Contact</Title> 
+        <Title><Trans path={'contact.title'}/></Title> 
         <div className={"contact-splitter-"+ratio}>
             <div>
                 <div className={"container"} style={{width: '100%', position: 'relative'}}>

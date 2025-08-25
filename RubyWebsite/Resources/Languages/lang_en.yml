@@ -18,49 +18,51 @@ home:
   header: Home Page
   introduction:
     header: Short about me
-    text: Hi, im Rubinschwein47(or just Ruby) which is german for "Ruby Pig 47", but in real life i am Felix Conrad!\n
-      Im a GameDev in private and a Fullstack Developer(currently apprentice) at work.\n
+    text: Hi, i am Rubinschwein47(or just Ruby) which is german for "Ruby Pig 47", but in real life i am Felix Conrad!\n
+      I'm a GameDev in private and a Fullstack Developer(currently apprentice) at work.\n
       No matter if you came here because you were curious about my video games, you want to reach out to me or you just stumbled here, feel free to look around :)!
   whyRuby:
     header: Brand Rubinschwein
     text: Why? Rubinschwein47
-      There isnt much behind it honestly. In Third grade(around 9) i chose this name without any apparent reason and i stuck it ever since.\n
+      There isn't much behind it honestly. In Third grade(around 9) i chose this name without any apparent reason and i stuck it ever since.\n
       Between then and now i've tried turning this into my online which i slowly improved.\n
       For quite some time i have also ben using Ruby and RS47, simply because they sound a bit more professional.\n
     explanationOldLogos: Here you can see the Various Logos that ive used over the years.
     logoDescriptions:
       0:
         header: First Try
-        text: This was probably my go at appearing cool back then,\n
+        text: "This was probably my try to appear cool back then,\n
           because of that i took fan art from Terraria and cropped it with the professionality of a 13 year old.\n
-          The Original is from the artist Bohrokki on Deviantart
+          The Original is from the artist [Bohrokki on Deviantart](https://www.deviantart.com/bohrokki/art/Skeletron-Prime-703195612).
+          [Website](https://www.deviantart.com/bohrokki/art/Skeletron-Prime-703195612)"
       1:
         header: Present from my Mother
         text: "This was a Present in the shape of a whole cooperate identity.\n
-          In the end i've never used "
+          In the end i've never used it, but still, it deserves a place on this list.\n
+          Feel Free to check her [Website](https://www.andreaconrad.de/)."
       2:
         header: The first one i completly own
         text: The whole thing is trying to be a combination of a wild boar and a occultist inspired from the equally named Terraria enemy.
       3:
         header: The attempt at trying to make it look good
-        text: I wanted to apply the skills i have since learned and create a new, better version.\n
-          Even though the shape and composition are pretty similar, the color gradient is a lot nicer to look at.
+        text: "I wanted to apply the skills i have since learned and create a new, better version.\n
+          Even though the shape and composition are pretty similar, the color gradient is a lot nicer to look at."
       4:
         header: Today
-        text: This is the current version which i hope will be a pat of my online identity for quite some time.\n
+        text: "This is the current version which i hope will be a pat of my online identity for quite some time.\n
           The goal was to create a visually pleasing character\n
           that would be more friendly instead of trying to look cool as hard as possible.\n
-          To create this logo, i used a combination of 3d modeling and shaders which i manually edited with a pixelart tool.
+          To create this logo, i used a combination of 3d modeling and shaders which i manually edited with a pixel art tool."
   aboutWebsite:
     header: Why this Website?
-    text: "The website you're seeing here was created for a number of reasons.\n
-      For one, whenever i didnt have my laptop with me or my current project wasnt on there, it was very difficult to show people what im doing.\n
+    text: "The website you're seeing here, was created for a number of reasons.\n
+      For one, whenever i didnt have my laptop with me or my current project wasn't on there, it was very difficult to show people what i'm doing.\n
       On top of that, the only way to contact me was by me giving them my phone number or E-mail, which depending on the context, can be anywhere from unprofessional all the way to crossing boundaries.\n
-      But most importantly of all: I needed an excuse to learn React and ASP.net Core, which is what this website was written in. You can find the technical details under the Portfolio Tab"
+      But most importantly of all: I needed an excuse to learn React and ASP.net Core, which is what this website was written in. You can find the technical details under the [Portfolio](https://rubinschwein47.com/portfolio) Tab."
   myGames:
     header: About my Games
     text: Of course there are some exceptions, but for the most part i focus on calm games that lay anywhere between relaxing and needing to think. Lidl Idle Planet probably represents this best.\n
-      For development i have always used Unity, but im interested to experiment with different Game Engines in the future.
+      For development i have always used Unity, but i'm interested to experiment with different Game Engines in the future.
 portfolio:
   header: Portfolio
   tabs:
@@ -71,15 +73,15 @@ portfolio:
       name: rubinschwein47.com
       text: " > 2025\n
       \n
-      A small website that combines all the anemities for Users and Developers that you would want in an production ready environment.\n
+      A small website that combines all the amenities for Users and Developers that you would want in an production ready environment.\n
       This includes things for users such as mobile and desktop compatability, multiple languages and Light/Dark-mode to pick.\n
       For developers there are OpenApi, centralized translation and Components optimized for maintainability.\n
       \n
-      The Individual reasons as to why i developed this are on the starting page if your interested. 
+      The Individual reasons as to why i developed this are on the [Starting page](https://rubinschwein47.com/home). 
       "
       tech: "
       This website runs on a small VPS that i configured and connected to my domain.\n
-      (The same domain i used with migadu, a small mail provider for my mail Address)\n
+      (The same domain i used with [migadu](https://www.migadu.com/), a small mail provider for my mail Address)\n
       \n
       Here are all relevant tools sorted by front and backend:\n
       (for more precise information feel free look at the Github Project)\n
@@ -88,7 +90,7 @@ portfolio:
        - **React** as a base \"Framework\" for the whole Project\n
        - **AntDesign** UI Library for parts of the Theming and base components\n
        - **OpenApi** for fast iteration between Back and Frontend\n
-       - **Zutand** data Management across the whole website\n
+       - **Zustand** data Management across the whole website\n
       \n
       ## Backend\n
        - **ASP.Net Core** the Framework\n
@@ -102,18 +104,18 @@ portfolio:
       text: " > 2024
       
       The **Ruby Data Language** is a strongly modifiable data Language, thus a **competing product to Xml**, Json and Yaml.\n
-      The style is similiar to Toml which is why it got the nickname Crackl. And because of its for Developers untypical syntax.\n
+      The style is similar to Toml which is why it got the nickname Crackl. And because of its for Developers untypical syntax.\n
       For one it is supposed to be very easy to read and write for and be usable for everyone with minimal technical knowledge.\n
       I also needed a way to call Functions inside the RDL file for a Video Game i was developing at the time to load functions outside of compile time.\n
       The development stopped since the game i was developing this for simply went out of scope for a solo Developer. 
       "
-      tech-text: "From a technical point a folder gets fed into the programm where all .rdl files are first preprocessed and then compiled.\n
+      tech-text: "From a technical point a folder gets fed into the program where all .rdl files are first preprocessed and then compiled.\n
       In Preprocessing the raw Strings are split up into lines and useless lines get deleted(like empty ones and Comments).\n
       Then in the first compile step the data hierarchy is being built by checking lines for the for the correct Regex and building a dictionary tree accordingly.\n
       In the second process the values are transferred from from strings to a through yaml defined Type (E.g. Integer) and and preprocess functions are being executed.\n
       The only completed function for now is the loading of local Png's into a unity usable format.\n
       In the end the Dictionary tree, the individuals lines and potential syntax errors are put into a wrapper object.\n
-      The individual bits of information can then be accessed in a fashion similar to Angular Formgroups (E.g.: myRdl.Get(\"Package.Name\")). 
+      The individual bits of information can then be accessed in a fashion similar to Angular Form groups (E.g.: myRdl.Get(\"Package.Name\")). 
       "
     lidlIdlePlanet:
       name: Lidle Idle Planet
@@ -121,7 +123,7 @@ portfolio:
       \n
       A small idle game where you click on a planet to collect points with which you can buy upgrades and make your cozy purple-white world better\n
       It has a pretty expandable system for upgrades where each level will spawn an object which is fit with a Mono Behavior for the according upgrade.\n
-      Extremly dynamic but not very fast and doesnt really use true OOP principles, but it was an awesome learning experience"
+      Extremely dynamic but not very fast and doesnt really use true OOP principles, but it was an awesome learning experience"
       external:
         itch: Play on Itch.io
     wallOf:
@@ -130,11 +132,11 @@ portfolio:
       \n
       The first game and programming-project that i actually finished. Before that i already dis small arduino Projects or similar but this is the first i published.\n
       The game was created in a one-week game jam and is a Bullet hell where you drive a tank and shoot simplistic shapes.\n
-      from a tech point of fiew its pretty basic, the only interesting thing is Object Pooler maybe."
+      from a tech point of view its pretty basic, the only interesting thing is Object Pooler maybe."
       external:
         itch: Play on Itch.io
 contact:
-  titlle: Contact
+  title: Contact
   itch: Itch.io
   gitHub: Github
   message:

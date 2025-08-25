@@ -18,22 +18,22 @@ home:
   header: Startseite
   introduction:
     header: Im kurzen über mich
-    text: "Hallo, ich bin Rubinschwein47(kurz Ruby) aber in echt heiße ich Felix Conrad!\n
-      Privat bin ich Game-Dev, an der Arbeit bin ich aber Fullstack Entwickler (derzeit noch in der Ausbildung).\n
-      Also egal ob du an meinen Videospielen interresiert bist, Kontakt mit mir aufnehmen möchtest oder hier ausversehen gelandet bist, sieh dich gerne um :)!"
+    text: "Hallo, ich bin Rubinschwein47(kurz Ruby) aber in wirklichkeit heiße ich Felix Conrad!\n
+      Privat bin ich Game-Dev, an der Arbeit bin ich aber Fullstack-Entwickler (derzeit noch in der Ausbildung).\n
+      Also egal, ob du an meinen Videospielen interessiert bist, Kontakt mit mir aufnehmen möchtest oder hier aus Versehen gelandet bist, sieh dich gerne um :)!"
   whyRuby:
     header: Marke Rubinschwein
     text: "Warum Rubinschwein47?
-      So ganz viel steht da garnicht hinter. In der dritten Klasse habe ich mir den Namen ohne jeglichen Grund ausgedacht und seitdem nutze ich diesen Titel.\n
-      Seit dem habe ich versucht daraus meine Online Präsenz zu formen und über die Jahre zu verfeinern.\n
-      Seit einiger Zeit verwende ich auch Ruby oder RS47 da sie einfach ansprechender und moderner wirken.\n"
+      So ganz viel steht da gar nicht hinter. In der dritten Klasse habe ich mir den Namen ohne jeglichen Grund ausgedacht und seitdem nutze ich diesen Titel.\n
+      Seitdem habe ich versucht daraus meine Online Präsenz zu formen und über die Jahre zu verfeinern.\n
+      Seit einiger Zeit verwende ich auch Ruby oder RS47, da sie einfach ansprechender und moderner wirken.\n"
     explanationOldLogos: Hier sieht man all die Logos die ich über die Jahre genutzt habe
     logoDescriptions:
       0:
         header: Der erste Versuch
         text: "Mein versuch war es warscheinlich cool aus zu sehen, \n
           deshalb habe ich damals ein Fanart von dem spiel Terraria genommen und mit der Professionalität eines 13 Jährigen ausgeschnitten.\n
-          Das Origal Stammt von dem Künstler Bohrokki auf Deviantart"
+          Das Origal Stammt von dem [Künstler Bohrokki auf Deviantart](https://www.deviantart.com/bohrokki/art/Skeletron-Prime-703195612)"
       1:
         header: Geschenk von Andrea Conrad
         text: "Das war ein Geschenk in Form einer Vollständigen Cooperate Identity.\n
@@ -54,14 +54,14 @@ home:
           Um dieses Logo zu Erstellen habe ich eine Kombination aus 3d Moddeling, Shader und Nachbearbeitung mit einem Pixelart Programm verwendet."
   aboutWebsite:
     header: Warum die Website?
-    text: "Diese Website die man hier sieht entstand tatsächlich aus einer vielzahl von Gründen und erfüllt dementsprechend auch eine vielzahl an Gründen.\n
-      Zum einen gab es das Problem das wenn ich nicht meinen Laptop dabei habe und da auch die Aktuellsten Projekte bereit habe, ist es sehr Schwierig den leuten zu zeigen was ich mache.\n
-      Dazu kommt auch noch das die einzige möglichkeit mich zu kontaktieren ist indem ich meine Nummer oder E-mail und andere weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.\n
-      Aber am wichtigsten von allem: Ich brauchte eine Ausrede um React und ASP.net Core zu lernen, womit diese Website jetzt auch geschrieben worde. Die technichen Einzelheiten findest du in Portfolio."
+    text: "Diese Website die man hier sieht, entstand tatsächlich aus einer Vielzahl von Gründen und dient dementsprechend auch eine vielzahl an Gründen.\n
+      Zum einen gab es das Problem, dass wenn ich nicht meinen Laptop dabei habe und darauf nicht die aktuellsten Projekte bereit habe, es sehr schwierig ist den Leuten zu zeigen, was ich mache.\n
+      Dazu kommt auch noch, dass die einzige Möglichkeit mich zu kontaktieren, indem ich meine Nummer oder E-mail weiter gebe, was je nach Kontext irgendwo zwischen unproffesionell, naiv und Grenzen überschreiten kann.\n
+      Aber am wichtigsten von allem: Ich brauchte eine Ausrede um React und ASP.net Core zu lernen, womit diese Website jetzt auch geschrieben wurde. Die technichen Einzelheiten findest du in [Portfolio](https://rubinschwein47.com/portfolio)."
   myGames:
     header: Über meine Spiele
-    text: "Natürlich gibt es genug ausnahmen, aber generell konzentriere ich mich darauf ruhige Spiele die irgendwo zwischen Entspannung und Nachdenken liegen, wobei Lidl Idle Planet das am besten verkörpert.\n
-      Für die Entwicklung habe ich bisher immer Unity benutzt, bin aber sehr interresiert mit anderen Game Engines zu experimentieren."
+    text: "Natürlich gibt es genug Ausnahmen, aber generell konzentriere ich mich darauf ruhige Spiele die irgendwo zwischen Entspannung und Nachdenken liegen zu entwickeln. Wobei Lidl Idle Planet das am besten verkörpert.\n
+      Für die Entwicklung habe ich bisher immer Unity benutzt, bin aber sehr interessiert daran mit anderen Game Engines zu experimentieren."
 portfolio:
   header: Portfolio
   tabs:
@@ -72,24 +72,24 @@ portfolio:
       name: rubinschwein47.com
       text: " > 2025\n
       
-        Eine kleine Website die alle Angenehmlichkeiten für Benuzer und Entwickler beinhalted die man sich in einem Production environment wünschen würde.\n
-        Dazu gehören für Benutzer Dinge wie Handy und Desktop Kompatibilität, mehrere Sprachen und Dark/Light Mode nach Wahl.\n
+        Eine kleine Website, die alle Angenehmlichkeiten für Benuzer und Entwickler beinhaltet, die man sich in einem Production-Environment wünschen würde.\n
+        Dazu gehören für Benutzer Dinge wie Handy-, und Desktop-Kompatibilität, mehrere Sprachen und Dark/Light-Mode nach Wahl.\n
         Für Entwickler Openapi, zentralisierte Übersetzung und alle Komponenten sind auf Wartbarkeit ausgelegt.\n
          \n
-        Die einzelnen Gründe warum ich das hier entwickelt habe stehen auf der Startseite wenn du interresiert bist.\n
+        Die einzelnen Gründe, warum ich das hier entwickelt habe, stehen auf der [Startseite](https://rubinschwein47.com/home).\n
         "
       tech: "
-      Die Website läuft auf einem kleinen VPS den ich eingerichtet und mit meiner Domain verknüpft habe.\n
-      (Gleiche Domain habe ich dann auch mit migadu, einem kleinen Mail-provider benutzt für meine mail Adresse)\n
+      Die Website läuft auf einem kleinen VPS, den ich eingerichtet und mit meiner Domain verknüpft habe.\n
+      (Gleiche Domain habe ich dann auch mit [migadu](https://www.migadu.com/), einem kleinen Mail-provider benutzt für meine Mail Adresse)\n
       \n
       Hier sind alle relevanten Tools sortiert nach Front und Backend:\n
       (Für genaueres schau dir gern das Github Projekt an) \n
       \n
       ## Frontend\n
-       - **React** als Basis \"Framework\" für das gesamte Project\n
-       - **AntDesign** UI Library für Teile des Theming und standart Komponenten\n
+       - **React** als Basis \"Framework\" für das gesamte Projekt\n
+       - **AntDesign** UI Library für Teile des Theming und Standart-Komponenten\n
        - **OpenApi** um zwischen Back und Frontend Schnell zu Iterieren\n
-       - **Zutand** Frontendweite Datenverwaltung\n
+       - **Zustand** Frontendweite Datenverwaltung\n
        \n
       ## Backend\n
        - **ASP.Net Core** das Framework\n
@@ -102,24 +102,24 @@ portfolio:
       name: Ruby Data Language
       text: " > 2024\n
       
-        Die **Ruby Data Language** ist eine stark modfiezierbare Datensprache, also ein **Konkurenzprodukt zu Xml**, Json und Yaml.\n
-        Sie errinert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat weil sie einen für Entwickler so untypischen Syntax hat.\n
-        Zum einen sollte die Srache sehr einfach zu lesen und zu schreiben sein und von quasi jedem mit minimalen technichen Kentnissen benutzbar sein.\n
-        Dazu brauchte ich die möglichkeit aufrufbare Funktionen ein zu bauen da die RDL für ein Videospiel entwickelt wurde und damit man Daten von außerhalb laden kann in Compile Time.\n
-        Die Entwicklung habe ich eingestellt da das Spiel wofür ich diese Sprache entwickelt habe meine fähigkeiten als Solo Entwicker überschreitet."
-      tech-text: "Technich gesehen geht ein Ordner in das Programm wo dann alle .rdl Datein Nacheinander erst preprocessed und dann compiled werden.\n
-        Im preprocess Schritt wird der rohe String in zeilen aufgeteilt und nutzlose Zeilen(wie leere zeilen oder Kommentare) werden entfernt.\n
-        Dann im ersten Compile schritt wird die Daten Hierarchie gebaut indem entlang der zeilen nach passenden Regex Conditions gesucht wurd und ein Dictionary-Tree entsteht.\n
-        Im zweiten Process werden die Werte von Strings in die über eine yaml definierten Typen umgewandelt (Bsp Integer) und Preprocess Funktionen werden ausgeführt.\n
-        Die bisher einzige fertige Funktion ist das laden von lokalen Pngs in ein für Unity nutzbares format.\n
-        Am Ende werden der Dictionary Tree, Die Zeilen und potentielle Syntaxfehler der File in ein Wrapper Object gegeben.\n
+        Die **Ruby Data Language** ist eine stark modifizierbare Datensprache, also ein **Konkurenzprodukt zu Xml**, Json und Yaml.\n
+        Sie erinnert vom Style am ehesten an Toml, weswegen die Sprache auch den Spitznamen Crackl erhalten hat, weil sie einen für Entwickler untypische Syntax hat.\n
+        Zum einen sollte die Sprache sehr einfach zu lesen und zu schreiben sein und von quasi jedem mit minimalen technichen Kenntnissen benutzbar sein.\n
+        Dazu brauchte ich die Möglichkeit, aufrufbare Funktionen einzubauen, da die RDL für ein Videospiel entwickelt wurde und damit man Daten von außerhalb laden kann in Compile Time.\n
+        Die Entwicklung habe ich eingestellt, da das Spiel, wofür ich diese Sprache entwickelt habe, meine Fähigkeiten als Solo-Entwicker überschreitet."
+      tech-text: "Technich gesehen geht ein Ordner in das Programm, wo dann alle .rdl Dateien nacheinander erst preprocessed und dann compiled werden.\n
+        Im Preprocess-Schritt wird der rohe String in Zeilen aufgeteilt und nutzlose Zeilen(wie leere Zeilen oder Kommentare) werden entfernt.\n
+        Dann im ersten Compile-Schritt wird die Datenhierarchie gebaut, indem entlang der Zeilen nach passenden Regex Conditions gesucht wird und ein Dictionary-Tree entsteht.\n
+        Im zweiten Process werden die Werte von Strings in die über yaml definierten Typen umgewandelt (Bsp: Integer) und Preprocess Funktionen werden ausgeführt.\n
+        Die bisher einzige fertige Funktion ist das Laden von lokalen Png's in ein für Unity nutzbares Format.\n
+        Am Ende werden der Dictionary Tree, Die Zeilen und potentielle Syntaxfehler der Files in ein Wrapper-Object gegeben.\n
         Die einzelnen Daten kann man dann wie in einer Angular Form aufrufen (Bsp: myRdl.Get(\"Package.Name\"))."
     lidlIdlePlanet:
       name: Lidle Idle Planet
       text: " > 2022\n
       \n
-      Ein kleines Idle Spiel in dem man auf einen Planeten Klickt um Punkte zu sammeln mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessrt.\n
-        Es hat ein ziehmlich expandierbares System für die Upgrades in dem es für jedes level ein Object generiert mit unterschiedlichen Mono behaviors.\n
+      Ein kleines Idle Spiel, in dem man auf einen Planeten clickt um Punkte zu sammeln, mit denen man sich Upgrades kaufen kann und seine entspannte lila-weiße Welt verbessert.\n
+        Es hat ein ziemlich expandierbares System für die Upgrades, in dem es für jedes Level ein Objekt generiert, mit unterschiedlichen Monobehaviors.\n
         Extrem dynamisch aber inperformant und nutzt keine echten OOP Prinzipien, war aber ein super Lernschritt."
       external:
         itch: Auf Itch.io Spielen
@@ -127,13 +127,13 @@ portfolio:
       name: Wall Of
       text: " > 2021\n
       \n
-      Das erste Spiel und Programmier-Projekt was ich je beendet habe. Davor hatte ich auch schon kleinere Arduino Projekte oder ähnliches aber das war das erste welches ich veröffentlicht habe.\n
-        Das spiel entstand in eienm ein wöchigen Game jam und ist ein Bullet hell wo du einen Panzer fährst und Formen abschiest.\n
-        Technich ist es ziehmlich standart, das einzig pannende ist der Custom Object Pooler eventuell.\n"
+      Das erste Spiel und Programmier-Projekt, das ich je beendet habe. Davor hatte ich auch schon kleinere Arduino-Projekte oder ähnliches, aber das war das erste, welches ich veröffentlicht habe.\n
+        Das Spiel entstand in einem einwöchigen Game-Jam und ist ein Bullet hell, wo du einen Panzer fährst und Formen abschießt.\n
+        Technich ist es ziemlich standard, das einzig spannende ist der Custom Object Pooler, eventuell.\n"
       external:
         itch: Auf Itch.io Spielen
 contact:
-  titlle: Kontakt
+  title: Kontakt
   itch: Itch.io
   gitHub: Github
   message:
