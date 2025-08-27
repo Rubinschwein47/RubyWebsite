@@ -11,4 +11,4 @@ export type { ContactDto } from './models/ContactDto';
 export type { ProblemDetails } from './models/ProblemDetails';
 
 export { ContactControllerService } from './services/ContactControllerService';
-export { LanguageControllerService } from "./services/LanguageControllerService";
+export { LanguageControllerService } from './services/LanguageControllerService';

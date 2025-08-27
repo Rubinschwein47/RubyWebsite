@@ -18,12 +18,11 @@ export class ContactControllerService {
     ): CancelablePromise<boolean> {
         return __request(OpenAPI, {
             method: 'POST',
-            url: '/contact',
+            url: '/api/contact',
             body: requestBody,
             mediaType: 'application/json',
             errors: {
                 400: `Bad Request`,
-                404: `Not Found`,
             },
         });
     }

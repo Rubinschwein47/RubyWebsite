@@ -7,7 +7,7 @@ public static class LanguageController
 
     public static void AddEndpoints(WebApplication app)
     {
-        app.MapGet("/locales/{language}", GetLanguage)
+        app.MapGet("/api/locales/{language}", GetLanguage)
             .WithName("Translation")
             .WithSummary("returns a yaml document containing all translations for the frontend.")
             .Produces<string>(200, "text/yml")

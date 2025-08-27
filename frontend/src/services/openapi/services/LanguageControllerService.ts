@@ -17,7 +17,7 @@ export class LanguageControllerService {
     ): CancelablePromise<string> {
         return __request(OpenAPI, {
             method: 'GET',
-            url: '/locales/{language}',
+            url: '/api/locales/{language}',
             path: {
                 'language': language,
             },

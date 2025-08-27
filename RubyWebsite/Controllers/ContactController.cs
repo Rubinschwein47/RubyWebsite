@@ -17,7 +17,7 @@ public static class ContactController
     public static void AddEndpoints(WebApplication app, SmtpSettings smtpSettings)
     {
         _smtpSettings = smtpSettings;
-        app.MapPost("/contact", ContactRequest)
+        app.MapPost("/api/contact", ContactRequest)
             .WithName("SendMail")
             .WithSummary("Send an email to contact@rubinschwein47.com")
             .Produces<bool>(200, "application/json")

@@ -10,11 +10,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/LISCENCE.md" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_de.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Resources/Languages/lang_en.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/services/ContactControllerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/services/ContactControllerService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/services/LanguageControllerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/services/LanguageControllerService.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +55,10 @@
   }
 }</component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23c646a82d4df66af1cb96f366d74b6bf136a4ca66a38de00ceae827db540f3/SwaggerBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3995e464c2f433ce833640d08ee41cd741701befa85c6f6e6b9f8838f3bfecb0/HttpsRedirectionBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/541a092bf7781c73472381c47dd31c3447c2568d2da945ec791f6193812a/OpenApiEndpointConventionBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/968676f9023f8d25be2585df3418c245849683b21d0e0ccc548663a35701297/Environment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e744562ef42dc5e29efed36f99fad0bd8896f768f06a144364a62cb95d92813/Console.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
   </component>
@@ -66,32 +74,33 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;.NET Launch Settings Profile.RubyWebsite:backend.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.3184466&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
-    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
-    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint&quot;,
-    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
-    &quot;npm.installDependencies.executor&quot;: &quot;Run&quot;,
-    &quot;npm.start.executor&quot;: &quot;Run&quot;,
-    &quot;npm.types:openapi.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Run",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "XThreadsFramesViewSplitterKey": "0.3184466",
+    "git-widget-placeholder": "master",
+    "js.linters.configure.manually.selectedeslint": "true",
+    "list.type.of.created.stylesheet": "CSS",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.standard": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint",
+    "node.js.selected.package.standard": "",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "npm.build.executor": "Run",
+    "npm.frontend.executor": "Run",
+    "npm.installDependencies.executor": "Run",
+    "npm.start.executor": "Run",
+    "npm.types:openapi.executor": "Run",
+    "settings.editor.selected.configurable": "preferences.pluginManager",
+    "ts.external.directory.path": "/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager" selected="Compound.Both">
+}]]></component>
+  <component name="RunManager" selected=".NET Launch Settings Profile.RubyWebsite:backend">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />
@@ -186,6 +195,16 @@
       <EXTENSION ID="com.jetbrains.rider.docker.debug" isFastModeEnabled="true" isSslEnabled="false" />
       <method v="2" />
     </configuration>
+    <configuration name="build" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/frontend/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="build" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <configuration name="frontend" type="js.build_tools.npm">
       <package-json value="$PROJECT_DIR$/frontend/package.json" />
       <command value="run" />
@@ -224,13 +243,15 @@
       <item itemvalue="Docker.docker-compose.yml: Compose Deployment" />
       <item itemvalue="Docker.RubyWebsite/Dockerfile" />
       <item itemvalue="npm.frontend" />
+      <item itemvalue="npm.build" />
       <item itemvalue="npm.installDependencies" />
       <item itemvalue="npm.types:openapi" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.installDependencies" />
+        <item itemvalue="npm.build" />
         <item itemvalue="npm.types:openapi" />
+        <item itemvalue="npm.installDependencies" />
       </list>
     </recent_temporary>
   </component>
@@ -274,7 +295,8 @@
       <workItem from="1755714237879" duration="7707000" />
       <workItem from="1755796705895" duration="4245000" />
       <workItem from="1756140724563" duration="6752000" />
-      <workItem from="1756152812315" duration="1827000" />
+      <workItem from="1756152812315" duration="2176000" />
+      <workItem from="1756321979735" duration="4785000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -468,7 +490,15 @@
       <option name="project" value="LOCAL" />
       <updated>1755722108808</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="Corrected Spelling and Grammar and properly did README.md and LICENSE.md">
+      <option name="closed" value="true" />
+      <created>1756155328827</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1756155328827</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -478,7 +508,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="clean up" />
     <MESSAGE value="added react" />
     <MESSAGE value="implemented things" />
     <MESSAGE value="fuck you openapi" />
@@ -503,7 +532,8 @@
     <MESSAGE value="minor bug fixes" />
     <MESSAGE value="Adjusted Website for diffrent ratios, portfolio still needs work" />
     <MESSAGE value="finished german Texts, ironed out small css quirks and formatted here and there" />
-    <option name="LAST_COMMIT_MESSAGE" value="finished german Texts, ironed out small css quirks and formatted here and there" />
+    <MESSAGE value="Corrected Spelling and Grammar and properly did README.md and LICENSE.md" />
+    <option name="LAST_COMMIT_MESSAGE" value="Corrected Spelling and Grammar and properly did README.md and LICENSE.md" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

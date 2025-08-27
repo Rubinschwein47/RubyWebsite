@@ -22,4 +22,35 @@
       </Content>
     </ItemGroup>
 
+    <ItemGroup>
+      <_ContentIncludedByDefault Remove="wwwroot\recources\Dither.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\card.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\Hippocampus_Main.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\ingame_front.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\ingame_packs.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\pack.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\Hippocampus\RDL-Logo.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\Explenation.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\Logo.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\Start.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\View1.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\View2.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\LidlIdle\WelcomeBack.jpg" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\WallOf\Achievements.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\WallOf\Icon.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\WallOf\Start.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\WallOf\View1.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\games\WallOf\View2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\LeaningOnWall.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\logos\LogoConrad.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\logos\LogoPig1.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\logos\LogoPig2.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\logos\LogoRuby.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\logos\LogoSkull.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\over_wall.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\Pondering.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\walls_bright.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\recources\walls_dark.png" />
+    </ItemGroup>
+
 </Project>
