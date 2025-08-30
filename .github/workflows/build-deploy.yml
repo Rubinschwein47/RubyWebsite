@@ -41,7 +41,11 @@ jobs:
           npm run build
 
       - name: Copy frontend build into backend
-        run: |
+        run: 
+          echo ls
+          cd RubyWebsite
+          echo ls
+          cd ..
           if [ -d "RubyWebsite/wwwroot/" ]; then
             rm -rf RubyWebsite/wwwroot/*
           else
