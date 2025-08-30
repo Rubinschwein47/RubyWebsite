@@ -44,6 +44,8 @@ jobs:
         run: |
           if [ -d "RubyWebsite/wwwroot/" ]; then
             rm -rf RubyWebsite/wwwroot/*
+          else
+            mkdir wwwroot
           fi
           cp -r frontend/build/* RubyWebsite/wwwroot/
 
