@@ -1,7 +1,10 @@
 name: Build and Deploy
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+  push: 
+    branches:
+      - master
 
 jobs:
   build-and-deploy:
@@ -39,7 +42,9 @@ jobs:
 
       - name: Copy frontend build into backend
         run: |
-          rm -rf RubyWebsite/wwwroot/*
+          if [ -d RubyWebsite/wwwroot/]; then
+            rm -rf RubyWebsite/wwwroot/*
+          fi
           cp -r frontend/build/* RubyWebsite/wwwroot/
 
       - name: Restore and build backend
