@@ -44,13 +44,9 @@ jobs:
         run: 
           echo ls
           cd RubyWebsite
+          mkdir wwwroot
           echo ls
           cd ..
-          if [ -d "RubyWebsite/wwwroot/" ]; then
-            rm -rf RubyWebsite/wwwroot/*
-          else
-            mkdir wwwroot
-          fi
           cp -r frontend/build/* RubyWebsite/wwwroot/
 
       - name: Restore and build backend
