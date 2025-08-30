@@ -5,6 +5,7 @@ import pluginReact from "eslint-plugin-react";
 import markdown from "@eslint/markdown";
 import css from "@eslint/css";
 import { defineConfig } from "eslint/config";
+import {use} from "react";
 
 
 export default defineConfig([
@@ -15,6 +16,14 @@ export default defineConfig([
   { files: ["**/*.md"], plugins: { markdown }, language: "markdown/gfm", extends: ["markdown/recommended"] },
   { files: ["**/*.css"], plugins: { css }, language: "css/css", extends: ["css/recommended"] },
   {
+    use: [{
+      loader: require.resolve('eslint-loader'),
+      options: {
+        formatter: eslintFormatter,
+        eslintPath: require.resolve('eslint'),
+        emitWarning: true,
+      }
+    }],
     files: ["**/*.{ts,mts,cts,tsx}"],
     rules: {
       "@typescript-eslint/typedef": [
@@ -32,5 +41,5 @@ export default defineConfig([
       "semi": ["error", "always"],
       "max-len": ["error", { "code": 200 }]
     }
-  }
+  },
 ]);
