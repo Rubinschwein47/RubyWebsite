@@ -33,7 +33,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "types:openapi": "openapi -i http://localhost:5037/swagger/v1/swagger.json -o src/services/openapi",
-    "installDependencies": "npm i --legacy-peer-deps"
+    "install-dependencies": "npm i --legacy-peer-deps"
   },
   "eslintConfig": {
     "extends": [

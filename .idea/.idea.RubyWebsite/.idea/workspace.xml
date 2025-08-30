@@ -10,16 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/build-deploy.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/RubyWebsite.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/services/ContactControllerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/services/ContactControllerService.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/services/openapi/services/LanguageControllerService.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/services/openapi/services/LanguageControllerService.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,32 +68,32 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Launch Settings Profile.RubyWebsite:backend.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "XThreadsFramesViewSplitterKey": "0.3184466",
-    "git-widget-placeholder": "master",
-    "js.linters.configure.manually.selectedeslint": "true",
-    "list.type.of.created.stylesheet": "CSS",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.standard": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint",
-    "node.js.selected.package.standard": "",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "npm.build.executor": "Run",
-    "npm.frontend.executor": "Run",
-    "npm.installDependencies.executor": "Run",
-    "npm.start.executor": "Run",
-    "npm.types:openapi.executor": "Run",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "ts.external.directory.path": "/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Launch Settings Profile.RubyWebsite:backend.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.3184466&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;C:/Users/felix/RiderProjects/RubyWebsite/frontend/node_modules/eslint&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;npm.build.executor&quot;: &quot;Run&quot;,
+    &quot;npm.frontend.executor&quot;: &quot;Run&quot;,
+    &quot;npm.installDependencies.executor&quot;: &quot;Run&quot;,
+    &quot;npm.start.executor&quot;: &quot;Run&quot;,
+    &quot;npm.types:openapi.executor&quot;: &quot;Run&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected=".NET Launch Settings Profile.RubyWebsite:backend">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
@@ -297,6 +291,7 @@
       <workItem from="1756140724563" duration="6752000" />
       <workItem from="1756152812315" duration="2176000" />
       <workItem from="1756321979735" duration="4785000" />
+      <workItem from="1756559154122" duration="1831000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
