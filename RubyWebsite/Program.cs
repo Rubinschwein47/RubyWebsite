@@ -6,7 +6,7 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
-var isDev = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") != "Development";
+var isDev = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT") == "Development";
 Console.WriteLine("Starting RubyWebsite...");
 Console.WriteLine("Environment is " + (isDev ? "Development" : "Production"));
 
