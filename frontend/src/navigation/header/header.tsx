@@ -150,7 +150,8 @@ function LanguageDropdown({ratio}: DropDownProps) {
         <Dropdown menu={{items}} placement="bottomRight" arrow>
             <Button style={{marginRight: "1rem"}}>
                 {ratio === WindowRatio.mobile? null :
-                    <Text> <Trans path={"header.language.language"}/></Text>}
+                    <Text> <Trans path={"header.language.language"}/></Text>
+                }
                 <GlobalOutlined/></Button>       
         </Dropdown>
     );

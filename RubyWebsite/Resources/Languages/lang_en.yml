@@ -146,5 +146,11 @@ contact:
     emailAddress: Example@web.de
     textHere: Write message here
     sendRequest: Send
+  toExternal: Open in a new window
+  writeDirect: Message me here
   findMe: You can find me here
-  niceDay: Have a wonderfull day!
+  niceDay: Have a wonderful day!
+hints:
+  loading: Loading
+  mailSuccess: The Email was send successfully
+  mailFailure: Something went wrong and the message wasn't sent
