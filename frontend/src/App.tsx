@@ -13,6 +13,10 @@ import Background from "./basics/background/background";
 
 OpenAPI.BASE = "http://localhost:5037";
 export default function App() {
+    const basePath = window.location.protocol + "//" + window.location.host;
+    if(!basePath.includes("localhost")) {
+        OpenAPI.BASE = basePath;
+    }
     const element = useRoutes(routes);
 
     const loaded = useInfoStore((state) => state.languageLoaded);
