@@ -42,10 +42,8 @@ jobs:
 
       - name: Copy frontend build into backend
         run:
-          echo ls
           cd RubyWebsite
           mkdir wwwroot
-          echo ls
           cd ..
           cp -r frontend/build/* RubyWebsite/wwwroot/
 
@@ -54,20 +52,6 @@ jobs:
         run: |
           dotnet restore
           dotnet publish -c Release -o publish
-      - name: Debug SSH Connection
-        run: |
-          echo "${{ env.DEPLOY_KEY }}" > deploy_key
-            chmod 600 deploy_key
-            ssh -i deploy_key \
-              -o StrictHostKeyChecking=no \
-              -v \
-              ${{ env.DEPLOY_USER }}@${{ env.DEPLOY_HOST }} "\
-              echo 'Connection Successful!' && \
-              echo 'I am logged in as:' && \
-              whoami && \
-              echo 'Checking permissions for target directory:' && \
-              ls -ld ${{ env.DEPLOY_PATH }} \
-              "
       - name: Deploy to VPS
         uses: appleboy/scp-action@v1
         with:

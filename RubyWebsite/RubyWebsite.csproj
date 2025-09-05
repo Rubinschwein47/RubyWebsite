@@ -51,6 +51,28 @@
       <_ContentIncludedByDefault Remove="wwwroot\recources\Pondering.png" />
       <_ContentIncludedByDefault Remove="wwwroot\recources\walls_bright.png" />
       <_ContentIncludedByDefault Remove="wwwroot\recources\walls_dark.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\asset-manifest.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\favicon.ico" />
+      <_ContentIncludedByDefault Remove="wwwroot\index.html" />
+      <_ContentIncludedByDefault Remove="wwwroot\logo192.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\logo512.png" />
+      <_ContentIncludedByDefault Remove="wwwroot\manifest.json" />
+      <_ContentIncludedByDefault Remove="wwwroot\robots.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\css\main.22c94dda.css" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\css\main.22c94dda.css.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\js\453.670e15c7.chunk.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\js\453.670e15c7.chunk.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\js\main.2be16e1d.js" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\js\main.2be16e1d.js.LICENSE.txt" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\js\main.2be16e1d.js.map" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\media\github-mark.0b945018de1e856da6051197add2f4d9.svg" />
+      <_ContentIncludedByDefault Remove="wwwroot\static\media\itch_white.4380c046874e8f5efaeb8fcaf2f0d9bc.svg" />
     </ItemGroup>
+    
 
+    <ItemGroup>
+        <Content Include="Resources\**">
+            <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+        </Content>
+    </ItemGroup>
 </Project>
