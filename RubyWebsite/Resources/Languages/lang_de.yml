@@ -148,4 +148,6 @@ contact:
   writeDirect: Schreib mir hier
   niceDay: Noch einen Wundervollen Tag
 hints:
-  mailFailure:
+  loading: Lädt
+  mailFailure: Es ist etwas schief gegangen und ihre nachricht wurde nicht gesendet
+  mailSuccess: Die Email wurde erfolgreich gesendet
