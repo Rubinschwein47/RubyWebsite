@@ -41,7 +41,7 @@ jobs:
           npm run build
 
       - name: Copy frontend build into backend
-        run:
+        run: |
           cd RubyWebsite
           mkdir wwwroot
           cd ..
