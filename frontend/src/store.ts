@@ -9,10 +9,15 @@ export enum WindowRatio {
     square = "square",
     mobile  = "mobile",
 }
+export enum StoreProgress{
+    uninitialized = "uninitialized",
+    progress = "progress",
+    finished = "finished"
+}
 
 type InfoStore = {
     theme: string,
-    initialized: boolean,
+    initialized: StoreProgress,
     initialize: () => Promise<void>,
     setTheme: (newTheme: string) => void,
     languageToken: string,
@@ -28,8 +33,9 @@ const supportedLanguages = [
     'de'
 ];
 export const useInfoStore = create<InfoStore>((set, get) => ({
-    initialized: false,
+    initialized: StoreProgress.uninitialized,
     initialize: async ()=>{
+        set({initialized: StoreProgress.progress});
         get().refreshRatio();
         let newTheme = localStorage.getItem("theme");
         if(newTheme == null){
@@ -48,7 +54,7 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
             }
         }
         await get().setLanguage(newLang);
-        set({initialized: true});
+        set({initialized: StoreProgress.finished});
     },
     theme: "",
     setTheme: (newTheme: string) => {

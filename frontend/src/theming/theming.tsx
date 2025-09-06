@@ -1,7 +1,7 @@
 import {ConfigProvider, theme, ThemeConfig} from 'antd';
 import React, {ReactNode, useEffect, useLayoutEffect} from 'react';
 import './theming.css';
-import {useInfoStore} from '../store';
+import {StoreProgress, useInfoStore} from '../store';
 
 const white = '#fff';
 const black = '#000';
@@ -176,7 +176,7 @@ export default function Theming({children}: { children: ReactNode }) {
     const setRatio = useInfoStore((state) => state.refreshRatio);
     useEffect(() => {
         console.log(navigator.languages);
-        if (!storeInitialized) {
+        if (storeInitialized === StoreProgress.uninitialized) {
             initializeStore();
         }
     });

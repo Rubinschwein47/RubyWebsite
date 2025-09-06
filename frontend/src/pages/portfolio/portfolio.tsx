@@ -124,9 +124,9 @@ export default function Portfolio() {
 function Project({props, projectKey, windowRatio}: WrapperProps) {
     const textTabs: TabsProps['items'] = [];
     props.texts.map((it, index) => {
-        textTabs.push( {
+        textTabs.push({
             label: <Trans path={it.tabName}></Trans>,
-            key: String(index+1),
+            key: String(index + 1),
             children:
                 (<Paragraph>
                     <Trans path={it.text} asMarkDown={true}/>
@@ -180,9 +180,12 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
             }
         </div>
         <div>
-            <Image.PreviewGroup preview={{
-                height: "70%",
-            }}>
+            <Image.PreviewGroup preview={
+                windowRatio === WindowRatio.mobile ? {
+                    width: "100%"
+                } : {
+                    height: "70%"
+                }}>
                 {props.images.map((it) => (<>
                     <ImageWaiter key={it.alt} size={"5rem"} alt={it.alt} src={it.path}/>
                     <VDiv/>

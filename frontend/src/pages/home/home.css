@@ -5,9 +5,18 @@
     border: 1px solid var(--header-color);
     border-radius: var(--border-radius);
     padding: 0 1rem;
+    gap: 0;
 }
 
 .toolbar-wrapper-mobile{
     height: auto;
-    width: calc(100vw - 100px);
+    width: calc(100vw - 16px);
 }
+
+:root{
+    --bottom-gap-image-descriptor: 50px;
+}
+.ant-image-preview-footer{
+    bottom: var( --bottom-gap-image-descriptor );
+}
+
