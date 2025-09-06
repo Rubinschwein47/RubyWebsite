@@ -7,16 +7,10 @@ import WebHeader from "./navigation/header/header";
 import BaseContainer from './basics/baseContainer/baseContainer';
 import {useRoutes} from "react-router";
 import {routes} from './navigation/router';
-import {useInfoStore} from './store';
 import '@ant-design/v5-patch-for-react-19';
 import Background from "./basics/background/background";
 
-OpenAPI.BASE = "http://localhost:5037";
 export default function App() {
-    const basePath = window.location.protocol + "//" + window.location.host;
-    if (!basePath.includes("localhost")) {
-        OpenAPI.BASE = basePath;
-    }
     const element = useRoutes(routes);
     return (
         <Layout key={4747}>

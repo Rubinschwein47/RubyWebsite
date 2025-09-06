@@ -1,6 +1,6 @@
 import {create} from "zustand/react";
 import yaml from "js-yaml";
-import {LanguageControllerService} from "./services/openapi";
+import {LanguageControllerService, OpenAPI} from "./services/openapi";
 
 const {translation} = LanguageControllerService;
 
@@ -35,6 +35,7 @@ const supportedLanguages = [
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: StoreProgress.uninitialized,
     initialize: async ()=>{
+        SetOpenApiBase();
         let newLang = localStorage.getItem("language");
         if(newLang == null){
             navigator.languages.forEach((it)=>{
@@ -111,3 +112,11 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
     },
 }));
 
+function SetOpenApiBase(){
+    const basePath = window.location.protocol + "//" + window.location.host;
+    if (!basePath.includes("localhost")) {
+        OpenAPI.BASE = basePath;
+    }else {
+        OpenAPI.BASE = "http://localhost:5037";
+    }
+}
