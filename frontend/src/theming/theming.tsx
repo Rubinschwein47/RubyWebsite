@@ -194,7 +194,7 @@ export default function Theming({children}: { children: ReactNode }) {
         <ConfigProvider
             theme={antThemes[theme]}
         >
-            {children}
+            {storeInitialized != StoreProgress.uninitialized? children:null}
         </ConfigProvider>
     );
 }

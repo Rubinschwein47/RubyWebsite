@@ -35,13 +35,6 @@ const supportedLanguages = [
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: StoreProgress.uninitialized,
     initialize: async ()=>{
-        set({initialized: StoreProgress.progress});
-        get().refreshRatio();
-        let newTheme = localStorage.getItem("theme");
-        if(newTheme == null){
-            newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
-        }
-        set({theme: newTheme});
         let newLang = localStorage.getItem("language");
         if(newLang == null){
             navigator.languages.forEach((it)=>{
@@ -53,7 +46,17 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
                 newLang = "en";
             }
         }
-        await get().setLanguage(newLang);
+        const langWait = get().setLanguage(newLang);
+        set({initialized: StoreProgress.progress});
+        
+        get().refreshRatio();
+        let newTheme = localStorage.getItem("theme");
+        if(newTheme == null){
+            newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
+        }
+        set({theme: newTheme});
+        
+        await langWait;
         set({initialized: StoreProgress.finished});
     },
     theme: "",
