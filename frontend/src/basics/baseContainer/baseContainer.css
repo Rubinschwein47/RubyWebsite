@@ -7,13 +7,13 @@
 }
 
 .base-container-pc {
-    width: calc(100vw - 12rem);
-    margin: 10rem 6rem 3rem;
+    width: calc(100vw - 18rem);
+    margin: 2rem 6rem 3rem;
 }
 
 .base-container-square {
-    width: calc(100vw - 20px);
-    margin: 10rem 10px 3rem;
+    width: calc(100vw - 10rem);
+    margin: 2rem 10px 3rem;
 }
 
 .base-container-mobile {
@@ -36,7 +36,7 @@
 }
 .content-space{
     width: 100%;
-    padding: 0 20% 0 80px;
+    padding: 0 20% 0 0px;
 }
 
 .content-space-pc{
