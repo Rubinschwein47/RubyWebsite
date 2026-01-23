@@ -12,7 +12,7 @@
 }
 
 .base-container-square {
-    width: calc(100vw - 10rem);
+    /*width: calc(100vw - 10rem);*/
     margin: 2rem 10px 3rem;
 }
 
