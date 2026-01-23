@@ -3,6 +3,7 @@ import Home from "../pages/home/home";
 import Contact from "../pages/contact/contact";
 import Portfolio from "../pages/portfolio/portfolio";
 import NotFound from "../pages/notFound";
+import ArticleOverview from "../pages/articles/articleOverview";
 
 export const routes: RouteObject[] = [
     {
@@ -16,6 +17,10 @@ export const routes: RouteObject[] = [
     {
         path: "/portfolio",
         Component: Portfolio,
+    },
+    {
+        path: "/article",
+        Component: ArticleOverview
     },
     {
         path: "/",

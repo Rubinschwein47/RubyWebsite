@@ -11,12 +11,16 @@ export default function Background() {
                 return '/recources/walls_bright.png';
             case "dark":
                 return '/recources/walls_dark.png';
+            case "dark_contrast":
+                return '/recources/Empty.png';
         }
         return '/recources/walls_bright.png';
     }
+
     const path = getPicturePath();
     return (<div style={{position: 'absolute', width: '100%', height: "100%"}}>
         <div className={"background-side"} style={{left: 0, backgroundImage: "url(" + path + ")"}}></div>
-        <div className={"background-side"} style={{right: 0, backgroundImage: "url(" + path + ")",transform: "scaleX(-1)"}}></div>
+        <div className={"background-side"}
+             style={{right: 0, backgroundImage: "url(" + path + ")", transform: "scaleX(-1)"}}></div>
     </div>);
 }

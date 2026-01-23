@@ -3,6 +3,7 @@ import './header.css';
 import {Header} from "antd/es/layout/layout";
 import {Button, Dropdown, Flex, MenuProps, Typography} from "antd";
 import {
+    EditFilled,
     FormatPainterFilled,
     GlobalOutlined,
     HomeFilled,
@@ -15,6 +16,8 @@ import {
 import {useInfoStore, WindowRatio} from '../../store';
 import {useNavigate} from "react-router";
 import Trans from "../../basics/Translate";
+import {ThemeDropdown} from "./themeDropdown";
+import { LanguageDropdown } from "./languageDropdown";
 
 const {Title, Text} = Typography;
 
@@ -27,7 +30,11 @@ const pages: { name: string; icon: React.JSX.Element }[] = [{
 }, {
     name: "contact",
     icon: <MessageFilled/>,
-}];
+},{
+    name: "article",
+    icon: <EditFilled />,
+}
+];
 export default function WebHeader() {
     const ratio = useInfoStore((state) => state.windowRatio);
 
@@ -118,74 +125,5 @@ function SubPage({name, children}: SupPageProps) {
             <Title level={3} style={{margin: "auto"}}><Trans path={"header.links." + name}/></Title>
             {children}
         </div>
-    );
-}
-type DropDownProps = {
-    ratio: WindowRatio;
-}
-function LanguageDropdown({ratio}: DropDownProps) {
-    const setLanguage = useInfoStore(state => state.setLanguage);
-
-    const items: MenuProps['items'] = [
-        {
-            key: 1,
-            label: (
-                <p><Trans path={"header.language.de"}/></p>
-            ),
-            onClick: () => {
-                setLanguage("de");
-            }
-        },
-        {
-            key: 2,
-            label: (
-                <p><Trans path={"header.language.en"}/></p>
-            ),
-            onClick: () => {
-                setLanguage("en");
-            }
-        }
-    ];
-    return (
-        <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button style={{marginRight: "1rem"}}>
-                {ratio === WindowRatio.mobile? null :
-                    <Text> <Trans path={"header.language.language"}/></Text>
-                }
-                <GlobalOutlined/></Button>       
-        </Dropdown>
-    );
-}
-
-function ThemeDropdown({ratio}: DropDownProps) {
-    const setTheme = useInfoStore(state => state.setTheme);
-
-    const items: MenuProps['items'] = [
-        {
-            key: 1,
-            label: (
-                <p><Trans path={"header.theme.dark"}/> <MoonFilled/></p>
-            ),
-            onClick: () => {
-                setTheme("dark");
-            }
-        },
-        {
-            key: 2,
-            label: (
-                <p><Trans path={"header.theme.light"}/> <SunFilled/></p>
-            ),
-            onClick: () => {
-                setTheme("light");
-            }
-        }
-    ];
-    return (
-        <Dropdown menu={{items}} placement="bottomRight" arrow>
-            <Button type="primary">
-                {ratio === WindowRatio.mobile? null :
-                <Text> <Trans path={"header.theme.theme"}/></Text>}
-                <FormatPainterFilled/></Button>
-        </Dropdown>
     );
 }

@@ -1,5 +1,5 @@
 import {ConfigProvider, ThemeConfig} from "antd";
-import {darkTheme, darkThemeAntDesign} from "./themes/dark";
+import {darkTheme, darkThemeAntDesign, darkThemeHighContrast} from "./themes/dark";
 import {lightTheme, lightThemeAntDesign} from "./themes/light";
 import {ReactNode, useEffect, useLayoutEffect} from "react";
 import {StoreProgress, useInfoStore} from "../store";
@@ -14,6 +14,7 @@ const antThemes: { [key: string]: ThemeConfig } = {
 
 const themes: { [key: string]: {[key: string]: string }  } = {
     dark: darkTheme,
+    dark_contrast: darkThemeHighContrast,
     light: lightTheme,
 }
 
