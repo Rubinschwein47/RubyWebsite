@@ -181,11 +181,14 @@ function Project({props, projectKey, windowRatio}: WrapperProps) {
         </div>
         <div>
             <Image.PreviewGroup preview={
-                windowRatio === WindowRatio.mobile ? {
-                    width: "100%"
-                } : {
-                    height: "70%"
-                }}>
+                {}    
+                // windowRatio === WindowRatio.mobile ? {
+                //     width: "100%"
+                // } : {
+                //     height: "70%"
+                // }
+            }
+            >
                 {props.images.map((it) => (<>
                     <ImageWaiter key={it.alt} size={"5rem"} alt={it.alt} src={it.path}/>
                     <VDiv/>

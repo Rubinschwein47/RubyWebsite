@@ -1,5 +1,5 @@
 import {Divider, Image, Space, Typography} from 'antd';
-import React from 'react';
+import React, {useState} from 'react';
 import "./home.css";
 import ImageWaiter from "../../basics/ImageWaiter";
 import VDiv from "../../basics/VDiv";
@@ -13,6 +13,7 @@ const {Title, Text} = Typography;
 export default function Home() {
     const ratio = useInfoStore((state) => state.windowRatio);
     document.documentElement.style.setProperty("--bottom-gap-image-descriptor", ratio == WindowRatio.mobile? "0px" : "50px");
+    const [logoIndex,setLogoIndex] = useState(0);
     return (<>
         <Title level={1}><Trans path={"home.header"}/></Title>
         <div style={{width: '100%'}}>
@@ -27,18 +28,14 @@ export default function Home() {
             <Paragraph strong><Trans path={"home.whyRuby.explanationOldLogos"}/></Paragraph>
             <div style={{height: "0.5rem"}}></div>
             <Image.PreviewGroup preview={{
-                toolbarRender: (
-                    reactElement,
-                    {
-                        current
-                    },
-                ) => (
+                onChange: (current) => setLogoIndex(current),
+                toolbarRender: (originalNode) => (
                     <Space className={"toolbar-wrapper"+ (ratio == WindowRatio.mobile? " toolbar-wrapper-mobile" : "")}>
-                        <Title level={3}><Trans path={"home.whyRuby.logoDescriptions." + current + ".header"}/></Title>
-                        <Paragraph><Trans path={"home.whyRuby.logoDescriptions." + current + ".text"} asMarkDown={true}/></Paragraph>
+                        <Title level={3}><Trans path={`home.whyRuby.logoDescriptions.${logoIndex}.header`}/></Title>
+                        <Paragraph><Trans path={`home.whyRuby.logoDescriptions.${logoIndex}.text`} asMarkDown={true}/></Paragraph>
                     </Space>
                 ),
-                height: "50%",
+                // height: "50%",
             }}>
                 <ImageWaiter size={"8rem"} alt={"logo_skull"} src="recources/logos/LogoSkull.png"/>
                 <VDiv/>

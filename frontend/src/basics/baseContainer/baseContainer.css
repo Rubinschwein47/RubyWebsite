@@ -7,8 +7,8 @@
 }
 
 .base-container-pc {
-    width: calc(100vw - 18rem);
-    margin: 2rem 6rem 3rem;
+    /*width: calc(100vw - 18rem);*/
+    margin: 2rem 6rem 3rem; 
 }
 
 .base-container-square {

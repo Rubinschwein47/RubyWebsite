@@ -7,7 +7,6 @@ import WebHeader from "./navigation/header/header";
 import BaseContainer from './basics/baseContainer/baseContainer';
 import {useRoutes} from "react-router";
 import {routes} from './navigation/router';
-import '@ant-design/v5-patch-for-react-19';
 import Background from "./basics/background/background";
 
 export default function App() {
@@ -19,7 +18,8 @@ export default function App() {
                 overflow: "hidden",
                 position: "absolute",
                 minHeight: "100vh",
-                backgroundColor: "var(--background-color)"
+                backgroundColor: "var(--background-color)",
+                width: "100%"
             }}>
                 <Background/>
                 <BaseContainer>
