@@ -1,6 +1,6 @@
 import {theme, ThemeConfig} from "antd";
-import {black, borderRadius, headerHeight, whiteBackground} from "../themeConstants";
-import {ThemeClass} from "../themeClass";
+import {black, borderRadius, fontSize, headerHeight, whiteBackground} from "../themeConstants";
+import {darkThemeHighContrast} from "./dark";
 
 export const lightTheme = {
     "--icon-color": "#000",
@@ -19,6 +19,23 @@ export const lightTheme = {
     "--background-color": whiteBackground,
 };
 
+export const lightThemeHighContrast = {
+    "--icon-color": "#000",
+    "--bg-icon-color": "0,0,0,0",
+    "--header-color": "#fcedff",
+    "--container-color": "#fff",
+    "--border-radius": borderRadius + "px",
+    "--highlight-orange": "#fab990",
+    "--highlight-blue": "#8ec2ff",
+    "--highlight-light-blue": "#a4e2ff",
+    "--highlight-purple": "#e89bfa",
+    "--highlight-grey": "#efefef",
+    "--highlight-green": "#aaffa4",
+    "--highlight-yellow": "#ffe69b",
+    "--highlight-red": "#ff5b74",
+    "--background-color": whiteBackground,
+};
+
 export const lightThemeAntDesign: ThemeConfig = {
     algorithm: theme.defaultAlgorithm,
     token: {
@@ -34,7 +51,8 @@ export const lightThemeAntDesign: ThemeConfig = {
         colorIconHover: black,
         colorTextBase: black,
         colorText: black,
-        colorSplit: "#f873be"
+        colorSplit: "#f873be",
+        fontSize: fontSize
     },
     components: {
         Layout: {

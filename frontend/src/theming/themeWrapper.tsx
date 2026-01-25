@@ -1,6 +1,6 @@
 import {ConfigProvider, ThemeConfig} from "antd";
 import {darkTheme, darkThemeAntDesign, darkThemeHighContrast} from "./themes/dark";
-import {lightTheme, lightThemeAntDesign} from "./themes/light";
+import {lightTheme, lightThemeAntDesign, lightThemeHighContrast} from "./themes/light";
 import {ReactNode, useEffect, useLayoutEffect} from "react";
 import {StoreProgress, useInfoStore} from "../store";
 import React from "react";
@@ -10,12 +10,15 @@ import "./themeWrapper.css";
 const antThemes: { [key: string]: ThemeConfig } = {
     dark: darkThemeAntDesign,
     light: lightThemeAntDesign,
+    light_contrast: lightThemeAntDesign,
+    dark_contrast: darkThemeAntDesign
 };
 
 const themes: { [key: string]: {[key: string]: string }  } = {
     dark: darkTheme,
     dark_contrast: darkThemeHighContrast,
     light: lightTheme,
+    light_contrast: lightThemeHighContrast,
 }
 
 export default function ThemeWrapper({children}: { children: ReactNode }) {
@@ -27,8 +30,6 @@ export default function ThemeWrapper({children}: { children: ReactNode }) {
         document.documentElement.style.setProperty(key, value);
 
     });
-    // for (const [key, value] of Object.entries(themes[theme])) {
-    // }
 
     const setRatio = useInfoStore((state) => state.refreshRatio);
     useEffect(() => {
@@ -37,6 +38,9 @@ export default function ThemeWrapper({children}: { children: ReactNode }) {
             initializeStore();
         }
     });
+    if(theme.includes("contrast")) {
+        document.documentElement.style.setProperty("font-size","large");
+    }
     useLayoutEffect(() => {
         function updateSize() {
             setRatio();

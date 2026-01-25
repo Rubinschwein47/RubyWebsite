@@ -20,7 +20,7 @@ function ThemeDropdown({ratio}: {ratio: WindowRatio}) {
                 setTheme("dark");
             }
         },{
-            key: 1,
+            key: 3,
             label: (
                 <p><Trans path={"header.theme.dark-contrast"}/> <MoonFilled/></p>
             ),
@@ -36,14 +36,22 @@ function ThemeDropdown({ratio}: {ratio: WindowRatio}) {
             onClick: () => {
                 setTheme("light");
             }
+        },{
+            key: 4,
+            label: (
+                <p><Trans path={"header.theme.light-contrast"}/> <MoonFilled/></p>
+            ),
+            onClick: () => {
+                setTheme("light_contrast");
+            }
         }
     ];
     return (
         <Dropdown menu={{items}} placement="bottomRight" arrow>
             <Button type="primary">
                 {ratio === WindowRatio.mobile? null :
-                    <Text> <Trans path={"header.theme.theme"}/></Text>}
-                <FormatPainterFilled/></Button>
+                    <Text> <Trans path={"header.theme.theme"}/></Text>} <FormatPainterFilled/>
+            </Button>
         </Dropdown>
     );
 }

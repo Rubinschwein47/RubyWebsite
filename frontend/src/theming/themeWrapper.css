@@ -26,9 +26,9 @@ p{
     white-space: pre-line;
 }
 
-.ant-typography{
-    white-space: pre-line;
-}
+/*.ant-typography{*/
+/*    white-space: pre-line;*/
+/*}*/
 
 .markdown{
     white-space: nowrap;

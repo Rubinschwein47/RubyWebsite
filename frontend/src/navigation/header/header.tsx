@@ -1,23 +1,13 @@
 import React from 'react';
 import './header.css';
 import {Header} from "antd/es/layout/layout";
-import {Button, Dropdown, Flex, MenuProps, Typography} from "antd";
-import {
-    EditFilled,
-    FormatPainterFilled,
-    GlobalOutlined,
-    HomeFilled,
-    MenuOutlined,
-    MessageFilled,
-    MoonFilled,
-    RocketFilled,
-    SunFilled
-} from '@ant-design/icons';
+import {Dropdown, Flex, MenuProps, Typography} from "antd";
+import {EditFilled, HomeFilled, MenuOutlined, MessageFilled, RocketFilled} from '@ant-design/icons';
 import {useInfoStore, WindowRatio} from '../../store';
 import {useNavigate} from "react-router";
 import Trans from "../../basics/Translate";
 import {ThemeDropdown} from "./themeDropdown";
-import { LanguageDropdown } from "./languageDropdown";
+import {LanguageDropdown} from "./languageDropdown";
 
 const {Title, Text} = Typography;
 
@@ -40,8 +30,8 @@ export default function WebHeader() {
 
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
-            {ratio === WindowRatio.mobile ?
-                <><MobilePages pages={pages}/> <Title style={{margin: "auto 12px"}} level={3}>Rubinschwein47</Title></> 
+            {ratio !== WindowRatio.pc ?
+                <><MobilePages pages={pages}/> <Title style={{margin: "auto 12px"}} level={3}>RS47</Title></> 
                 : <DesktopPages pages={pages}/>}
             <div className={"options-panel"}>
                 <LanguageDropdown ratio={ratio}></LanguageDropdown>
@@ -49,8 +39,7 @@ export default function WebHeader() {
             </div>
 
         </Flex>
-        {ratio === WindowRatio.mobile ?
-            null :
+        {ratio === WindowRatio.pc ?
             <div className={'name-present'}>
                 <Flex style={{
                     alignItems: 'center',
@@ -61,6 +50,7 @@ export default function WebHeader() {
                     <div className={"name-present-line"} style={{marginRight: "auto"}}></div>
                 </Flex>
             </div>
+            :null
         }
     </Header>);
 }

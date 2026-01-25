@@ -13,6 +13,8 @@ export default function Background() {
                 return '/recources/walls_dark.png';
             case "dark_contrast":
                 return '/recources/Empty.png';
+            case "light_contrast":
+                return '/recources/Empty.png';
         }
         return '/recources/walls_bright.png';
     }
