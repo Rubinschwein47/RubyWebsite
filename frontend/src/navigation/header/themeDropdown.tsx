@@ -1,4 +1,4 @@
-import {FormatPainterFilled, MoonFilled, SunFilled} from "@ant-design/icons";
+import {FormatPainterFilled, MoonFilled, StarFilled, SunFilled, ThunderboltFilled} from "@ant-design/icons";
 import {Button, Dropdown, MenuProps, Typography} from "antd";
 import {useInfoStore, WindowRatio} from "../../store";
 import Trans from "../../basics/Translate";
@@ -22,7 +22,7 @@ function ThemeDropdown({ratio}: {ratio: WindowRatio}) {
         },{
             key: 3,
             label: (
-                <p><Trans path={"header.theme.dark-contrast"}/> <MoonFilled/></p>
+                <p><Trans path={"header.theme.dark-contrast"}/> <ThunderboltFilled /></p>
             ),
             onClick: () => {
                 setTheme("dark_contrast");
@@ -39,7 +39,7 @@ function ThemeDropdown({ratio}: {ratio: WindowRatio}) {
         },{
             key: 4,
             label: (
-                <p><Trans path={"header.theme.light-contrast"}/> <MoonFilled/></p>
+                <p><Trans path={"header.theme.light-contrast"}/> <StarFilled /></p>
             ),
             onClick: () => {
                 setTheme("light_contrast");

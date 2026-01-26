@@ -6,10 +6,13 @@ header:
     portfolio: Portfolio
     tech-stack: Tech Stack
     contact: Kontakt
+    article: Artikel
   theme:
     theme: Theme
     dark: Dunkles Design
+    dark-contrast: Hoher Kontrast Dunkel
     light: Helles Design
+    light-contrast: Hoher Kontrast Hell
   language:
     language: Sprache
     de: Deutsch
@@ -70,7 +73,7 @@ portfolio:
   projects:
     website:
       name: rubinschwein47.com
-      text: " > 2025\n
+      text: " > 2025 - 2026\n
       
         Eine kleine Website, die alle Angenehmlichkeiten für Benuzer und Entwickler beinhaltet, die man sich in einem Production-Environment wünschen würde.\n
         Dazu gehören für Benutzer Dinge wie Handy-, und Desktop-Kompatibilität, mehrere Sprachen und Dark/Light-Mode nach Wahl.\n
