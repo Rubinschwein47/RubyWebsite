@@ -50,6 +50,7 @@ app.UseHttpsRedirection();
 
 Console.WriteLine("Setting up Endpoints...");
 LanguageController.AddEndpoints(app);
+ArticleController.AddEndpoints(app);
 var smtp = builder.Configuration.GetSection("Smtp").Get<SmtpSettings>();
 ContactController.AddEndpoints(app, smtp);
 Console.WriteLine("Endpoints have been set up successfully");

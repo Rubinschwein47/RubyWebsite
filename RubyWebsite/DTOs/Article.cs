@@ -2,10 +2,17 @@ namespace RubyWebsite.DTOs;
 
 public class ArticleDto
 {
-    string Title { get; set; }
-    string[] Tags { get; set; }
-    DateTime Date { get; set; }
-    string Description { get; set; }
+    public string? Handle { get; set; }
+    public string Title { get; set; }
+    public string[] Tags { get; set; }
+    public DateTime Date { get; set; }
+    public string Description { get; set; }
+}
+
+public class FullArticleDto(ArticleDto article,string text)
+{
+    public ArticleDto? MetaData { get;  }= article;
+    public string Text { get; } = text;
 }
 //
 // public abstract class ArticlePart
