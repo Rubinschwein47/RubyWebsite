@@ -2,7 +2,7 @@ import React from 'react';
 import './header.css';
 import {Header} from "antd/es/layout/layout";
 import {Dropdown, Flex, MenuProps, Typography} from "antd";
-import {EditFilled, HomeFilled, MenuOutlined, MessageFilled, RocketFilled} from '@ant-design/icons';
+import {ExperimentFilled, HomeFilled, MenuOutlined, MessageFilled, RocketFilled} from '@ant-design/icons';
 import {useInfoStore, WindowRatio} from '../../store';
 import {useNavigate} from "react-router";
 import Trans from "../../basics/Translate";
@@ -21,8 +21,8 @@ const pages: { name: string; icon: React.JSX.Element }[] = [{
     name: "contact",
     icon: <MessageFilled/>,
 },{
-    name: "article",
-    icon: <EditFilled />,
+    name: "thingis",
+    icon: <ExperimentFilled />,
 }
 ];
 export default function WebHeader() {

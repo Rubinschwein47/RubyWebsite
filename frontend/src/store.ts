@@ -1,15 +1,17 @@
 import {create} from "zustand/react";
 import yaml from "js-yaml";
 import {LanguageControllerService, OpenAPI} from "./services/openapi";
+import {FALSE} from "openapi-typescript";
 
 const {translation} = LanguageControllerService;
 
 export enum WindowRatio {
     pc = "pc",
     square = "square",
-    mobile  = "mobile",
+    mobile = "mobile",
 }
-export enum StoreProgress{
+
+export enum StoreProgress {
     uninitialized = "uninitialized",
     progress = "progress",
     finished = "finished"
@@ -34,29 +36,29 @@ const supportedLanguages = [
 ];
 export const useInfoStore = create<InfoStore>((set, get) => ({
     initialized: StoreProgress.uninitialized,
-    initialize: async ()=>{
+    initialize: async () => {
         SetOpenApiBase();
         let newLang = localStorage.getItem("language");
-        if(newLang == null){
-            navigator.languages.forEach((it)=>{
-                if(newLang != null && supportedLanguages.includes(it)){
+        if (newLang == null) {
+            navigator.languages.forEach((it) => {
+                if (newLang != null && supportedLanguages.includes(it)) {
                     newLang = it;
                 }
             });
-            if(newLang == null){
+            if (newLang == null) {
                 newLang = "en";
             }
         }
         const langWait = get().setLanguage(newLang);
         set({initialized: StoreProgress.progress});
-        
+
         get().refreshRatio();
         let newTheme = localStorage.getItem("theme");
-        if(newTheme == null){
-            newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches?"dark": "light";
+        if (newTheme == null) {
+            newTheme = window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light";
         }
         set({theme: newTheme});
-        
+
         await langWait;
         set({initialized: StoreProgress.finished});
     },
@@ -82,17 +84,17 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
     getTranslation: (key: string) => {
         const parts = key.split(".");
         let tree = get().language;
-        parts.forEach((it,i) => {
+        parts.forEach((it, i) => {
             const treeResult = tree[it as keyof typeof tree];
-            if(
-                (i != parts.length-1 && typeof treeResult != "object") ||
-                (i == parts.length-1 && typeof treeResult != "string")
-                ) {
+            if (
+                (i != parts.length - 1 && typeof treeResult != "object") ||
+                (i == parts.length - 1 && typeof treeResult != "string")
+            ) {
                 return parts;
             }
             tree = tree[it as keyof typeof tree];
         });
-        if(typeof tree != "string") {
+        if (typeof tree != "string") {
             return key;
         }
         return tree;
@@ -100,11 +102,11 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
     windowRatio: WindowRatio.square,
     refreshRatio: () => {
         const ratio = window.innerWidth / window.innerHeight;
-        if(ratio >= 4/3) {
+        if (ratio >= 4 / 3) {
             set({windowRatio: WindowRatio.pc});
             return;
         }
-        if(ratio <= 3/4) {
+        if (ratio <= 3 / 4) {
             set({windowRatio: WindowRatio.mobile});
             return;
         }
@@ -112,11 +114,11 @@ export const useInfoStore = create<InfoStore>((set, get) => ({
     },
 }));
 
-function SetOpenApiBase(){
+function SetOpenApiBase() {
     const basePath = window.location.protocol + "//" + window.location.host;
     if (!basePath.includes("localhost")) {
         OpenAPI.BASE = basePath;
-    }else {
+    } else {
         OpenAPI.BASE = "http://localhost:5037";
     }
 }

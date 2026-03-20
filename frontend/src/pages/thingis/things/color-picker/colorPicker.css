@@ -1,0 +1,43 @@
+
+.main-order-color{
+    display: flex;
+    gap: 1rem;
+    > div{
+        display:inline-block;
+    }
+}
+.color-image{
+    --hue: 0;
+    position: relative;
+    width: 20rem;
+    height: 20rem;
+    border-radius: var(--border-radius);
+    background:
+        linear-gradient(0deg, black 0%, var(--transparent) 100%),
+        linear-gradient(90deg, white 0%, hsl(var(--hue),100%,50%) 100%);
+}
+.color-dot{
+    width:0.8rem;
+    height: 0.8rem;
+    background-color: black;
+    border-radius: 100%;
+    border:solid white 2px;
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top:0%;
+    left:0%;
+}
+
+.slider-container{
+    --start: hsl(0,100%,50%);
+    --end: hsl(360,100%,50%);
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+    .ant-slider-track{
+        display:none;
+    }
+    .ant-slider-step{
+        background: var(--rainbow);
+    }
+}

@@ -4,6 +4,7 @@ using RubyWebsite.DTOs;
 
 namespace RubyWebsite.Controllers;
 
+//Currently Unused, the whole Article stuff since it would likely look empty fast
 public class ArticleController
 {
     static char sep = Path.DirectorySeparatorChar;

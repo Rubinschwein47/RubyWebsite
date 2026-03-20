@@ -10,10 +10,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/build-deploy.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite.sln.DotSettings.user" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/store.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +34,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="dev" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
@@ -52,9 +57,22 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/23c646a82d4df66af1cb96f366d74b6bf136a4ca66a38de00ceae827db540f3/SwaggerBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/3995e464c2f433ce833640d08ee41cd741701befa85c6f6e6b9f8838f3bfecb0/HttpsRedirectionBuilderExtensions.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/541a092bf7781c73472381c47dd31c3447c2568d2da945ec791f6193812a/OpenApiEndpointConventionBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/6771d4a4cce39ed533223dc35ed9620b1989fcc3687851d2e401ac1aa69f6f8/SwaggerUIBuilderExtensions.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/968676f9023f8d25be2585df3418c245849683b21d0e0ccc548663a35701297/Environment.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/e744562ef42dc5e29efed36f99fad0bd8896f768f06a144364a62cb95d92813/Console.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/Controllers/LanguageController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/felix_conrad/RiderProjects/RubyWebsite/RubyWebsite/Controllers/LanguageController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/DataObjects/SmtpSettings.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/Properties/launchSettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/appsettings.Development.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/appsettings.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/wwwroot/static/css/main.22c94dda.css.map" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/RubyWebsite/wwwroot/static/js/main.2be16e1d.js.map" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/frontend/package-lock.json" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///home/felix_conrad/RiderProjects/RubyWebsite/frontend/public/manifest.json" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///home/felix_conrad/RiderProjects/RubyWebsite/frontend/public/manifest.json" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
@@ -76,6 +94,7 @@
     &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.3184466&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;js.linters.configure.manually.selectedeslint&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/felix_conrad/Unity/Games/DAAS&quot;,
     &quot;list.type.of.created.stylesheet&quot;: &quot;CSS&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
@@ -89,12 +108,12 @@
     &quot;npm.installDependencies.executor&quot;: &quot;Run&quot;,
     &quot;npm.start.executor&quot;: &quot;Run&quot;,
     &quot;npm.types:openapi.executor&quot;: &quot;Run&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
     &quot;ts.external.directory.path&quot;: &quot;/home/felix_conrad/RiderProjects/RubyWebsite/frontend/node_modules/typescript/lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected=".NET Launch Settings Profile.RubyWebsite:backend">
+  <component name="RunManager" selected="Compound.Both">
     <configuration name="Both" type="CompoundRunConfigurationType">
       <toRun name="RubyWebsite:backend" type="LaunchSettings" />
       <toRun name="frontend" type="js.build_tools.npm" />
@@ -243,9 +262,11 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.types:openapi" />
         <item itemvalue="npm.installDependencies" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.build" />
+        <item itemvalue="npm.types:openapi" />
       </list>
     </recent_temporary>
   </component>
@@ -291,7 +312,23 @@
       <workItem from="1756140724563" duration="6752000" />
       <workItem from="1756152812315" duration="2176000" />
       <workItem from="1756321979735" duration="4785000" />
-      <workItem from="1756559154122" duration="1831000" />
+      <workItem from="1756559154122" duration="9057000" />
+      <workItem from="1756756313898" duration="1974000" />
+      <workItem from="1757019626531" duration="14884000" />
+      <workItem from="1757155434887" duration="13016000" />
+      <workItem from="1757190898643" duration="870000" />
+      <workItem from="1757449437377" duration="909000" />
+      <workItem from="1757583361276" duration="8288000" />
+      <workItem from="1757686049223" duration="53000" />
+      <workItem from="1757915940657" duration="1446000" />
+      <workItem from="1758270054011" duration="6649000" />
+      <workItem from="1758303286300" duration="31000" />
+      <workItem from="1760560120606" duration="1912000" />
+      <workItem from="1761950171375" duration="31000" />
+      <workItem from="1764262649629" duration="641000" />
+      <workItem from="1764281547806" duration="1289000" />
+      <workItem from="1765394366816" duration="1844000" />
+      <workItem from="1765494297846" duration="1584000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -493,7 +530,159 @@
       <option name="project" value="LOCAL" />
       <updated>1756155328827</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="added github workflow">
+      <option name="closed" value="true" />
+      <created>1756561256966</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1756561256966</updated>
+    </task>
+    <task id="LOCAL-00027" summary="made action manual">
+      <option name="closed" value="true" />
+      <created>1756561449034</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1756561449034</updated>
+    </task>
+    <task id="LOCAL-00028" summary="changed deploy">
+      <option name="closed" value="true" />
+      <created>1756570034915</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1756570034915</updated>
+    </task>
+    <task id="LOCAL-00029" summary="made eslint not break build">
+      <option name="closed" value="true" />
+      <created>1756570462552</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1756570462552</updated>
+    </task>
+    <task id="LOCAL-00030" summary="made build not so picky">
+      <option name="closed" value="true" />
+      <created>1756571001536</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1756571001536</updated>
+    </task>
+    <task id="LOCAL-00031" summary="made cleanup cautious and run on push to master">
+      <option name="closed" value="true" />
+      <created>1756571467957</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1756571467957</updated>
+    </task>
+    <task id="LOCAL-00032" summary="im a syntax genius">
+      <option name="closed" value="true" />
+      <created>1756571678243</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1756571678243</updated>
+    </task>
+    <task id="LOCAL-00033" summary="ahh yes, quotes">
+      <option name="closed" value="true" />
+      <created>1756571794530</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1756571794530</updated>
+    </task>
+    <task id="LOCAL-00034" summary="lil github cant copy without its trusty folder">
+      <option name="closed" value="true" />
+      <created>1756572293667</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1756572293667</updated>
+    </task>
+    <task id="LOCAL-00035" summary="just guessing at this point">
+      <option name="closed" value="true" />
+      <created>1756573178821</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1756573178821</updated>
+    </task>
+    <task id="LOCAL-00036" summary="f around and find out">
+      <option name="closed" value="true" />
+      <created>1756573425765</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1756573425765</updated>
+    </task>
+    <task id="LOCAL-00037" summary="I am literally stupid at this point">
+      <option name="closed" value="true" />
+      <created>1757021292213</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1757021292213</updated>
+    </task>
+    <task id="LOCAL-00038" summary="added Resources folder to be included in the build&#10;and slimmed build-deploy.yml">
+      <option name="closed" value="true" />
+      <created>1757098289623</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1757098289623</updated>
+    </task>
+    <task id="LOCAL-00039" summary="fixed syntax">
+      <option name="closed" value="true" />
+      <created>1757098461281</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1757098461281</updated>
+    </task>
+    <task id="LOCAL-00040" summary="made openapi not call localhost in prod">
+      <option name="closed" value="true" />
+      <created>1757099745007</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1757099745007</updated>
+    </task>
+    <task id="LOCAL-00041" summary="changed minor missing texts">
+      <option name="closed" value="true" />
+      <created>1757107835759</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1757107835759</updated>
+    </task>
+    <task id="LOCAL-00042" summary="optimized loading and stuff for SEO">
+      <option name="closed" value="true" />
+      <created>1757165905483</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1757165905483</updated>
+    </task>
+    <task id="LOCAL-00043" summary="made language load as fast as possible">
+      <option name="closed" value="true" />
+      <created>1757166947887</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1757166947887</updated>
+    </task>
+    <task id="LOCAL-00044" summary="fixed openapi order setup bug">
+      <option name="closed" value="true" />
+      <created>1757191160814</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1757191160814</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -503,32 +692,32 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="added react" />
-    <MESSAGE value="implemented things" />
-    <MESSAGE value="fuck you openapi" />
-    <MESSAGE value="stable and can start" />
-    <MESSAGE value="implemented openapi" />
-    <MESSAGE value="added themes" />
-    <MESSAGE value="added walls, finished themes(no cookies), added Header text" />
-    <MESSAGE value="Added Container and Streamlined+Fixed Design" />
-    <MESSAGE value="minor corrections" />
-    <MESSAGE value="added routing" />
-    <MESSAGE value="added Tab Icon" />
-    <MESSAGE value="replaced library with own code, now actually works" />
-    <MESSAGE value="made themes more generic" />
-    <MESSAGE value="made translation whole, implemented localstorage and started writing about text" />
-    <MESSAGE value="touched router and removed brain cells" />
-    <MESSAGE value="put all pictures together and finished the Portfolio, but text still missing" />
-    <MESSAGE value="Fixed up background sizing issue and removed unused code" />
-    <MESSAGE value="added mobile support" />
-    <MESSAGE value="started contact page" />
     <MESSAGE value="Implemented es lint and continued message" />
     <MESSAGE value="gay" />
     <MESSAGE value="minor bug fixes" />
     <MESSAGE value="Adjusted Website for diffrent ratios, portfolio still needs work" />
     <MESSAGE value="finished german Texts, ironed out small css quirks and formatted here and there" />
     <MESSAGE value="Corrected Spelling and Grammar and properly did README.md and LICENSE.md" />
-    <option name="LAST_COMMIT_MESSAGE" value="Corrected Spelling and Grammar and properly did README.md and LICENSE.md" />
+    <MESSAGE value="added github workflow" />
+    <MESSAGE value="made action manual" />
+    <MESSAGE value="changed deploy" />
+    <MESSAGE value="made eslint not break build" />
+    <MESSAGE value="made build not so picky" />
+    <MESSAGE value="made cleanup cautious and run on push to master" />
+    <MESSAGE value="im a syntax genius" />
+    <MESSAGE value="ahh yes, quotes" />
+    <MESSAGE value="lil github cant copy without its trusty folder" />
+    <MESSAGE value="just guessing at this point" />
+    <MESSAGE value="f around and find out" />
+    <MESSAGE value="I am literally stupid at this point" />
+    <MESSAGE value="added Resources folder to be included in the build&#10;and slimmed build-deploy.yml" />
+    <MESSAGE value="fixed syntax" />
+    <MESSAGE value="made openapi not call localhost in prod" />
+    <MESSAGE value="changed minor missing texts" />
+    <MESSAGE value="optimized loading and stuff for SEO" />
+    <MESSAGE value="made language load as fast as possible" />
+    <MESSAGE value="fixed openapi order setup bug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed openapi order setup bug" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

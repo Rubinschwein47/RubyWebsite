@@ -3,7 +3,9 @@ import Home from "../pages/home/home";
 import Contact from "../pages/contact/contact";
 import Portfolio from "../pages/portfolio/portfolio";
 import NotFound from "../pages/notFound";
-import ArticleOverview from "../pages/articles/articleOverview";
+import ThingisOverview from "../pages/thingis/thingisOverview";
+import ColorPicker from "../pages/thingis/things/color-picker/colorPicker";
+import {thingisRoute} from "../pages/thingis/thinigsRoute";
 
 export const routes: RouteObject[] = [
     {
@@ -19,8 +21,8 @@ export const routes: RouteObject[] = [
         Component: Portfolio,
     },
     {
-        path: "/article",
-        Component: ArticleOverview
+        path: "/thingis",
+        children: thingisRoute
     },
     {
         path: "/",

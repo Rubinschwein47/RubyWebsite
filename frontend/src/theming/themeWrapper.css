@@ -21,7 +21,10 @@ code {
     height: auto;
     min-height: 100vh;
 }
-
+.ant-slider{
+    display: flex;
+    flex-grow: 1;
+}
 p{
     white-space: pre-line;
 }
