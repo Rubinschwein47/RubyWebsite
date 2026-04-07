@@ -9,7 +9,8 @@ const {Text, Title} = Typography;
 
 export default function ColorPicker() {
     // dropdown control
-    const [colorFieldMouseDown, setColorFieldMouseDown] = useState<boolean>(false);
+    // const [colorFieldMouseDown, setColorFieldMouseDown] = useState<boolean>(false);
+    var colorFieldMouseDown = false;
     const colorImage = useRef<HTMLDivElement>(null);
     const colorDot = useRef<HTMLDivElement>(null);
 
@@ -20,7 +21,9 @@ export default function ColorPicker() {
 
 
     const mouseEnter = (event: React.MouseEvent) => {
-        setColorFieldMouseDown(true);
+        colorFieldMouseDown = true;
+        console.log("mouseDown:",event);
+        console.log("mouseDown native:",event.nativeEvent);
         mouseMove(event.nativeEvent);
     }
     const mouseMove = (event: MouseEvent) => {
@@ -34,7 +37,7 @@ export default function ColorPicker() {
         console.log(x, y);
     }
     const mouseLeave = () => {
-        setColorFieldMouseDown(false);
+        colorFieldMouseDown = false;
     }
     useEffect(() => {
         document.addEventListener('mousemove', mouseMove);
