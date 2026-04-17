@@ -4,3 +4,31 @@
     flex-wrap: wrap;
     gap: 1rem;
 }
+
+.thingi-display {
+    width: 16rem;
+    height: 25rem;
+    text-align: center;
+
+    color: var(--icon-color);
+    transition: transform .3s ease;
+    transform: scale(1);
+    > *{
+        margin: 0.5rem auto;
+    }
+}
+
+.thingi-display:hover {
+    transform: scale(1.05);
+}
+.thingis-display {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    padding: 1.5rem 0.5rem 0.5rem;
+}
+
+.badge{
+    color: var(--icon-color);
+}
