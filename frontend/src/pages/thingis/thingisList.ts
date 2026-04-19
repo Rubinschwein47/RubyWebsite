@@ -18,7 +18,7 @@ export const ThingiTagColors:{[id:string]:string} = {
 
 export const thingis:ThingiInfo[] = [
     {
-        name: "color-picker",
+        name: "colorPicker",
         icon: "recources/Pondering.png",
         uri: "color-picker",
         tags: [ThingiTag.Productive, ThingiTag.Color]
