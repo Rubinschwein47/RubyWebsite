@@ -160,4 +160,16 @@ hints:
   mailFailure: Something went wrong and the message wasn't sent
 article:
   header: Articles
-  
+thingis:
+  header: Thingis
+  searchByName: search
+  colorPicker:
+    title: Color Picker
+    description: a feature rich color picker 
+    hue: Hue
+    red: Red
+    blue: Blue
+    green: Green
+  superAi:
+    title: Super Ruby AI
+    description: Hyper-intelligent and totally real in house AI

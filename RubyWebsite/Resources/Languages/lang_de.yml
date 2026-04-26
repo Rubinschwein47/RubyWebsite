@@ -154,9 +154,3 @@ hints:
   loading: Lädt
   mailFailure: Es ist etwas schief gegangen und ihre nachricht wurde nicht gesendet
   mailSuccess: Die Email wurde erfolgreich gesendet
-thingis:
-  header: Thingis
-  searchByName: search
-  colorPicker: 
-    title: Color Picker
-    description: a feature rich color picker 

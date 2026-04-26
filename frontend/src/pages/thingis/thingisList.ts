@@ -24,10 +24,10 @@ export const thingis:ThingiInfo[] = [
         tags: [ThingiTag.Productive, ThingiTag.Color]
     },
     {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
+        name: "superAi",
+        icon: "recources/Pondering.png",
+        uri: "super-ai",
+        tags: [ThingiTag.Fun]
     },
     {
         name: "color-picker",

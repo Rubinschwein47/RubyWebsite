@@ -83,3 +83,10 @@
         background: var(--gradient);
     }
 }
+
+.color-display{
+    border-radius: var(--border-radius);
+    width: 15rem;
+    height: 10rem;
+    background-color: hsl(0,66.324%,35.32%);
+}
