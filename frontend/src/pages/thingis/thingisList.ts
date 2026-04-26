@@ -9,11 +9,13 @@ export enum ThingiTag {
     Productive="productive",
     Fun = "fun",
     Color="color",
+    Time = "time",
 }
 export const ThingiTagColors:{[id:string]:string} = {
     productive: 'grey',
     fun: 'purple',
     color: 'yellow',
+    time: 'red',
 }
 
 export const thingis:ThingiInfo[] = [
@@ -30,142 +32,22 @@ export const thingis:ThingiInfo[] = [
         tags: [ThingiTag.Fun]
     },
     {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
+        name: "multiCounter",
+        icon: "recources/Pondering.png",
+        uri: "multi-counter",
+        tags: [ThingiTag.Productive]
     },
     {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
+        name: "multiTimer",
+        icon: "recources/Pondering.png",
+        uri: "multi-timer",
+        tags: [ThingiTag.Productive, ThingiTag.Time]
     },
     {
-        name: "color-picker",
+        name: "pomodore",
         icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
-    },
-    {
-        name: "color-picker",
-        icon: "someArtShit",
-        uri: "color-picker",
-        tags: [ThingiTag.Productive, ThingiTag.Color]
+        uri: "pomodore",
+        tags: [ThingiTag.Productive, ThingiTag.Time]
     }
 ]
 

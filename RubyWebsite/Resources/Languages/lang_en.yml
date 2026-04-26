@@ -7,6 +7,7 @@ header:
     tech-stack: Tech Stack
     contact: Contact
     article: Articles
+    thingis: Thingis
   theme:
     theme: Theme
     dark: Dark Design
@@ -165,7 +166,7 @@ thingis:
   searchByName: search
   colorPicker:
     title: Color Picker
-    description: a feature rich color picker 
+    description: A feature rich color picker 
     hue: Hue
     red: Red
     blue: Blue
@@ -173,3 +174,9 @@ thingis:
   superAi:
     title: Super Ruby AI
     description: Hyper-intelligent and totally real in house AI
+  multiCounter:
+    title: Multi Counter
+    description: As many counters as the heart desires.
+  multiTimer:
+    title: Multi Timer
+    description: As many timers or stopwatches as the heart desires

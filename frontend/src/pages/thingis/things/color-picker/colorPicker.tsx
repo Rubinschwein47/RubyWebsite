@@ -123,8 +123,9 @@ export default function ColorPicker() {
                 <div ref={colorDisplay} className={"color-display"}></div>
                 <div><span>rgb: {convert.hsl.rgb(hue,saturation,lightness).join(",")}</span> <Text copyable={{text: convert.hsl.rgb(hue,saturation,lightness).join(",")}}/></div>
                 <div><span>hsv: {convert.hsl.hsv(hue,saturation,lightness).join(",")}</span> <Text copyable={{text: convert.hsl.hsv(hue,saturation,lightness).join(",")}}/></div>
-                <div><span>hsl: {hue.toPrecision(1)},{saturation.toPrecision(1)},{lightness.}</span> <Text copyable={{text: hue.toPrecision(1) +","+saturation.toPrecision(1)+","+lightness.toPrecision(1)}}/></div>
-
+                <div><span>hsl: {Math.round(hue)},{Math.round(saturation)},{Math.round(lightness)}</span> <Text copyable={{text: Math.round(hue) +","+Math.round(saturation)+","+Math.round(lightness)}}/></div>
+                <div><span>hex: #{convert.hsl.hex(hue,saturation,lightness)}</span> <Text copyable={{text: "#"+convert.hsl.hex(hue,saturation,lightness)}}/></div>
+                <div><span>cmyk: {convert.hsl.cmyk(hue,saturation,lightness).join(",")}</span> <Text copyable={{text: convert.hsl.cmyk(hue,saturation,lightness).join(",")}}/></div>
             </div>
         </div>
     </div>);
