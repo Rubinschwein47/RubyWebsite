@@ -8,7 +8,7 @@ import {Link} from "react-router";
 import {useInfoStore} from "../../store";
 import FatHeader from "../../basics/fatHeader/fatHeader";
 
-const {Text, Title} = Typography;
+const {Text} = Typography;
 
 export default function ThingisOverview() {
     const translate = useInfoStore((state) => state.getTranslation);

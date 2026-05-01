@@ -29,7 +29,7 @@ export default function ImageWaiter({src, alt, size, forceSquare = false, previe
                     width={size}
                 />:
                 <img
-                    style={{display: imageLoaded ? 'flex' : 'none',width:size, height: forceSquare?size:undefined}}
+                    style={{display: imageLoaded ? 'flex' : 'none',width:size, height: forceSquare?size:undefined,imageRendering:"crisp-edges"}}
                     src={src}
                     alt={alt}
                     onLoad={handleImageLoad}

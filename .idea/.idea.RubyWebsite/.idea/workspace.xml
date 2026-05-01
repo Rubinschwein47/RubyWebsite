@@ -10,23 +10,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4f7c8235-7d4e-4771-9d2b-d000e351c37f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/contribution.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/public/recources/update.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/basics/fatHeader/fatHeader.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/frontend/src/basics/fatHeader/fatHeader.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.RubyWebsite/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/RubyWebsite/Controllers/ContactController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/index.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/basics/ImageWaiter.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/navigation/header/header.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/contact/contact.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/home/home.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/portfolio/portfolio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/notFound.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/thingis/thingisList.ts" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/thingis/thingisList.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/frontend/src/pages/thingis/thingisOverview.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/thingis/thingisOverview.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/themeWrapper.css" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/themeWrapper.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/frontend/src/theming/themeWrapper.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/theming/themeWrapper.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/thingis/things/color-picker/colorPicker.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/thingis/things/color-picker/colorPicker.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/frontend/src/pages/thingis/things/multi-counter/multiCounter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/frontend/src/pages/thingis/things/multi-counter/multiCounter.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +41,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="master" />
+        <entry key="$PROJECT_DIR$" value="experiment-pxl-icons" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -282,8 +274,8 @@
         <item itemvalue="npm.types:openapi" />
         <item itemvalue="npm.installDependencies" />
         <item itemvalue="npm.build" />
-        <item itemvalue="npm.build" />
         <item itemvalue="npm.types:openapi" />
+        <item itemvalue="npm.installDependencies" />
       </list>
     </recent_temporary>
   </component>
@@ -348,7 +340,7 @@
       <workItem from="1765494297846" duration="1584000" />
       <workItem from="1774031262167" duration="15323000" />
       <workItem from="1774311125900" duration="6000" />
-      <workItem from="1777638523597" duration="13438000" />
+      <workItem from="1777638523597" duration="19629000" />
     </task>
     <task id="LOCAL-00001" summary="clean up">
       <option name="closed" value="true" />
@@ -718,7 +710,15 @@
       <option name="project" value="LOCAL" />
       <updated>1777643388637</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="changed header fonts">
+      <option name="closed" value="true" />
+      <created>1777652300721</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1777652300721</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -728,7 +728,6 @@
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
-    <MESSAGE value="minor bug fixes" />
     <MESSAGE value="Adjusted Website for diffrent ratios, portfolio still needs work" />
     <MESSAGE value="finished german Texts, ironed out small css quirks and formatted here and there" />
     <MESSAGE value="Corrected Spelling and Grammar and properly did README.md and LICENSE.md" />
@@ -753,7 +752,8 @@
     <MESSAGE value="fixed openapi order setup bug" />
     <MESSAGE value="started color picker and thingis" />
     <MESSAGE value="changed from create react app to vite" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed from create react app to vite" />
+    <MESSAGE value="changed header fonts" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed header fonts" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

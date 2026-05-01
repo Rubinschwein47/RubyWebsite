@@ -21,13 +21,13 @@ export const ThingiTagColors:{[id:string]:string} = {
 export const thingis:ThingiInfo[] = [
     {
         name: "colorPicker",
-        icon: "recources/Pondering.png",
+        icon: "recources/thingis/ColorPicker64.png",
         uri: "color-picker",
         tags: [ThingiTag.Productive, ThingiTag.Color]
     },
     {
         name: "superAi",
-        icon: "recources/Pondering.png",
+        icon: "recources/thingis/Brain64.png",
         uri: "super-ai",
         tags: [ThingiTag.Fun]
     },

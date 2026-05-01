@@ -113,7 +113,7 @@ function SubPage({name, children}: SupPageProps) {
     };
     return (
         <div onClick={() => goToLink("/" + name)} className={"header-tab"}>
-            <h3 style={{margin: "auto"}}><Trans path={"header.links." + name}/></h3>
+            <h3 style={{margin: "auto",color:"var(--icon-color)"}}><Trans path={"header.links." + name}/></h3>
             {children}
         </div>
     );

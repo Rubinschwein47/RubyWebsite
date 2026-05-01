@@ -4,8 +4,9 @@ import Trans from "../../../../basics/Translate";
 import "./colorPicker.css"
 import {clamp, squareLerp,round} from "../../../../util/util";
 import convert from "color-convert";
+import FatHeader from "../../../../basics/fatHeader/fatHeader";
 
-const {Text, Title} = Typography;
+const {Text} = Typography;
 
 
 //The corners of the color space represented in [saturation,lightness]
@@ -84,7 +85,7 @@ export default function ColorPicker() {
         colorDot.current!.style.top = (100-hsv[2]) + '%';
     }
     return (<div>
-        <Title level={1}><Trans path={"thingis.colorPicker.title"}/></Title>
+        <FatHeader level={1}><Trans path={"thingis.colorPicker.title"}/></FatHeader>
         <div className={"main-order-color"}>
             <div className="container" style={{display: "flex", flexDirection: "column"}}>
                 <div

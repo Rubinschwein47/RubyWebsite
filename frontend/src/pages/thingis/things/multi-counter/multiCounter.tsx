@@ -1,12 +1,13 @@
 import Trans from "../../../../basics/Translate";
 import React from "react";
-import {Typography} from "antd";
-
-const {Text, Title} = Typography;
+//@ts-ignore
+import FatHeader from "../../../../basics/fatHeader/fatHeader";
 
 export default function MultiCounter() {
     
     return (
-        <Title level={1}><Trans path={"thingis.multiCounter.title"}/></Title>
+        <>
+            <FatHeader level={1}><Trans path={"thingis.multiCounter.title"}/></FatHeader>
+        </>
     )
 } 

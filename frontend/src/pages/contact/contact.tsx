@@ -9,8 +9,9 @@ import {Link} from "react-router";
 import {GitHubIcon, ItchIcon} from "../../basics/customIcons/icons";
 import "../../services/openapi/models/ContactDto";
 import {ContactControllerService, ContactDto} from "../../services/openapi";
+import FatHeader from "../../basics/fatHeader/fatHeader";
 
-const {Title, Text, Paragraph} = Typography;
+const {Text, Paragraph} = Typography;
 
 
 export default function Contact() {
@@ -82,14 +83,14 @@ export default function Contact() {
 
     return (<>
         {contextHolder}
-        <Title><Trans path={'contact.title'}/></Title> 
+        <FatHeader><Trans path={'contact.title'}/></FatHeader> 
         <div className={"contact-splitter-"+ratio}>
             <div>
                 <div className={"container"} style={{width: '100%', position: 'relative'}}>
                     {ratio === WindowRatio.pc? <img src={'/recources/LeaningOnWall.png'} className={"wall-leaning"}
                                             alt="Ruby Leaning on Wall"/>:null}
-                    <Title level={2} style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
-                        path={"contact.message.leaveMessage"}/></Title>
+                    <h2 style={{margin: "0.5rem 0 1.5rem 0"}}><Trans
+                        path={"contact.message.leaveMessage"}/></h2>
                     <div style={{display: "flex", marginBottom: "1rem"}}>
                         <Input
                             value={firstName} onChange={e => setFirstName(e.target.value)}
@@ -117,8 +118,8 @@ export default function Contact() {
                 </div>
             </div>
             <div style={{paddingLeft: ratio === WindowRatio.mobile ? 0 : "9rem"}}>
-                <Title level={2}><Trans
-                    path={"contact.findMe"}/></Title>
+                <h2><Trans
+                    path={"contact.findMe"}/></h2>
                 <Paragraph copyable><PhoneFilled/> +49 179 1368 592</Paragraph>
                 <Tooltip title={translate("contact.writeDirect")}>
                     <Link to={"mailto:contact@rubinschwein47.com"} target={"_blank"}><MailOutlined
