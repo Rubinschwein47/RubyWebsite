@@ -9,7 +9,6 @@ import ThemeWrapper from "./theming/themeWrapper";
 const router = createBrowserRouter(routes)
 
 let root = ReactDOM.createRoot(document.getElementById('root')!);
-console.log("this got called");
 root.render(
     <React.StrictMode>
         <ThemeWrapper>

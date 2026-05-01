@@ -9,9 +9,10 @@ import VDiv from "../../basics/VDiv";
 import {useInfoStore, WindowRatio} from "../../store";
 import {projects} from "../../model/projectList";
 import {Project} from "../../model/project";
+import FatHeader from "../../basics/fatHeader/fatHeader";
 
 
-const {Title, Text, Paragraph} = Typography;
+const { Text, Paragraph} = Typography;
 
 
 type WrapperProps = {
@@ -23,7 +24,7 @@ type WrapperProps = {
 export default function Portfolio() {
     const ratio = useInfoStore((state) => state.windowRatio);
     return <>
-        <Title>Portfolio</Title>
+        <FatHeader>Portfolio</FatHeader>
         <div style={{height: "3rem"}}></div>
         {projects.map((it) => <RenderProject
             key={it.name + 'd'}
@@ -53,9 +54,9 @@ function RenderProject({props, projectKey, windowRatio}: WrapperProps) {
                 <Links links={props.externalLinks}></Links>
             </div>
             <div style={{marginLeft: "1rem"}}>
-                <Title level={2} style={{margin: "0 0 1rem 0"}}>
+                <h2 style={{margin: "0 0 1rem 0"}}>
                     <Trans path={props.name}/>
-                </Title>
+                </h2>
                 <Badges badges={props.badges}></Badges>
                 <Tabs
                     type={"card"}
@@ -69,9 +70,9 @@ function RenderProject({props, projectKey, windowRatio}: WrapperProps) {
 
     function MobileHeadRender() {
         return <>
-            <Title level={2} style={{margin: "0 0 1rem 0"}}>
+            <h2 style={{margin: "0 0 1rem 0"}}>
                 <Trans path={props.name}/>
-            </Title>
+            </h2>
             <div style={{width: "100%", textAlign: "center"}}>
                 <ImageWaiter size={"12rem"} alt={props.logoAlt} src={props.logoPath}/>
             </div>

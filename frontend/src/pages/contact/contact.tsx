@@ -33,7 +33,6 @@ export default function Contact() {
     }
 
     const clickSend = () => {
-        console.log("clickSend");
         if (!checkMail() || email.length == 0) {
             messageApi.open({
                 type: "error",

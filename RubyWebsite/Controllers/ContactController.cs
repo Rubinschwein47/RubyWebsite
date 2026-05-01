@@ -46,7 +46,6 @@ public static class ContactController
 
     private static async Task<bool> ContactRequest(ContactDto contact)
     {
-        Console.WriteLine($"Contact: {contact.FirstName} {contact.LastName}");
         var password = Environment.GetEnvironmentVariable("EMAIL_PASSWORD");
         if (string.IsNullOrEmpty(password))
         {

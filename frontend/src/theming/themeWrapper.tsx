@@ -25,7 +25,6 @@ export default function ThemeWrapper({children}: { children: ReactNode }) {
     const theme = useInfoStore((state) => state.theme);
     const storeInitialized = useInfoStore((state) => state.initialized);
     const initializeStore = useInfoStore((state) => state.initialize);
-    console.log("theme: ", theme);
     Object.entries(themes[theme] != null? themes[theme]: themes["dark"]).forEach(([key,value]) => {
         document.documentElement.style.setProperty(key, value);
 
@@ -33,7 +32,6 @@ export default function ThemeWrapper({children}: { children: ReactNode }) {
 
     const setRatio = useInfoStore((state) => state.refreshRatio);
     useEffect(() => {
-        console.log(navigator.languages);
         if (storeInitialized === StoreProgress.uninitialized) {
             initializeStore();
         }

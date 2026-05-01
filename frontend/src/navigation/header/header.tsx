@@ -8,8 +8,9 @@ import {useNavigate} from "react-router";
 import Trans from "../../basics/Translate";
 import {ThemeDropdown} from "./themeDropdown";
 import {LanguageDropdown} from "./languageDropdown";
+import FatHeader from "../../basics/fatHeader/fatHeader";
 
-const {Title, Text} = Typography;
+const {Text} = Typography;
 
 const pages: { name: string; icon: React.JSX.Element }[] = [{
     name: "home",
@@ -31,7 +32,7 @@ export default function WebHeader() {
     return (<Header className={"header"}>
         <Flex style={{height: '100%'}}>
             {ratio !== WindowRatio.pc ?
-                <><MobilePages pages={pages}/> <Title style={{margin: "auto 12px"}} level={3}>RS47</Title></> 
+                <><MobilePages pages={pages}/> <h3 style={{margin: "auto 12px"}}>RS47</h3></> 
                 : <DesktopPages pages={pages}/>}
             <div className={"options-panel"}>
                 <LanguageDropdown ratio={ratio}></LanguageDropdown>
@@ -46,7 +47,7 @@ export default function WebHeader() {
                     pointerEvents: 'none'
                 }}>
                     <div className={"name-present-line"} style={{marginLeft: "auto"}}></div>
-                    <Title style={{margin: '1rem'}}>Rubinschwein47</Title>
+                    <FatHeader style={{margin: '1rem'}}>Rubinschwein47</FatHeader>
                     <div className={"name-present-line"} style={{marginRight: "auto"}}></div>
                 </Flex>
             </div>
@@ -84,9 +85,9 @@ function MobilePages({pages}: PagesProps) {
     pages.forEach((page, index) => {
         items?.push({
             key: index,
-            label: <Title level={3}><Trans
+            label: <h3 ><Trans
                 path={"header.links." + page.name}/> {React.cloneElement(page.icon, {className: "mobile-icon"})}
-            </Title>,
+            </h3>,
             onClick: () => {
                 goToLink("/" + page.name);
             }
@@ -112,7 +113,7 @@ function SubPage({name, children}: SupPageProps) {
     };
     return (
         <div onClick={() => goToLink("/" + name)} className={"header-tab"}>
-            <Title level={3} style={{margin: "auto"}}><Trans path={"header.links." + name}/></Title>
+            <h3 style={{margin: "auto"}}><Trans path={"header.links." + name}/></h3>
             {children}
         </div>
     );

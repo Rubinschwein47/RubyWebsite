@@ -6,6 +6,7 @@ import {thingis, ThingiTag, ThingiTagColors} from "./thingisList";
 import ImageWaiter from "../../basics/ImageWaiter";
 import {Link} from "react-router";
 import {useInfoStore} from "../../store";
+import FatHeader from "../../basics/fatHeader/fatHeader";
 
 const {Text, Title} = Typography;
 
@@ -13,7 +14,7 @@ export default function ThingisOverview() {
     const translate = useInfoStore((state) => state.getTranslation);
 
     return (<>
-        <Title level={1}><Trans path={"thingis.header"}/></Title>
+        <FatHeader><Trans path={"thingis.header"}/></FatHeader>
         <div className={"container thingis-search-container"}>
             <span style={{width: '20rem'}}><Input placeholder={translate("thingis.searchByName")}/></span>
             {/*<span style={{width: '5rem'}}><Input placeholder={"Title"}/></span>*/}

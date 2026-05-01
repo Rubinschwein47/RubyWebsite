@@ -5,7 +5,12 @@
     top: 62px;
     display: flex;
     align-items: center;
-    justify-content: center
+    justify-content: center;
+    h1{
+    .outline-font{
+        letter-spacing: -2.8px;
+    }
+}
 }
 
 .name-present-line{
