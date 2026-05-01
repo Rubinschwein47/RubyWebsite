@@ -1,7 +1,7 @@
 import Icon, {CustomIconComponentProps} from "@ant-design/icons/lib/components/Icon";
 import React from "react";
-import {ReactComponent as itchSvg} from "./svgs/itch_white.svg";
-import {ReactComponent as githubSvg} from "./svgs/github-mark.svg";
+// import {ReactComponent as itchSvg} from "./svgs/itch_white.svg";
+// import {ReactComponent as githubSvg} from "./svgs/github-mark.svg";
 
 const HeartSvg = () => (
     <svg width="1em" height="1em" fill="currentColor" viewBox="0 0 1024 1024">
@@ -19,12 +19,15 @@ export function HeartIcon(props: Partial<CustomIconComponentProps>) {
 
 export function ItchIcon(props: Partial<CustomIconComponentProps>) {
     return (
-        <Icon component={itchSvg} {...props} />
+        <div></div>
+        // <Icon component={itchSvg} {...props} />
     );
 }
 
 export function GitHubIcon(props: Partial<CustomIconComponentProps>) {
     return (
-        <Icon component={githubSvg} {...props} />
+        <div></div>
+
+    // <Icon component={githubSvg} {...props} />
     );
 }
